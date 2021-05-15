@@ -26,6 +26,30 @@
 			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/AVL"
 		},
 		{
+			"name" : "BINTREE_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/binTree"
+		},
+		{
+			"name" : "BINTREE_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/binTree"
+		},
+		{
 			"name" : "BITMAP_BINARY_DIR",
 			"properties" : 
 			[
@@ -843,7 +867,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "11"
+			"value" : "13"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1288,6 +1312,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/prime"
+		},
+		{
+			"name" : "QUEUE_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queue"
+		},
+		{
+			"name" : "QUEUE_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queue"
 		},
 		{
 			"name" : "UniPrint_BINARY_DIR",

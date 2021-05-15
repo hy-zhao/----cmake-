@@ -17,7 +17,9 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11,
+						12
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -41,28 +43,18 @@
 					]
 				},
 				{
-					"build" : "BST",
+					"build" : "binTree",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 2,
-					"source" : "BST",
+					"source" : "binTree",
 					"targetIndexes" : 
 					[
-						3
+						1
 					]
-				},
-				{
-					"build" : "BTree",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.15.0"
-					},
-					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "BTree"
 				},
 				{
 					"build" : "BitMap",
@@ -75,7 +67,7 @@
 					"source" : "BitMap",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -89,8 +81,32 @@
 					"source" : "Bitmap_set_only",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
+				},
+				{
+					"build" : "BST",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "BST",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "BTree",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "BTree"
 				},
 				{
 					"build" : "UniPrint",
@@ -99,11 +115,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 4,
+					"projectIndex" : 5,
 					"source" : "UniPrint",
 					"targetIndexes" : 
 					[
-						8
+						10
 					]
 				},
 				{
@@ -113,12 +129,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 5,
+					"projectIndex" : 6,
 					"source" : "factorial",
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				},
 				{
@@ -128,11 +144,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 6,
+					"projectIndex" : 7,
 					"source" : "hashtable",
 					"targetIndexes" : 
 					[
-						9
+						11
 					]
 				},
 				{
@@ -142,12 +158,26 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 7,
+					"projectIndex" : 8,
 					"source" : "prime",
 					"targetIndexes" : 
 					[
-						6,
-						7
+						7,
+						8
+					]
+				},
+				{
+					"build" : "queue",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 9,
+					"source" : "queue",
+					"targetIndexes" : 
+					[
+						9
 					]
 				},
 				{
@@ -157,11 +187,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 8,
+					"projectIndex" : 10,
 					"source" : "vector",
 					"targetIndexes" : 
 					[
-						10
+						12
 					]
 				}
 			],
@@ -178,18 +208,20 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9,
+						10
 					],
 					"directoryIndexes" : 
 					[
 						0,
-						3,
-						5
+						4,
+						6
 					],
 					"name" : "dsacpp",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -209,19 +241,7 @@
 					[
 						2
 					],
-					"name" : "BST",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						3
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						4
-					],
-					"name" : "BITMAP",
+					"name" : "BINTREE",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -231,63 +251,99 @@
 				{
 					"directoryIndexes" : 
 					[
-						6
+						3
+					],
+					"name" : "BITMAP",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "BST",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
 					],
 					"name" : "UniPrint",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						8
+						10
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						7
+						8
 					],
 					"name" : "FACTORIAL",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						8
+						9
 					],
 					"name" : "hashtable",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						9
+						11
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						9
+						10
 					],
 					"name" : "PRIME",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						6,
-						7
+						7,
+						8
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						10
+						11
+					],
+					"name" : "QUEUE",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
 					],
 					"name" : "vector",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						10
+						12
 					]
 				}
 			],
@@ -301,74 +357,88 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 4,
+					"directoryIndex" : 2,
+					"id" : "BINTREE::@b93427fbc6ac3ec150cf",
+					"jsonFile" : "target-BINTREE-Debug-12f8877fd7cfc5a8d324.json",
+					"name" : "BINTREE",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
 					"id" : "BITMAPLIB::@cff14956501449a59ac8",
 					"jsonFile" : "target-BITMAPLIB-Debug-a20d00dee1ae767a9c23.json",
 					"name" : "BITMAPLIB",
 					"projectIndex" : 3
 				},
 				{
-					"directoryIndex" : 5,
+					"directoryIndex" : 4,
 					"id" : "BITMAP_SET_ONLYLIB::@748c76fa14602d9d4f2d",
 					"jsonFile" : "target-BITMAP_SET_ONLYLIB-Debug-8677cfae714908d3a138.json",
 					"name" : "BITMAP_SET_ONLYLIB",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 2,
+					"directoryIndex" : 5,
 					"id" : "BST::@ad8f68c01f36623b7280",
 					"jsonFile" : "target-BST-Debug-39419daaf5c2dc68a972.json",
 					"name" : "BST",
-					"projectIndex" : 2
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "FACTORIAL::@d94aa637cc44e6c8475a",
-					"jsonFile" : "target-FACTORIAL-Debug-d23a8b7f043ddcd8a239.json",
-					"name" : "FACTORIAL",
-					"projectIndex" : 5
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "FACTORIALLIB::@d94aa637cc44e6c8475a",
-					"jsonFile" : "target-FACTORIALLIB-Debug-2c13ffcee140ee4fb332.json",
-					"name" : "FACTORIALLIB",
-					"projectIndex" : 5
-				},
-				{
-					"directoryIndex" : 9,
-					"id" : "PRIME::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIME-Debug-78801f8c6c1359b25abb.json",
-					"name" : "PRIME",
-					"projectIndex" : 7
-				},
-				{
-					"directoryIndex" : 9,
-					"id" : "PRIMELIB::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIMELIB-Debug-99e0a975716932d76b0f.json",
-					"name" : "PRIMELIB",
-					"projectIndex" : 7
-				},
-				{
-					"directoryIndex" : 6,
-					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
-					"jsonFile" : "target-UNIPRINTLIB-Debug-96df9cd72f5dc52f9413.json",
-					"name" : "UNIPRINTLIB",
 					"projectIndex" : 4
 				},
 				{
 					"directoryIndex" : 8,
-					"id" : "hashtable::@5b24f28f0f334b38317d",
-					"jsonFile" : "target-hashtable-Debug-7826cd22abed6e8a3db6.json",
-					"name" : "hashtable",
+					"id" : "FACTORIAL::@d94aa637cc44e6c8475a",
+					"jsonFile" : "target-FACTORIAL-Debug-d23a8b7f043ddcd8a239.json",
+					"name" : "FACTORIAL",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "FACTORIALLIB::@d94aa637cc44e6c8475a",
+					"jsonFile" : "target-FACTORIALLIB-Debug-2c13ffcee140ee4fb332.json",
+					"name" : "FACTORIALLIB",
 					"projectIndex" : 6
 				},
 				{
 					"directoryIndex" : 10,
+					"id" : "PRIME::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIME-Debug-78801f8c6c1359b25abb.json",
+					"name" : "PRIME",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "PRIMELIB::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIMELIB-Debug-99e0a975716932d76b0f.json",
+					"name" : "PRIMELIB",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "QUEUE::@d63f5f69c5a9088733ed",
+					"jsonFile" : "target-QUEUE-Debug-b75ffc350caa9c7b4fb1.json",
+					"name" : "QUEUE",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
+					"jsonFile" : "target-UNIPRINTLIB-Debug-96df9cd72f5dc52f9413.json",
+					"name" : "UNIPRINTLIB",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "hashtable::@5b24f28f0f334b38317d",
+					"jsonFile" : "target-hashtable-Debug-7826cd22abed6e8a3db6.json",
+					"name" : "hashtable",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 12,
 					"id" : "vector::@95776985c747069fcc28",
 					"jsonFile" : "target-vector-Debug-5eaf20132a166c436967.json",
 					"name" : "vector",
-					"projectIndex" : 8
+					"projectIndex" : 10
 				}
 			]
 		}

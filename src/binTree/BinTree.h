@@ -28,13 +28,13 @@ public:
    int remove ( BinNodePosi<T> x ); //删除以位置x处节点为根的子树，返回该子树原先的规模
    BinTree<T>* secede ( BinNodePosi<T> x ); //将子树x从当前树中摘除，并将其转换为一棵独立子树
    template <typename VST> //操作器
-   void travLevel ( VST& visit ) { if ( _root ) _root->travLevel ( visit ); } //层次遍历
+   void travLevel ( VST  visit ) { if ( _root ) _root->travLevel ( visit ); } //层次遍历
    template <typename VST> //操作器
-   void travPre ( VST& visit ) { if ( _root ) _root->travPre ( visit ); } //先序遍历
+   void travPre ( VST  visit ) { if ( _root ) _root->travPre ( visit ); } //先序遍历
    template <typename VST> //操作器
-   void travIn ( VST& visit ) { if ( _root ) _root->travIn ( visit ); } //中序遍历
+   void travIn ( VST  visit ) { if ( _root ) _root->travIn ( visit ); } //中序遍历
    template <typename VST> //操作器
-   void travPost ( VST& visit ) { if ( _root ) _root->travPost ( visit ); } //后序遍历
+   void travPost ( VST  visit ) { if ( _root ) _root->travPost ( visit ); } //后序遍历
    bool operator< ( BinTree<T> const& t ) //比较器（其余自行补充）
    { return _root && t._root && lt ( _root, t._root ); }
    bool operator== ( BinTree<T> const& t ) //判等器

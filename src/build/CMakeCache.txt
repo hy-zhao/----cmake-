@@ -21,6 +21,12 @@ AVL_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/b
 AVL_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/AVL
 
 //Value Computed by CMake
+BINTREE_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/binTree
+
+//Value Computed by CMake
+BINTREE_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/binTree
+
+//Value Computed by CMake
 BITMAP_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BitMap
 
 //Value Computed by CMake
@@ -256,6 +262,12 @@ PRIME_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src
 PRIME_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/prime
 
 //Value Computed by CMake
+QUEUE_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queue
+
+//Value Computed by CMake
+QUEUE_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queue
+
+//Value Computed by CMake
 UniPrint_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint
 
 //Value Computed by CMake
@@ -388,7 +400,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

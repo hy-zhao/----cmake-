@@ -9,7 +9,7 @@ project(${PROJECT_NAME})
 #     # "../_share/double_Elem.h"
 #     # "../_share/Hailstone_Elem.h"
 #     # "../_share/increase_Elem.h"
-#     # "../stack/stack.h"
+#     # "../stack/Stack.h"
 #     # "../queue/queue.h"
 #     # "../UniPrint/UniPrint.h"
 #     "BinNode.h"
@@ -54,3 +54,6 @@ add_library(BINTREELIB INTERFACE)
 add_executable(${PROJECT_NAME} "main.cpp")
 
 target_include_directories(BINTREELIB INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(${PROJECT_NAME} UNIPRINTLIB)
+
