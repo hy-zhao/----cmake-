@@ -517,6 +517,101 @@ build bubblesort/libBUBBLESORTLIB.a: CXX_STATIC_LIBRARY_LINKER__BUBBLESORTLIB_De
 #############################################
 # Utility command for rebuild_cache
 
+build conversion/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build conversion/rebuild_cache: phony conversion/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build conversion/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build conversion/edit_cache: phony conversion/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target CONVERSION
+
+
+#############################################
+# Order-only phony target for CONVERSION
+
+build cmake_object_order_depends_target_CONVERSION: phony || cmake_object_order_depends_target_CONVERSIONLIB cmake_object_order_depends_target_UNIPRINTLIB
+
+build conversion/CMakeFiles/CONVERSION.dir/main.cpp.o: CXX_COMPILER__CONVERSION_Debug ../conversion/main.cpp || cmake_object_order_depends_target_CONVERSION
+  DEP_FILE = conversion/CMakeFiles/CONVERSION.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../conversion -I../UniPrint
+  OBJECT_DIR = conversion/CMakeFiles/CONVERSION.dir
+  OBJECT_FILE_DIR = conversion/CMakeFiles/CONVERSION.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CONVERSION
+
+
+#############################################
+# Link the executable conversion/CONVERSION
+
+build conversion/CONVERSION: CXX_EXECUTABLE_LINKER__CONVERSION_Debug conversion/CMakeFiles/CONVERSION.dir/main.cpp.o | conversion/libCONVERSIONLIB.a UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a conversion/libCONVERSIONLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = conversion/libCONVERSIONLIB.a  UniPrint/libUNIPRINTLIB.a
+  OBJECT_DIR = conversion/CMakeFiles/CONVERSION.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = conversion/CONVERSION
+  TARGET_PDB = CONVERSION.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target CONVERSIONLIB
+
+
+#############################################
+# Order-only phony target for CONVERSIONLIB
+
+build cmake_object_order_depends_target_CONVERSIONLIB: phony || conversion/CMakeFiles/CONVERSIONLIB.dir
+
+build conversion/CMakeFiles/CONVERSIONLIB.dir/convert.cpp.o: CXX_COMPILER__CONVERSIONLIB_Debug ../conversion/convert.cpp || cmake_object_order_depends_target_CONVERSIONLIB
+  DEP_FILE = conversion/CMakeFiles/CONVERSIONLIB.dir/convert.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../conversion
+  OBJECT_DIR = conversion/CMakeFiles/CONVERSIONLIB.dir
+  OBJECT_FILE_DIR = conversion/CMakeFiles/CONVERSIONLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target CONVERSIONLIB
+
+
+#############################################
+# Link the static library conversion/libCONVERSIONLIB.a
+
+build conversion/libCONVERSIONLIB.a: CXX_STATIC_LIBRARY_LINKER__CONVERSIONLIB_Debug conversion/CMakeFiles/CONVERSIONLIB.dir/convert.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = conversion/CMakeFiles/CONVERSIONLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = conversion/libCONVERSIONLIB.a
+  TARGET_PDB = CONVERSIONLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build UniPrint/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -1056,6 +1151,10 @@ build BUBBLESORT: phony bubblesort/BUBBLESORT
 
 build BUBBLESORTLIB: phony bubblesort/libBUBBLESORTLIB.a
 
+build CONVERSION: phony conversion/CONVERSION
+
+build CONVERSIONLIB: phony conversion/libCONVERSIONLIB.a
+
 build FACTORIAL: phony factorial/FACTORIAL
 
 build FACTORIALLIB: phony factorial/libFACTORIALLIB.a
@@ -1078,6 +1177,8 @@ build libBITMAP_SET_ONLYLIB.a: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
 
 build libBUBBLESORTLIB.a: phony bubblesort/libBUBBLESORTLIB.a
 
+build libCONVERSIONLIB.a: phony conversion/libCONVERSIONLIB.a
+
 build libFACTORIALLIB.a: phony factorial/libFACTORIALLIB.a
 
 build libPRIMELIB.a: phony prime/libPRIMELIB.a
@@ -1096,7 +1197,7 @@ build vector: phony vector/vector
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
-build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all UniPrint/all factorial/all hashtable/all prime/all queue/all random/all vector/all
+build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all UniPrint/all factorial/all hashtable/all prime/all queue/all random/all vector/all
 
 # =============================================================================
 
@@ -1157,6 +1258,13 @@ build bubblesort/all: phony bubblesort/BUBBLESORT bubblesort/libBUBBLESORTLIB.a
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion
+
+build conversion/all: phony conversion/CONVERSION conversion/libCONVERSIONLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/factorial
 
 build factorial/all: phony factorial/FACTORIAL factorial/libFACTORIALLIB.a
@@ -1203,14 +1311,14 @@ build vector/all: phony vector/vector
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
+build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
 
 
 #############################################

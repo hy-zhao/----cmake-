@@ -51,6 +51,16 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../conversion -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o conversion/CMakeFiles/CONVERSION.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../conversion -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o conversion/CMakeFiles/CONVERSIONLIB.dir/convert.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion/convert.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion/convert.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint/print_basic.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint/print_basic.cpp"
 },

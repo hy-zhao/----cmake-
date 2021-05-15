@@ -1,6 +1,6 @@
 #include "stack/stack.h" //借助栈结构，计算直方图H[]中的最大矩形（并列时取最靠左者）
 
-__int64 mr_STACKS( int H[], int n, int& mr_r, int& mr_s, int& mr_t ) { //除末项-1哨兵，H[]皆非负
+int64_t mr_STACKS( int H[], int n, int& mr_r, int& mr_s, int& mr_t ) { //除末项-1哨兵，H[]皆非负
    int* s = new int[n]; Stack<int> S; //自右可见项的秩
    for( int r = 0; r < n; r++ ) { //依次计算出
       while ( !S.empty() && H[S.top()] >= H[r] ) S.pop(); //每一个s(r)
@@ -17,9 +17,9 @@ __int64 mr_STACKS( int H[], int n, int& mr_r, int& mr_s, int& mr_t ) { //除末�
    }
    while( !T.empty() ) T.pop();
 
-   __int64 maxRect = 0;
+   int64_t maxRect = 0;
    for( int r = 0; r < n; r++ ) {
-      __int64 mR = H[r] * (t[r] - s[r]);
+      int64_t mR = H[r] * (t[r] - s[r]);
       if ( maxRect < mR )
          { maxRect = mR; mr_r = r; mr_s = s[r]; mr_t = t[r]; }
    }

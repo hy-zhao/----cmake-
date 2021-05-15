@@ -2,9 +2,9 @@
 #include <ctime>
 #include <cstdio>
 
-__int64 mr_STACK ( int H[], int n, int& r, int& s, int& t ); //借助一个栈：O(n)
-__int64 mr_STACKS( int H[], int n, int& r, int& s, int& t ); //借助两个栈：O(n)
-__int64 mr_BRUTE ( int H[], int n, int& r, int& s, int& t ); //蛮力：O(n^2)
+int64_t mr_STACK ( int H[], int n, int& r, int& s, int& t ); //借助一个栈：O(n)
+int64_t mr_STACKS( int H[], int n, int& r, int& s, int& t ); //借助两个栈：O(n)
+int64_t mr_BRUTE ( int H[], int n, int& r, int& s, int& t ); //蛮力：O(n^2)
 
 /******************************************************************************************
  * 直方图中的最大矩形
@@ -23,11 +23,11 @@ int main ( int argc, char* argv[] ) {
    }
 
    int r, s, t; //最大矩形：H[r] x [s, t)
-   __int64 mrBrute = mr_BRUTE( H, n, r = -1, s = -1, t = -1 );
+   int64_t mrBrute = mr_BRUTE( H, n, r = -1, s = -1, t = -1 );
    printf( "MaxRect Brute-Force  : %I64d = %d x [%d,%d)\n", mrBrute, H[r], s, t );
-   __int64 mrStacks = mr_STACKS( H, n, r = -1, s = -1, t = -1 );
+   int64_t mrStacks = mr_STACKS( H, n, r = -1, s = -1, t = -1 );
    printf( "MaxRect using STACKS : %I64d = %d x [%d,%d)\n", mrStacks, H[r], s, t );
-   __int64 mrStack  = mr_STACK ( H, n, r = -1, s = -1, t = -1 );
+   int64_t mrStack  = mr_STACK ( H, n, r = -1, s = -1, t = -1 );
    printf( "MaxRect using STACK  : %I64d = %d x [%d,%d)\n", mrStack, H[r], s, t );
 
    for ( int i = 0; i < s; i++ ) {

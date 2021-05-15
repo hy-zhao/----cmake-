@@ -10,11 +10,11 @@
 
 #define ABS(x) ( (0 < (x)) ? (x) : (-(x)) )
 
-__int64 gcdEU_R ( __int64 a, __int64 b );
-__int64 gcdEU ( __int64 a, __int64 b );
-__int64 gcdCN ( __int64 a, __int64 b );
+int64_t gcdEU_R ( int64_t a, int64_t b );
+int64_t gcdEU ( int64_t a, int64_t b );
+int64_t gcdCN ( int64_t a, int64_t b );
 
-__int64 gcd ( __int64 a, __int64 b ) {
+int64_t gcd ( int64_t a, int64_t b ) {
    switch ( rand() % 3 ) {
       case 0:  return gcdEU_R ( ABS ( a ), ABS ( b ) );
       case 1:  return gcdEU ( ABS ( a ), ABS ( b ) );
@@ -31,7 +31,7 @@ int main ( int argc, char* argv[] ) {
    srand ( ( unsigned int ) time ( NULL ) );
 // 计算GCD
    do {
-      __int64 a = _atoi64 ( argv[1] ), b = _atoi64 ( argv[2] );
+      int64_t a = atoll ( argv[1] ), b = atoll ( argv[2] );
       printf ( "Chinese:   GCD(%22I64d, %22I64d) = %22I64d\n",   a, b, gcdCN ( ABS ( a ), ABS ( b ) ) );
       printf ( "Euclidean: GCD(%22I64d, %22I64d) = %22I64d = %22I64d\n",   a, b, gcdEU ( ABS ( a ), ABS ( b ) ), gcdEU_R ( ABS ( a ), ABS ( b ) ) );
       printf ( "Random:    GCD(%22I64d, %22I64d) = %22I64d = %22I64d\n\n",   a, b, gcd ( a, b ), gcd ( a, b ) );
@@ -39,7 +39,7 @@ int main ( int argc, char* argv[] ) {
    } while ( 2 < argc );
 // 随机计算GCD
    for ( int i = 0; i < 9; i++ ) {
-      __int64 a = 1, b = 1;
+      int64_t a = 1, b = 1;
       for ( int k = 0; k < 4; k++ ) { //随机生成正整数a和b
          ( rand() & 1 ) ? a *= ( 1 + rand() ) : a += rand();
          ( rand() & 1 ) ? b *= ( 1 + rand() ) : b += rand();

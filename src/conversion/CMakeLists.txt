@@ -1,9 +1,10 @@
-set(PROJECT_NAME conversion)
+set(PROJECT_NAME CONVERSION)
+project(${PROJECT_NAME})
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "convert.h"
-)
-# source_group("婢跺
+add_library(CONVERSIONLIB convert.cpp)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(CONVERSIONLIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(${PROJECT_NAME} CONVERSIONLIB UNIPRINTLIB)

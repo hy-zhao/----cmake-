@@ -17,7 +17,7 @@
 #include "stack/stack.h" //使用栈
 #include "priority.h"
 
-__int64 facI ( int n );
+int64_t facI ( int n );
 double calcu ( double a, char op, double b );
 double calcu ( char op, double b );
 void displayProgress ( char*, char*, Stack<double>&, Stack<char>&, char* );

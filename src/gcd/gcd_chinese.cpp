@@ -6,7 +6,7 @@
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
 
-__int64 gcdCN ( __int64 a, __int64 b ) { //assert: 0 < min(a, b)
+int64_t gcdCN ( int64_t a, int64_t b ) { //assert: 0 < min(a, b)
    int r = 0; //a和b的2^r形式的公因子
    while ( ! ( ( a & 1 ) || ( b & 1 ) ) ) { //若a和b都是偶数
       a >>= 1; b >>= 1; r ++; //则同时除2（右移），并累加至r

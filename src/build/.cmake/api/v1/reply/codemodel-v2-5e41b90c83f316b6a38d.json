@@ -21,7 +21,8 @@
 						11,
 						12,
 						13,
-						14
+						14,
+						15
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -126,17 +127,32 @@
 					]
 				},
 				{
-					"build" : "UniPrint",
+					"build" : "conversion",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 6,
+					"source" : "conversion",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "UniPrint",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
 					"source" : "UniPrint",
 					"targetIndexes" : 
 					[
-						13
+						15
 					]
 				},
 				{
@@ -146,12 +162,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 7,
+					"projectIndex" : 8,
 					"source" : "factorial",
 					"targetIndexes" : 
 					[
-						7,
-						8
+						9,
+						10
 					]
 				},
 				{
@@ -161,11 +177,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 8,
+					"projectIndex" : 9,
 					"source" : "hashtable",
 					"targetIndexes" : 
 					[
-						14
+						16
 					]
 				},
 				{
@@ -175,12 +191,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 9,
+					"projectIndex" : 10,
 					"source" : "prime",
 					"targetIndexes" : 
 					[
-						9,
-						10
+						11,
+						12
 					]
 				},
 				{
@@ -190,11 +206,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 10,
+					"projectIndex" : 11,
 					"source" : "queue",
 					"targetIndexes" : 
 					[
-						11
+						13
 					]
 				},
 				{
@@ -204,11 +220,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 11,
+					"projectIndex" : 12,
 					"source" : "random",
 					"targetIndexes" : 
 					[
-						12
+						14
 					]
 				},
 				{
@@ -218,11 +234,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 12,
+					"projectIndex" : 13,
 					"source" : "vector",
 					"targetIndexes" : 
 					[
-						15
+						17
 					]
 				}
 			],
@@ -243,7 +259,8 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13
 					],
 					"directoryIndexes" : 
 					[
@@ -323,19 +340,7 @@
 					[
 						8
 					],
-					"name" : "UniPrint",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						13
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						9
-					],
-					"name" : "FACTORIAL",
+					"name" : "CONVERSION",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -346,21 +351,21 @@
 				{
 					"directoryIndexes" : 
 					[
-						10
+						9
 					],
-					"name" : "hashtable",
+					"name" : "UniPrint",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						14
+						15
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						11
+						10
 					],
-					"name" : "PRIME",
+					"name" : "FACTORIAL",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -371,13 +376,26 @@
 				{
 					"directoryIndexes" : 
 					[
-						12
+						11
 					],
-					"name" : "QUEUE",
+					"name" : "hashtable",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						11
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "PRIME",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11,
+						12
 					]
 				},
 				{
@@ -385,11 +403,11 @@
 					[
 						13
 					],
-					"name" : "RANDOM",
+					"name" : "QUEUE",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						12
+						13
 					]
 				},
 				{
@@ -397,11 +415,23 @@
 					[
 						14
 					],
+					"name" : "RANDOM",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						15
+					],
 					"name" : "vector",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						15
+						17
 					]
 				}
 			],
@@ -457,67 +487,81 @@
 					"projectIndex" : 5
 				},
 				{
-					"directoryIndex" : 9,
-					"id" : "FACTORIAL::@d94aa637cc44e6c8475a",
-					"jsonFile" : "target-FACTORIAL-Debug-d23a8b7f043ddcd8a239.json",
-					"name" : "FACTORIAL",
-					"projectIndex" : 7
-				},
-				{
-					"directoryIndex" : 9,
-					"id" : "FACTORIALLIB::@d94aa637cc44e6c8475a",
-					"jsonFile" : "target-FACTORIALLIB-Debug-2c13ffcee140ee4fb332.json",
-					"name" : "FACTORIALLIB",
-					"projectIndex" : 7
-				},
-				{
-					"directoryIndex" : 11,
-					"id" : "PRIME::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIME-Debug-78801f8c6c1359b25abb.json",
-					"name" : "PRIME",
-					"projectIndex" : 9
-				},
-				{
-					"directoryIndex" : 11,
-					"id" : "PRIMELIB::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIMELIB-Debug-99e0a975716932d76b0f.json",
-					"name" : "PRIMELIB",
-					"projectIndex" : 9
-				},
-				{
-					"directoryIndex" : 12,
-					"id" : "QUEUE::@d63f5f69c5a9088733ed",
-					"jsonFile" : "target-QUEUE-Debug-102cfa123262db6f5138.json",
-					"name" : "QUEUE",
-					"projectIndex" : 10
-				},
-				{
-					"directoryIndex" : 13,
-					"id" : "RANDOMLIB::@043bef6630b23836363a",
-					"jsonFile" : "target-RANDOMLIB-Debug-4b6619143107627c4c02.json",
-					"name" : "RANDOMLIB",
-					"projectIndex" : 11
+					"directoryIndex" : 8,
+					"id" : "CONVERSION::@dae4621177dd7c573cc2",
+					"jsonFile" : "target-CONVERSION-Debug-034e9f720f2255e588b6.json",
+					"name" : "CONVERSION",
+					"projectIndex" : 6
 				},
 				{
 					"directoryIndex" : 8,
-					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
-					"jsonFile" : "target-UNIPRINTLIB-Debug-96df9cd72f5dc52f9413.json",
-					"name" : "UNIPRINTLIB",
+					"id" : "CONVERSIONLIB::@dae4621177dd7c573cc2",
+					"jsonFile" : "target-CONVERSIONLIB-Debug-c5c18fa5b1e7ba1d98b7.json",
+					"name" : "CONVERSIONLIB",
 					"projectIndex" : 6
 				},
 				{
 					"directoryIndex" : 10,
-					"id" : "hashtable::@5b24f28f0f334b38317d",
-					"jsonFile" : "target-hashtable-Debug-7826cd22abed6e8a3db6.json",
-					"name" : "hashtable",
+					"id" : "FACTORIAL::@d94aa637cc44e6c8475a",
+					"jsonFile" : "target-FACTORIAL-Debug-d23a8b7f043ddcd8a239.json",
+					"name" : "FACTORIAL",
 					"projectIndex" : 8
 				},
 				{
+					"directoryIndex" : 10,
+					"id" : "FACTORIALLIB::@d94aa637cc44e6c8475a",
+					"jsonFile" : "target-FACTORIALLIB-Debug-2c13ffcee140ee4fb332.json",
+					"name" : "FACTORIALLIB",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "PRIME::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIME-Debug-78801f8c6c1359b25abb.json",
+					"name" : "PRIME",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "PRIMELIB::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIMELIB-Debug-99e0a975716932d76b0f.json",
+					"name" : "PRIMELIB",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "QUEUE::@d63f5f69c5a9088733ed",
+					"jsonFile" : "target-QUEUE-Debug-102cfa123262db6f5138.json",
+					"name" : "QUEUE",
+					"projectIndex" : 11
+				},
+				{
 					"directoryIndex" : 14,
+					"id" : "RANDOMLIB::@043bef6630b23836363a",
+					"jsonFile" : "target-RANDOMLIB-Debug-4b6619143107627c4c02.json",
+					"name" : "RANDOMLIB",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
+					"jsonFile" : "target-UNIPRINTLIB-Debug-96df9cd72f5dc52f9413.json",
+					"name" : "UNIPRINTLIB",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "hashtable::@5b24f28f0f334b38317d",
+					"jsonFile" : "target-hashtable-Debug-7826cd22abed6e8a3db6.json",
+					"name" : "hashtable",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 15,
 					"id" : "vector::@95776985c747069fcc28",
 					"jsonFile" : "target-vector-Debug-5eaf20132a166c436967.json",
 					"name" : "vector",
-					"projectIndex" : 12
+					"projectIndex" : 13
 				}
 			]
 		}

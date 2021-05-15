@@ -12,9 +12,9 @@ using namespace std;
 
 #include "Fib.h"
 
-__int64  fibI ( int n ); //迭代版
-__int64  fib ( int n ); //二分递归版
-__int64  fib ( int n, __int64& f ); //线性递归版
+int64_t  fibI ( int n ); //迭代版
+int64_t  fib ( int n ); //二分递归版
+int64_t  fib ( int n, int64_t& f ); //线性递归版
 
 int main ( int argc, char* argv[] ) { //测试FIB
 // 检查参数
@@ -32,7 +32,7 @@ int main ( int argc, char* argv[] ) { //测试FIB
       printf ( "fib(%2d) = %22I64d\n", i, fibI ( i ) );
    printf ( "\n------------- Linear Recursion -------------\n" );
    for ( int i = 0; i < n; i++ ) {
-      __int64 f;
+      int64_t f;
       printf ( "fib(%2d) = %22I64d\n", i, fib ( i, f ) );
    }
    printf ( "\n------------- Binary Recursion -------------\n" );

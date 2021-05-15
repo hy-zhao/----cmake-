@@ -74,6 +74,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/cmake_install.cmake")
 endif()
 

@@ -891,7 +891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "15"
+			"value" : "16"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1288,6 +1288,30 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "CONVERSION_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion"
+		},
+		{
+			"name" : "CONVERSION_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion"
 		},
 		{
 			"name" : "FACTORIAL_BINARY_DIR",

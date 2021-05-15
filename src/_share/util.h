@@ -20,6 +20,7 @@ using namespace std;
 
 #include <cstdio>
 #include <cstdlib>
+#include <cstdint>
 #include <ctime>
 #include <climits>
 #include <cmath>

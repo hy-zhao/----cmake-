@@ -21,6 +21,10 @@
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/CMakeFiles/rebuild_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/CMakeFiles/CONVERSION.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/CMakeFiles/CONVERSIONLIB.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/UNIPRINTLIB.dir

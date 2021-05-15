@@ -6,8 +6,8 @@
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
 
-__int64 powerBF ( __int64 a, int n ) { //a^n算法（蛮力版）：n >= 0
-   __int64 pow = 1; //O(1)
+int64_t powerBF ( int64_t a, int n ) { //a^n算法（蛮力版）：n >= 0
+   int64_t pow = 1; //O(1)
    while ( 0 < n ) { //O(n)
       pow *= a; //O(1)
       n--; //O(1)

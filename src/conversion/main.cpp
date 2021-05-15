@@ -16,7 +16,7 @@ int main ( int argc, char* argv[] ) {
       /*DSA*/{ cout << "Usage: " << argv[0] << " <integer> <base>" << endl; return -1; }
    for ( int i = 1; i < argc; i += 2 ) {
       /*DSA*/system ( "cls" );
-      __int64 n = _atoi64 ( argv[i] ); //待转换的十进制数
+      int64_t n = atoll ( argv[i] ); //待转换的十进制数
       /*DSA*/if ( 0 >= n ) //参数检查
          /*DSA*/{ cout << "But " << n << " is not a positive integer" << endl;   return -2; }
       int base = atoi ( argv[i+1] ); //目标进制

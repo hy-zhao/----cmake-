@@ -6,9 +6,9 @@
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
 
-__int64 power ( __int64 a, int n ) { //a^n算法：n >= 0
-   __int64 pow = 1; //O(1)
-   __int64 p = a; //O(1)
+int64_t power ( int64_t a, int n ) { //a^n算法：n >= 0
+   int64_t pow = 1; //O(1)
+   int64_t p = a; //O(1)
    while ( 0 < n ) { //O(logn)
       if ( n & 1 ) //O(1)
          pow *= p; //O(1)

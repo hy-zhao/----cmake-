@@ -6,11 +6,11 @@
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
 
-__int64 gcdEU_R ( __int64 a, __int64 b ) { //assert: 0 <= min(a, b)
+int64_t gcdEU_R ( int64_t a, int64_t b ) { //assert: 0 <= min(a, b)
    return ( 0 == b ) ? a : gcdEU_R ( b, a % b );
 }
 
-__int64 gcdEU ( __int64 a, __int64 b ) { //assert: 0 <= min(a, b)
+int64_t gcdEU ( int64_t a, int64_t b ) { //assert: 0 <= min(a, b)
    while ( true ) {
       if ( 0 == a ) return b;
       if ( 0 == b ) return a;

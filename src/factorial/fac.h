@@ -13,5 +13,5 @@
 
 int64_t facI ( int );
 int64_t facR ( int );
-// __int64 facI ( int );
-// __int64 facR ( int );
+// int64_t facI ( int );
+// int64_t facR ( int );

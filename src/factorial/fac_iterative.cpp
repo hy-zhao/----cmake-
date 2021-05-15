@@ -8,5 +8,5 @@
 // #include <cstdint>
 #include "fac.h"
 
-// __int64 facI ( int n ) { __int64 f = 1; while ( n > 1 ) f *= n--; return f; } //阶乘运算（迭代版）
+// int64_t facI ( int n ) { int64_t f = 1; while ( n > 1 ) f *= n--; return f; } //阶乘运算（迭代版）
 int64_t facI ( int n ) { int64_t f = 1; while ( n > 1 ) f *= n--; return f; } //阶乘运算（迭代版）

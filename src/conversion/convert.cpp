@@ -8,7 +8,7 @@
 
 /*DSA*/#include "convert.h"
 
-void convert ( Stack<char>& S, __int64 n, int base ) { //整数n的1<base<=16进制打印（迭代版）
+void convert ( Stack<char>& S, int64_t n, int base ) { //整数n的1<base<=16进制打印（迭代版）
    char digit[] = "0123456789ABCDEF"; //数位符号，如有必要可相应扩充
    while ( n > 0 ) { //由低到高，逐一计算出新进制下的各数位
       /*DSA*/printf ( "%20I64d = %20I64d * %d + %20I64d\n", n , n/base, base, n%base );
