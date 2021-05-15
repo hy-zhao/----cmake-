@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/melody/Downloads/test/src/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I../ -I../_share -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o AVL/CMakeFiles/AVL.dir/main.cpp.o -c /Users/melody/Downloads/test/src/AVL/main.cpp",
+  "file": "/Users/melody/Downloads/test/src/AVL/main.cpp"
+}
+]

@@ -1,0 +1,99 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0/include",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0/include-fixed",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
+					],
+					"linkDirectories" : 
+					[
+						"/usr/local/opt/zlib/lib",
+						"/usr/local/opt/bzip2/lib",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib"
+					],
+					"linkFrameworkDirectories" : 
+					[
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
+					],
+					"linkLibraries" : 
+					[
+						"gcc_ext.10.5",
+						"gcc"
+					]
+				},
+				"path" : "/usr/local/bin/x86_64-apple-darwin20-gcc-11.1.0",
+				"version" : "11.1.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "AppleClang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1",
+						"/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include",
+						"/Library/Developer/CommandLineTools/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/usr/local/opt/zlib/lib",
+						"/usr/local/opt/bzip2/lib",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib"
+					],
+					"linkFrameworkDirectories" : 
+					[
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
+					],
+					"linkLibraries" : 
+					[
+						"c++"
+					]
+				},
+				"path" : "/Library/Developer/CommandLineTools/usr/bin/c++",
+				"version" : "12.0.5.12050022"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

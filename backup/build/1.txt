@@ -1,0 +1,583 @@
+[1/2] /Library/Developer/CommandLineTools/usr/bin/c++  -I../ -I../_share -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT AVL/CMakeFiles/AVL.dir/main.cpp.o -MF AVL/CMakeFiles/AVL.dir/main.cpp.o.d -o AVL/CMakeFiles/AVL.dir/main.cpp.o -c ../AVL/main.cpp
+FAILED: AVL/CMakeFiles/AVL.dir/main.cpp.o 
+/Library/Developer/CommandLineTools/usr/bin/c++  -I../ -I../_share -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT AVL/CMakeFiles/AVL.dir/main.cpp.o -MF AVL/CMakeFiles/AVL.dir/main.cpp.o.d -o AVL/CMakeFiles/AVL.dir/main.cpp.o -c ../AVL/main.cpp
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:14:
+In file included from ../_share/util.h:26:
+In file included from ../_share/checkOrder_list.h:11:
+../list/list.h:70:10: warning: non-portable path to file '"list_implementation.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_implementation.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "list_implementation.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:14:
+In file included from ../_share/util.h:26:
+In file included from ../_share/checkOrder_list.h:11:
+In file included from ../list/list.h:70:
+../list/List_implementation.h:19:10: warning: non-portable path to file '"listNode.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "ListNode.h"
+         ^~~~~~~~~~~~
+         "listNode.h"
+../list/List_implementation.h:21:10: warning: non-portable path to file '"list_bracket.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_bracket.h"
+         ^~~~~~~~~~~~~~~~
+         "list_bracket.h"
+../list/List_implementation.h:23:10: warning: non-portable path to file '"list_initialize.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_initialize.h"
+         ^~~~~~~~~~~~~~~~~~~
+         "list_initialize.h"
+../list/List_implementation.h:24:10: warning: non-portable path to file '"list_copyNodes.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_copyNodes.h"
+         ^~~~~~~~~~~~~~~~~~
+         "list_copyNodes.h"
+../list/List_implementation.h:25:10: warning: non-portable path to file '"list_constructor_by_copying.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_constructor_by_copying.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "list_constructor_by_copying.h"
+../list/List_implementation.h:26:10: warning: non-portable path to file '"list_destructor.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_destructor.h"
+         ^~~~~~~~~~~~~~~~~~~
+         "list_destructor.h"
+../list/List_implementation.h:32:10: warning: non-portable path to file '"list_remove.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_remove.h"
+         ^~~~~~~~~~~~~~~
+         "list_remove.h"
+../list/List_implementation.h:33:10: warning: non-portable path to file '"list_clear.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_clear.h"
+         ^~~~~~~~~~~~~~
+         "list_clear.h"
+../list/List_implementation.h:38:10: warning: non-portable path to file '"List_insertionsort.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_insertionSort.h"
+         ^~~~~~~~~~~~~~~~~~~~~~
+         "List_insertionsort.h"
+../list/List_implementation.h:40:10: warning: non-portable path to file '"List_SelectionSort.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_selectionSort.h"
+         ^~~~~~~~~~~~~~~~~~~~~~
+         "List_SelectionSort.h"
+../list/List_implementation.h:42:10: warning: non-portable path to file '"List_mergesort.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_mergeSort.h"
+         ^~~~~~~~~~~~~~~~~~
+         "List_mergesort.h"
+../list/List_implementation.h:43:10: warning: non-portable path to file '"List_RadixSort.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_radixSort.h"
+         ^~~~~~~~~~~~~~~~~~
+         "List_RadixSort.h"
+../list/List_implementation.h:48:10: warning: non-portable path to file '"list_reverse1.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List_reverse1.h"
+         ^~~~~~~~~~~~~~~~~
+         "list_reverse1.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:14:
+In file included from ../_share/util.h:27:
+In file included from ../_share/checkOrder_vector.h:11:
+In file included from ../Vector/Vector.h:67:
+In file included from ../vector/vector_implementation.h:19:
+In file included from ../stack/stack.h:12:
+../stack_vector/stack_vector.h:11:10: warning: non-portable path to file '"vector/vector.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Vector/Vector.h" //以向量为基类，派生出栈模板类
+         ^~~~~~~~~~~~~~~~~
+         "vector/vector.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:14:
+In file included from ../_share/util.h:27:
+In file included from ../_share/checkOrder_vector.h:11:
+In file included from ../Vector/Vector.h:67:
+../vector/vector_implementation.h:33:10: warning: non-portable path to file '"vector_find.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Vector_find.h"
+         ^~~~~~~~~~~~~~~
+         "vector_find.h"
+../vector/vector_implementation.h:39:10: warning: non-portable path to file '"vector_traverse.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Vector_traverse.h"
+         ^~~~~~~~~~~~~~~~~~~
+         "vector_traverse.h"
+../vector/vector_implementation.h:41:10: warning: non-portable path to file '"vector_unsort.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Vector_unsort.h"
+         ^~~~~~~~~~~~~~~~~
+         "vector_unsort.h"
+../vector/vector_implementation.h:42:10: warning: non-portable path to file '"vector_sort.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Vector_sort.h"
+         ^~~~~~~~~~~~~~~
+         "vector_sort.h"
+../vector/vector_implementation.h:45:10: warning: non-portable path to file '"vector_bubblesort_C.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "vector_bubbleSort_C.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "vector_bubblesort_C.h"
+../vector/vector_implementation.h:46:10: warning: non-portable path to file '"vector_selectionsort.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "vector_selectionSort.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+         "vector_selectionsort.h"
+../vector/vector_implementation.h:47:10: warning: non-portable path to file '"Vector_merge.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "vector_merge.h"
+         ^~~~~~~~~~~~~~~~
+         "Vector_merge.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:14:
+../_share/util.h:31:10: warning: non-portable path to file '"Hailstone_Elem.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "hailstone_Elem.h"
+         ^~~~~~~~~~~~~~~~~~
+         "Hailstone_Elem.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:13:10: warning: non-portable path to file '"binTree/BinTree.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BinTree/BinTree.h" //二叉树
+         ^~~~~~~~~~~~~~~~~~~
+         "binTree/BinTree.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:13:
+In file included from ../BinTree/BinTree.h:11:
+In file included from ../BinTree/BinNode.h:51:
+In file included from ../BinTree/BinNode_implementation.h:16:
+../BinTree/BinNode_macro.h:11:10: warning: non-portable path to file '"BinNode_macro_BASIC.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BinNode_macro_Basic.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "BinNode_macro_BASIC.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:13:
+In file included from ../BinTree/BinTree.h:11:
+In file included from ../BinTree/BinNode.h:51:
+In file included from ../BinTree/BinNode_implementation.h:20:
+../BinTree/BinNode_travPreorder.h:11:17: warning: non-portable path to file '"stack/stack.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+/*DSA*/#include "stack/Stack.h" //引入栈模板类
+                ^~~~~~~~~~~~~~~
+                "stack/stack.h"
+../BinTree/BinNode_travPreorder.h:12:17: warning: non-portable path to file '"BinNode_travPreorder_R.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+/*DSA*/#include "BinNode_TravPreorder_R.h"
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                "BinNode_travPreorder_R.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:13:
+In file included from ../BinTree/BinTree.h:11:
+In file included from ../BinTree/BinNode.h:51:
+In file included from ../BinTree/BinNode_implementation.h:21:
+../BinTree/BinNode_travInorder.h:11:17: warning: non-portable path to file '"stack/stack.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+/*DSA*/#include "stack/Stack.h" //引入栈模板类
+                ^~~~~~~~~~~~~~~
+                "stack/stack.h"
+../BinTree/BinNode_travInorder.h:12:17: warning: non-portable path to file '"BinNode_travInorder_R.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+/*DSA*/#include "BinNode_TravInorder_R.h"
+                ^~~~~~~~~~~~~~~~~~~~~~~~~
+                "BinNode_travInorder_R.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:13:
+In file included from ../BinTree/BinTree.h:11:
+In file included from ../BinTree/BinNode.h:51:
+In file included from ../BinTree/BinNode_implementation.h:22:
+../BinTree/BinNode_travPostorder.h:12:17: warning: non-portable path to file '"BinNode_travPostorder_R.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+/*DSA*/#include "BinNode_TravPostorder_R.h"
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                "BinNode_travPostorder_R.h"
+../BinTree/BinNode_travPostorder.h:13:17: warning: non-portable path to file '"BinNode_travPostorder_I.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+/*DSA*/#include "BinNode_TravPostorder_I.h"
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                "BinNode_travPostorder_I.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:13:
+In file included from ../BinTree/BinTree.h:11:
+In file included from ../BinTree/BinNode.h:51:
+In file included from ../BinTree/BinNode_implementation.h:23:
+In file included from ../BinTree/BinNode_travLevel.h:11:
+../queue/queue.h:11:10: warning: non-portable path to file '"list/list.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List/List.h" //以List为基类
+         ^~~~~~~~~~~~~
+         "list/list.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:13:
+In file included from ../BinTree/BinTree.h:44:
+In file included from ../BinTree/BinTree_implementation.h:21:
+../BinTree/BinTree_attach.h:13:22: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+/*DSA*/   if ( x->lc = S->_root ) x->lc->parent = x; //接入
+               ~~~~~~^~~~~~~~~~
+../BinTree/BinTree_attach.h:13:22: note: place parentheses around the assignment to silence this warning
+/*DSA*/   if ( x->lc = S->_root ) x->lc->parent = x; //接入
+                     ^
+               (               )
+../BinTree/BinTree_attach.h:13:22: note: use '==' to turn this assignment into an equality comparison
+/*DSA*/   if ( x->lc = S->_root ) x->lc->parent = x; //接入
+                     ^
+                     ==
+../BinTree/BinTree_attach.h:20:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   if ( x->rc = S->_root ) x->rc->parent = x; //接入
+        ~~~~~~^~~~~~~~~~
+../BinTree/BinTree_attach.h:20:15: note: place parentheses around the assignment to silence this warning
+   if ( x->rc = S->_root ) x->rc->parent = x; //接入
+              ^
+        (               )
+../BinTree/BinTree_attach.h:20:15: note: use '==' to turn this assignment into an equality comparison
+   if ( x->rc = S->_root ) x->rc->parent = x; //接入
+              ^
+              ==
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:14:10: warning: non-portable path to file '"huffman/HuffTree.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Huffman/HuffTree.h" //Huffman树
+         ^~~~~~~~~~~~~~~~~~~~
+         "huffman/HuffTree.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:15:
+../BST/BST.h:11:10: warning: non-portable path to file '"binTree/BinTree.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BinTree/BinTree.h" //引入BinTree
+         ^~~~~~~~~~~~~~~~~~~
+         "binTree/BinTree.h"
+../BST/BST.h:30:10: warning: non-portable path to file '"bst_implementation.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BST_implementation.h"
+         ^~~~~~~~~~~~~~~~~~~~~~
+         "bst_implementation.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:15:
+In file included from ../BST/BST.h:30:
+../BST/BST_implementation.h:17:10: warning: non-portable path to file '"bst_insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BST_insert.h" //插入
+         ^~~~~~~~~~~~~~
+         "bst_insert.h"
+../BST/BST_implementation.h:18:10: warning: non-portable path to file '"bst_removeAt.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BST_removeAt.h" //在子树中删除
+         ^~~~~~~~~~~~~~~~
+         "bst_removeAt.h"
+../BST/BST_implementation.h:19:10: warning: non-portable path to file '"bst_remove.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BST_remove.h" //删除
+         ^~~~~~~~~~~~~~
+         "bst_remove.h"
+../BST/BST_implementation.h:21:10: warning: non-portable path to file '"BST_RotateAt.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BST_rotateAt.h"
+         ^~~~~~~~~~~~~~~~
+         "BST_RotateAt.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:16:
+In file included from ../AVL/AVL.h:19:
+../AVL/AVL_implementation.h:19:10: warning: non-portable path to file '"AVL_Insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "AVL_insert.h" //插入
+         ^~~~~~~~~~~~~~
+         "AVL_Insert.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:17:10: warning: non-portable path to file '"splay/Splay.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Splay/Splay.h" //伸展树
+         ^~~~~~~~~~~~~~~
+         "splay/Splay.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:17:
+In file included from ../Splay/Splay.h:21:
+../Splay/Splay_implementation.h:17:10: warning: non-portable path to file '"Splay_Insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Splay_insert.h" //插入
+         ^~~~~~~~~~~~~~~~
+         "Splay_Insert.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:17:
+In file included from ../Splay/Splay.h:21:
+In file included from ../Splay/Splay_implementation.h:19:
+../Splay/Splay_splay.h:46:11: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   if ( p = v->parent ) { //若p果真非空，则额外再做一次单旋
+        ~~^~~~~~~~~~~
+../Splay/Splay_splay.h:46:11: note: place parentheses around the assignment to silence this warning
+   if ( p = v->parent ) { //若p果真非空，则额外再做一次单旋
+          ^
+        (            )
+../Splay/Splay_splay.h:46:11: note: use '==' to turn this assignment into an equality comparison
+   if ( p = v->parent ) { //若p果真非空，则额外再做一次单旋
+          ^
+          ==
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:18:
+In file included from ../redBlack/RedBlack.h:23:
+../redBlack/RedBlack_implementation.h:16:10: warning: non-portable path to file '"RedBlack_Insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "RedBlack_insert.h" //插入
+         ^~~~~~~~~~~~~~~~~~~
+         "RedBlack_Insert.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:21:10: warning: non-portable path to file '"skiplist/QuadList.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Skiplist/Quadlist.h" //四叉表
+         ^~~~~~~~~~~~~~~~~~~~~
+         "skiplist/QuadList.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:21:
+../Skiplist/Quadlist.h:11:10: warning: non-portable path to file '"QuadListNode.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "QuadlistNode.h" //引入Quadlist节点类
+         ^~~~~~~~~~~~~~~~
+         "QuadListNode.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:21:
+In file included from ../Skiplist/Quadlist.h:11:
+../Skiplist/QuadlistNode.h:26:10: warning: non-portable path to file '"QuadListNode_implementation.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "QuadlistNode_implementation.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "QuadListNode_implementation.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:21:
+In file included from ../Skiplist/Quadlist.h:11:
+In file included from ../Skiplist/QuadlistNode.h:26:
+../Skiplist/QuadlistNode_implementation.h:16:10: warning: non-portable path to file '"QuadListNode_insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "QuadlistNode_insert.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "QuadListNode_insert.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:21:
+../Skiplist/Quadlist.h:40:10: warning: non-portable path to file '"QuadList_implementation.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Quadlist_implementation.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "QuadList_implementation.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:21:
+In file included from ../Skiplist/Quadlist.h:40:
+../Skiplist/Quadlist_implementation.h:17:10: warning: non-portable path to file '"QuadList_initialize.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Quadlist_initialize.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "QuadList_initialize.h"
+../Skiplist/Quadlist_implementation.h:19:10: warning: non-portable path to file '"QuadList_insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Quadlist_insert.h"
+         ^~~~~~~~~~~~~~~~~~~
+         "QuadList_insert.h"
+../Skiplist/Quadlist_implementation.h:20:10: warning: non-portable path to file '"QuadList_remove.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Quadlist_remove.h"
+         ^~~~~~~~~~~~~~~~~~~
+         "QuadList_remove.h"
+../Skiplist/Quadlist_implementation.h:24:10: warning: non-portable path to file '"QuadList_traverse.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Quadlist_traverse.h"
+         ^~~~~~~~~~~~~~~~~~~~~
+         "QuadList_traverse.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:22:10: warning: non-portable path to file '"skiplist/SkipList.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Skiplist/Skiplist.h" //跳转表
+         ^~~~~~~~~~~~~~~~~~~~~
+         "skiplist/SkipList.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:22:
+../Skiplist/Skiplist.h:11:10: warning: non-portable path to file '"list/list.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List/List.h" //引入列表
+         ^~~~~~~~~~~~~
+         "list/list.h"
+../Skiplist/Skiplist.h:13:10: warning: non-portable path to file '"QuadList.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Quadlist.h" //引入Quadlist
+         ^~~~~~~~~~~~
+         "QuadList.h"
+../Skiplist/Skiplist.h:32:10: warning: non-portable path to file '"SkipList_implementation.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Skiplist_implementation.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "SkipList_implementation.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:22:
+In file included from ../Skiplist/Skiplist.h:32:
+../Skiplist/Skiplist_implementation.h:17:10: warning: non-portable path to file '"SkipList_get.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Skiplist_get.h"
+         ^~~~~~~~~~~~~~~~
+         "SkipList_get.h"
+../Skiplist/Skiplist_implementation.h:18:10: warning: non-portable path to file '"SkipList_put.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Skiplist_put.h"
+         ^~~~~~~~~~~~~~~~
+         "SkipList_put.h"
+../Skiplist/Skiplist_implementation.h:19:10: warning: non-portable path to file '"SkipList_remove.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Skiplist_remove.h"
+         ^~~~~~~~~~~~~~~~~~~
+         "SkipList_remove.h"
+../Skiplist/Skiplist_implementation.h:20:10: warning: non-portable path to file '"SkipList_skipSearch.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Skiplist_skipSearch.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "SkipList_skipSearch.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:23:10: warning: non-portable path to file '"hashtable/HashTable.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Hashtable/Hashtable.h" //散列表
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "hashtable/HashTable.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:23:
+../Hashtable/Hashtable.h:12:10: warning: non-portable path to file '"BitMap/Bitmap.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Bitmap/Bitmap.h" //引入位图
+         ^~~~~~~~~~~~~~~~~
+         "BitMap/Bitmap.h"
+../Hashtable/Hashtable.h:34:10: warning: non-portable path to file '"HashTable_Implementation.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Hashtable_implementation.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "HashTable_Implementation.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:23:
+In file included from ../Hashtable/Hashtable.h:34:
+../Hashtable/Hashtable_implementation.h:11:1: error: unterminated /* comment
+/******************************************************************************************
+^
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:24:
+../PQ_List/PQ_List.h:12:10: warning: non-portable path to file '"list/list.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "List/List.h" //引入列表
+         ^~~~~~~~~~~~~
+         "list/list.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:25:
+../PQ_ComplHeap/PQ_ComplHeap.h:11:10: warning: non-portable path to file '"vector/vector.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Vector/Vector.h" //借助多重继承机制，基于向量
+         ^~~~~~~~~~~~~~~~~
+         "vector/vector.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:25:
+In file included from ../PQ_ComplHeap/PQ_ComplHeap.h:26:
+../PQ_ComplHeap/PQ_ComplHeap_implementation.h:19:10: warning: non-portable path to file '"PQ_ComplHeap_insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PQ_ComplHeap_Insert.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         "PQ_ComplHeap_insert.h"
+../PQ_ComplHeap/PQ_ComplHeap_implementation.h:24:10: warning: non-portable path to file '"PQ_ComplHeap_Heapify.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PQ_ComplHeap_heapify.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+         "PQ_ComplHeap_Heapify.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:26:10: warning: non-portable path to file '"PQ_leftheap/PQ_LeftHeap.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PQ_LeftHeap/PQ_LeftHeap.h" //基于左式堆实现的优先级队列
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "PQ_leftheap/PQ_LeftHeap.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:26:
+../PQ_LeftHeap/PQ_LeftHeap.h:12:10: warning: non-portable path to file '"binTree/BinTree.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "BinTree/BinTree.h" //引入二叉树节点模板类
+         ^~~~~~~~~~~~~~~~~~~
+         "binTree/BinTree.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:26:
+In file included from ../PQ_LeftHeap/PQ_LeftHeap.h:26:
+../PQ_LeftHeap/PQ_LeftHeap_implementation.h:19:10: warning: non-portable path to file '"PQ_LeftHeap_insert.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PQ_LeftHeap_Insert.h"
+         ^~~~~~~~~~~~~~~~~~~~~~
+         "PQ_LeftHeap_insert.h"
+../PQ_LeftHeap/PQ_LeftHeap_implementation.h:22:10: warning: non-portable path to file '"PQ_Leftheap_merge.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PQ_LeftHeap_Merge.h"
+         ^~~~~~~~~~~~~~~~~~~~~
+         "PQ_Leftheap_merge.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:27:
+In file included from ../graph/Graph.h:67:
+In file included from ../graph/Graph_implementation.h:28:
+../graph/Graph_bcc.h:34:38: warning: while loop has empty body [-Wempty-body]
+               while ( u != S.pop() ); //弹出当前BCC中（除v外）的所有节点，可视需要做进一步处理
+                                     ^
+../graph/Graph_bcc.h:34:38: note: put the semicolon on a separate line to silence this warning
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+../UniPrint/print.h:28:10: warning: non-portable path to file '"graphmatrix/GraphMatrix.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "graphMatrix/GraphMatrix.h" //基于邻接矩阵实现的图
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "graphmatrix/GraphMatrix.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:28:
+../graphMatrix/GraphMatrix.h:11:10: warning: non-portable path to file '"vector/vector.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Vector/Vector.h" //引入向量
+         ^~~~~~~~~~~~~~~~~
+         "vector/vector.h"
+../graphMatrix/GraphMatrix.h:12:10: warning: non-portable path to file '"graph/Graph.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Graph/Graph.h" //引入图ADT
+         ^~~~~~~~~~~~~~~
+         "graph/Graph.h"
+../graphMatrix/GraphMatrix.h:47:52: warning: while loop has empty body [-Wempty-body]
+   { while ( ( -1 < j ) && ( !exists ( i, --j ) ) ); return j; } //逆向线性试探
+                                                   ^
+../graphMatrix/GraphMatrix.h:47:52: note: put the semicolon on a separate line to silence this warning
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:70:
+../UniPrint/print_implementation.h:17:10: warning: non-portable path to file '"print_binNode.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_BinNode.h"
+         ^~~~~~~~~~~~~~~~~
+         "print_binNode.h"
+../UniPrint/print_implementation.h:18:10: warning: non-portable path to file '"print_bintree.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_BinTree.h"
+         ^~~~~~~~~~~~~~~~~
+         "print_bintree.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:70:
+In file included from ../UniPrint/print_implementation.h:18:
+../UniPrint/Print_BinTree.h:14:10: warning: non-portable path to file '"BitMap/Bitmap.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Bitmap/Bitmap.h" //使用位图记录分支转向
+         ^~~~~~~~~~~~~~~~~
+         "BitMap/Bitmap.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:70:
+../UniPrint/print_implementation.h:19:10: warning: non-portable path to file '"print_btree.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_BTree.h"
+         ^~~~~~~~~~~~~~~
+         "print_btree.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:70:
+In file included from ../UniPrint/print_implementation.h:19:
+../UniPrint/Print_BTree.h:14:10: warning: non-portable path to file '"BitMap/Bitmap.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Bitmap/Bitmap.h" //使用位图记录分支转向
+         ^~~~~~~~~~~~~~~~~
+         "BitMap/Bitmap.h"
+In file included from ../AVL/main.cpp:12:
+In file included from ../AVL/AVL_test.h:15:
+In file included from ../UniPrint/print.h:70:
+../UniPrint/print_implementation.h:20:10: warning: non-portable path to file '"print_PQ_List.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_PQ_List.h"
+         ^~~~~~~~~~~~~~~~~
+         "print_PQ_List.h"
+../UniPrint/print_implementation.h:21:10: warning: non-portable path to file '"print_PQ_ComplHeap.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_PQ_ComplHeap.h"
+         ^~~~~~~~~~~~~~~~~~~~~~
+         "print_PQ_ComplHeap.h"
+../UniPrint/print_implementation.h:22:10: warning: non-portable path to file '"print_PQ_LeftHeap.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_PQ_LeftHeap.h"
+         ^~~~~~~~~~~~~~~~~~~~~
+         "print_PQ_LeftHeap.h"
+../UniPrint/print_implementation.h:23:10: warning: non-portable path to file '"print_Entry.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_Entry.h"
+         ^~~~~~~~~~~~~~~
+         "print_Entry.h"
+../UniPrint/print_implementation.h:24:10: warning: non-portable path to file '"print_QuadList.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_Quadlist.h"
+         ^~~~~~~~~~~~~~~~~~
+         "print_QuadList.h"
+../UniPrint/print_implementation.h:25:10: warning: non-portable path to file '"print_SkipList.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_Skiplist.h"
+         ^~~~~~~~~~~~~~~~~~
+         "print_SkipList.h"
+../UniPrint/print_implementation.h:26:10: warning: non-portable path to file '"print_HashTable.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_Hashtable.h"
+         ^~~~~~~~~~~~~~~~~~~
+         "print_HashTable.h"
+../UniPrint/print_implementation.h:29:10: warning: non-portable path to file '"print_traversable.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Print_traversable.h"
+         ^~~~~~~~~~~~~~~~~~~~~
+         "print_traversable.h"
+../AVL/main.cpp:20:44: error: expected '}'
+      T e = dice ( ( T ) n * 3 ); //[0, 3n)
+                                           ^
+../AVL/main.cpp:19:29: note: to match this '{'
+   while ( avl.size() < n ) {
+                            ^
+../AVL/main.cpp:20:44: error: expected '}'
+      T e = dice ( ( T ) n * 3 ); //[0, 3n)
+                                           ^
+../AVL/main.cpp:17:47: note: to match this '{'
+template <typename T> void  testAVL ( int n ) {
+                                              ^
+92 warnings and 3 errors generated.
+ninja: build stopped: subcommand failed.

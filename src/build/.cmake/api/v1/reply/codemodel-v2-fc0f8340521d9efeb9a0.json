@@ -1,0 +1,234 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "_share",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "_share"
+				},
+				{
+					"build" : "BST",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "BST"
+				},
+				{
+					"build" : "BTree",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "BTree"
+				},
+				{
+					"build" : "AVL",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "AVL",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "UniPrint",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "UniPrint",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "hashtable",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "hashtable",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "vector",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "vector",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3
+					],
+					"name" : "dsacpp"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "share",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "AVL",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "UniPrint",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "hashtable",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "vector",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "AVL::@9ffb54fd14b34dcea702",
+					"jsonFile" : "target-AVL-d3a9d6b8c746b960d131.json",
+					"name" : "AVL",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
+					"jsonFile" : "target-UNIPRINTLIB-61410de43335c155fb51.json",
+					"name" : "UNIPRINTLIB",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "hashtable::@5b24f28f0f334b38317d",
+					"jsonFile" : "target-hashtable-a72b68e24ac8b245b115.json",
+					"name" : "hashtable",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "vector::@95776985c747069fcc28",
+					"jsonFile" : "target-vector-2880864f69cb052da944.json",
+					"name" : "vector",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+		"source" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}
