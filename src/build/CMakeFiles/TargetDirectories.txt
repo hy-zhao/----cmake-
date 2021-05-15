@@ -15,6 +15,10 @@
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hashtable/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hashtable/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hashtable/CMakeFiles/hashtable.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/prime/CMakeFiles/rebuild_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/prime/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/prime/CMakeFiles/PRIME.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/prime/CMakeFiles/PRIMELIB.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector/CMakeFiles/vector.dir

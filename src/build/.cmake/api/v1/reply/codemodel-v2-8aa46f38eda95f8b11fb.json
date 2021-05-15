@@ -14,7 +14,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -78,7 +79,7 @@
 					"source" : "UniPrint",
 					"targetIndexes" : 
 					[
-						1
+						3
 					]
 				},
 				{
@@ -92,6 +93,21 @@
 					"source" : "hashtable",
 					"targetIndexes" : 
 					[
+						4
+					]
+				},
+				{
+					"build" : "prime",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "prime",
+					"targetIndexes" : 
+					[
+						1,
 						2
 					]
 				},
@@ -102,11 +118,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 5,
+					"projectIndex" : 6,
 					"source" : "vector",
 					"targetIndexes" : 
 					[
-						3
+						5
 					]
 				}
 			],
@@ -120,7 +136,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"directoryIndexes" : 
 					[
@@ -159,7 +176,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1
+						3
 					]
 				},
 				{
@@ -171,7 +188,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2
+						4
 					]
 				},
 				{
@@ -179,11 +196,24 @@
 					[
 						7
 					],
+					"name" : "PRIME",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
 					"name" : "vector",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						3
+						5
 					]
 				}
 			],
@@ -197,6 +227,20 @@
 					"projectIndex" : 2
 				},
 				{
+					"directoryIndex" : 7,
+					"id" : "PRIME::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIME-a011b35f70b577813654.json",
+					"name" : "PRIME",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "PRIMELIB::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIMELIB-ee1e1468f170b515cd3e.json",
+					"name" : "PRIMELIB",
+					"projectIndex" : 5
+				},
+				{
 					"directoryIndex" : 5,
 					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
 					"jsonFile" : "target-UNIPRINTLIB-61410de43335c155fb51.json",
@@ -206,16 +250,16 @@
 				{
 					"directoryIndex" : 6,
 					"id" : "hashtable::@5b24f28f0f334b38317d",
-					"jsonFile" : "target-hashtable-a72b68e24ac8b245b115.json",
+					"jsonFile" : "target-hashtable-de154febc9e7b2afb163.json",
 					"name" : "hashtable",
 					"projectIndex" : 4
 				},
 				{
-					"directoryIndex" : 7,
+					"directoryIndex" : 8,
 					"id" : "vector::@95776985c747069fcc28",
 					"jsonFile" : "target-vector-2880864f69cb052da944.json",
 					"name" : "vector",
-					"projectIndex" : 5
+					"projectIndex" : 6
 				}
 			]
 		}

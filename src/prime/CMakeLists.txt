@@ -1,11 +1,13 @@
-set(PROJECT_NAME prime)
-
+set(PROJECT_NAME PRIME)
+project(${PROJECT_NAME})
 ################################################################################
 # Source groups
 ################################################################################
-set(SOURCE_LIB
-    # "../BitMap/Bitmap.h"
-    "Eratosthenes.h"
-    "primeNLT.h"
+add_library(PRIMELIB
+    Eratosthenes.cpp
+    primeNLT.cpp
 )
-# source_group("婢跺
+
+add_executable(${PROJECT_NAME} "main.cpp" ${PRIMELIB})
+
+target_include_directories(PRIMELIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
