@@ -767,12 +767,12 @@ build queue/edit_cache: phony queue/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for QUEUE
 
-build cmake_object_order_depends_target_QUEUE: phony || queue/CMakeFiles/QUEUE.dir
+build cmake_object_order_depends_target_QUEUE: phony || cmake_object_order_depends_target_UNIPRINTLIB
 
 build queue/CMakeFiles/QUEUE.dir/main.cpp.o: CXX_COMPILER__QUEUE_Debug ../queue/main.cpp || cmake_object_order_depends_target_QUEUE
   DEP_FILE = queue/CMakeFiles/QUEUE.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../
+  INCLUDES = -I../ -I../UniPrint
   OBJECT_DIR = queue/CMakeFiles/QUEUE.dir
   OBJECT_FILE_DIR = queue/CMakeFiles/QUEUE.dir
 
@@ -784,9 +784,10 @@ build queue/CMakeFiles/QUEUE.dir/main.cpp.o: CXX_COMPILER__QUEUE_Debug ../queue/
 #############################################
 # Link the executable queue/QUEUE
 
-build queue/QUEUE: CXX_EXECUTABLE_LINKER__QUEUE_Debug queue/CMakeFiles/QUEUE.dir/main.cpp.o
+build queue/QUEUE: CXX_EXECUTABLE_LINKER__QUEUE_Debug queue/CMakeFiles/QUEUE.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
   OBJECT_DIR = queue/CMakeFiles/QUEUE.dir
   POST_BUILD = :
   PRE_LINK = :

@@ -21,16 +21,22 @@ void testQueue ( int n ) {
    Queue<T> Q;
    printf ( "\n  ==== Test %2d. Growing queue\n", testID++ );
    while ( Q.size() < n ) {
-      ( Q.empty() || ( 30 < dice ( 100 ) ) ) ?
-         Q.enqueue ( (T) dice ( 2 * n ) ) : //70%入队
+      if ( Q.empty() || ( 30 < dice ( 100 ) ) ) {
+         Q.enqueue ( (T) dice ( 2 * n ) ); //70%入队
+      }else{
          Q.dequeue(); //30%出队
+      }
+         
       print ( Q );
    }
    printf ( "\n  ==== Test %2d. Shrinking queue\n", testID++ );
    while ( !Q.empty() ) {
-      ( 70 < dice ( 100 ) ) ?
-         Q.enqueue ( (T) dice ( 2 * n ) ) : //30%入队
+      if ( 70 < dice ( 100 ) ) {
+         Q.enqueue ( (T) dice ( 2 * n ) ); //30%入队
+      }else{
          Q.dequeue(); //70%出队
+      }
+         
       print ( Q );
    }
 }
