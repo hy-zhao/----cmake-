@@ -1,0 +1,55 @@
+[1/24] /usr/local/bin/g++-11  -I../ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT BST/CMakeFiles/BST.dir/main.cpp.o -MF BST/CMakeFiles/BST.dir/main.cpp.o.d -o BST/CMakeFiles/BST.dir/main.cpp.o -c ../BST/main.cpp
+FAILED: BST/CMakeFiles/BST.dir/main.cpp.o 
+/usr/local/bin/g++-11  -I../ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT BST/CMakeFiles/BST.dir/main.cpp.o -MF BST/CMakeFiles/BST.dir/main.cpp.o.d -o BST/CMakeFiles/BST.dir/main.cpp.o -c ../BST/main.cpp
+In file included from ../binTree/BinNode_macro.h:13,
+                 from ../binTree/BinNode_implementation.h:19,
+                 from ../binTree/BinNode.h:51,
+                 from ../binTree/BinTree.h:11,
+                 from ../Uniprint/print.h:15,
+                 from ../BST/BST_test.h:15,
+                 from ../BST/main.cpp:12:
+../binTree/BinNode_macro_RedBlack.h:13:57: warning: backslash-newline at end of file
+   13 | #define BlackHeightUpdated(x) ( /*RedBlack高度更新条件*/\
+      |                                                          
+../BST/main.cpp: In instantiation of 'void testBST(int) [with T = int]':
+../BST/main.cpp:63:17:   required from here
+../BST/main.cpp:40:20: error: second operand to the conditional operator is of type 'void', but the third operand is neither a throw-expression nor of type 'void'
+   40 |             printf ( "not exists\n" );
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~
+../BST/main.cpp:53:70: error: second operand to the conditional operator is of type 'void', but the third operand is neither a throw-expression nor of type 'void'
+   53 |       bst.remove ( e ) ? printf ( "Done\n" ), print ( bst ) : printf ( "not exists\n" );
+      |                                                               ~~~~~~~^~~~~~~~~~~~~~~~~~
+[2/24] /usr/local/bin/g++-11  -I../ -I../Bitmap_set_only -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o -MF Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o.d -o Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o -c ../Bitmap_set_only/main_O1_init_set_only.cpp
+[3/24] /usr/local/bin/g++-11  -I../ -I../BitMap -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o -MF BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o.d -o BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o -c ../BitMap/main_O1_init.cpp
+[4/24] /usr/local/bin/g++-11  -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o -MF UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o.d -o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o -c ../UniPrint/print_basic.cpp
+In file included from ../binTree/BinNode_macro.h:13,
+                 from ../binTree/BinNode_implementation.h:19,
+                 from ../binTree/BinNode.h:51,
+                 from ../binTree/BinTree.h:11,
+                 from ../UniPrint/print.h:15,
+                 from ../UniPrint/print_basic.cpp:9:
+../binTree/BinNode_macro_RedBlack.h:13:57: warning: backslash-newline at end of file
+   13 | #define BlackHeightUpdated(x) ( /*RedBlack高度更新条件*/\
+      |                                                          
+[5/24] /usr/local/bin/g++-11  -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o -MF UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o.d -o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o -c ../UniPrint/print_HuffChar.cpp
+In file included from ../binTree/BinNode_macro.h:13,
+                 from ../binTree/BinNode_implementation.h:19,
+                 from ../binTree/BinNode.h:51,
+                 from ../binTree/BinTree.h:11,
+                 from ../UniPrint/print.h:15,
+                 from ../UniPrint/print_HuffChar.cpp:9:
+../binTree/BinNode_macro_RedBlack.h:13:57: warning: backslash-newline at end of file
+   13 | #define BlackHeightUpdated(x) ( /*RedBlack高度更新条件*/\
+      |                                                          
+[6/24] /usr/local/bin/g++-11  -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -MD -MT AVL/CMakeFiles/AVL.dir/main.cpp.o -MF AVL/CMakeFiles/AVL.dir/main.cpp.o.d -o AVL/CMakeFiles/AVL.dir/main.cpp.o -c ../AVL/main.cpp
+In file included from ../binTree/BinNode_macro.h:13,
+                 from ../binTree/BinNode_implementation.h:19,
+                 from ../binTree/BinNode.h:51,
+                 from ../binTree/BinTree.h:11,
+                 from ../UniPrint/print.h:15,
+                 from ../AVL/AVL_test.h:15,
+                 from ../AVL/main.cpp:12:
+../binTree/BinNode_macro_RedBlack.h:13:57: warning: backslash-newline at end of file
+   13 | #define BlackHeightUpdated(x) ( /*RedBlack高度更新条件*/\
+      |                                                          
+ninja: build stopped: subcommand failed.

@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: dsacpp
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -61,24 +66,58 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 #############################################
 # Utility command for rebuild_cache
 
-build _share/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/_share && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+build AVL/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/AVL && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build _share/rebuild_cache: phony _share/CMakeFiles/rebuild_cache.util
+build AVL/rebuild_cache: phony AVL/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build _share/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/_share && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build AVL/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/AVL && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build _share/edit_cache: phony _share/CMakeFiles/edit_cache.util
+build AVL/edit_cache: phony AVL/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target AVL
+
+
+#############################################
+# Order-only phony target for AVL
+
+build cmake_object_order_depends_target_AVL: phony || cmake_object_order_depends_target_UNIPRINTLIB
+
+build AVL/CMakeFiles/AVL.dir/main.cpp.o: CXX_COMPILER__AVL_Debug ../AVL/main.cpp || cmake_object_order_depends_target_AVL
+  DEP_FILE = AVL/CMakeFiles/AVL.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = AVL/CMakeFiles/AVL.dir
+  OBJECT_FILE_DIR = AVL/CMakeFiles/AVL.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target AVL
+
+
+#############################################
+# Link the executable AVL/AVL
+
+build AVL/AVL: CXX_EXECUTABLE_LINKER__AVL_Debug AVL/CMakeFiles/AVL.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
+  OBJECT_DIR = AVL/CMakeFiles/AVL.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = AVL/AVL
+  TARGET_PDB = AVL.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -107,6 +146,39 @@ build BST/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build BST/edit_cache: phony BST/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BST
+
+
+#############################################
+# Order-only phony target for BST
+
+build cmake_object_order_depends_target_BST: phony || BST/CMakeFiles/BST.dir
+
+build BST/CMakeFiles/BST.dir/main.cpp.o: CXX_COMPILER__BST_Debug ../BST/main.cpp || cmake_object_order_depends_target_BST
+  DEP_FILE = BST/CMakeFiles/BST.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../
+  OBJECT_DIR = BST/CMakeFiles/BST.dir
+  OBJECT_FILE_DIR = BST/CMakeFiles/BST.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BST
+
+
+#############################################
+# Link the executable BST/BST
+
+build BST/BST: CXX_EXECUTABLE_LINKER__BST_Debug BST/CMakeFiles/BST.dir/main.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  OBJECT_DIR = BST/CMakeFiles/BST.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = BST/BST
+  TARGET_PDB = BST.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -145,61 +217,118 @@ build BTree/edit_cache: phony BTree/CMakeFiles/edit_cache.util
 #############################################
 # Utility command for rebuild_cache
 
-build AVL/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/AVL && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+build BitMap/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BitMap && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build AVL/rebuild_cache: phony AVL/CMakeFiles/rebuild_cache.util
+build BitMap/rebuild_cache: phony BitMap/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build AVL/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/AVL && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build BitMap/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BitMap && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build AVL/edit_cache: phony AVL/CMakeFiles/edit_cache.util
+build BitMap/edit_cache: phony BitMap/CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target AVL
+# Object build statements for STATIC_LIBRARY target BITMAPLIB
 
 
 #############################################
-# Order-only phony target for AVL
+# Order-only phony target for BITMAPLIB
 
-build cmake_object_order_depends_target_AVL: phony || cmake_object_order_depends_target_UNIPRINTLIB
+build cmake_object_order_depends_target_BITMAPLIB: phony || BitMap/CMakeFiles/BITMAPLIB.dir
 
-build AVL/CMakeFiles/AVL.dir/main.cpp.o: CXX_COMPILER__AVL_ ../AVL/main.cpp || cmake_object_order_depends_target_AVL
-  DEP_FILE = AVL/CMakeFiles/AVL.dir/main.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../_share -I../UniPrint
-  OBJECT_DIR = AVL/CMakeFiles/AVL.dir
-  OBJECT_FILE_DIR = AVL/CMakeFiles/AVL.dir
-  TARGET_COMPILE_PDB = AVL/CMakeFiles/AVL.dir/
-  TARGET_PDB = AVL/AVL.pdb
+build BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o: CXX_COMPILER__BITMAPLIB_Debug ../BitMap/main_O1_init.cpp || cmake_object_order_depends_target_BITMAPLIB
+  DEP_FILE = BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../BitMap
+  OBJECT_DIR = BitMap/CMakeFiles/BITMAPLIB.dir
+  OBJECT_FILE_DIR = BitMap/CMakeFiles/BITMAPLIB.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target AVL
+# Link build statements for STATIC_LIBRARY target BITMAPLIB
 
 
 #############################################
-# Link the executable AVL/AVL
+# Link the static library BitMap/libBITMAPLIB.a
 
-build AVL/AVL: CXX_EXECUTABLE_LINKER__AVL_ AVL/CMakeFiles/AVL.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
-  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
-  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
-  OBJECT_DIR = AVL/CMakeFiles/AVL.dir
+build BitMap/libBITMAPLIB.a: CXX_STATIC_LIBRARY_LINKER__BITMAPLIB_Debug BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = BitMap/CMakeFiles/BITMAPLIB.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = AVL/CMakeFiles/AVL.dir/
-  TARGET_FILE = AVL/AVL
-  TARGET_PDB = AVL/AVL.pdb
+  TARGET_FILE = BitMap/libBITMAPLIB.a
+  TARGET_PDB = BITMAPLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Bitmap_set_only/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/Bitmap_set_only && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Bitmap_set_only/rebuild_cache: phony Bitmap_set_only/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Bitmap_set_only/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/Bitmap_set_only && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Bitmap_set_only/edit_cache: phony Bitmap_set_only/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target BITMAP_SET_ONLYLIB
+
+
+#############################################
+# Order-only phony target for BITMAP_SET_ONLYLIB
+
+build cmake_object_order_depends_target_BITMAP_SET_ONLYLIB: phony || Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir
+
+build Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o: CXX_COMPILER__BITMAP_SET_ONLYLIB_Debug ../Bitmap_set_only/main_O1_init_set_only.cpp || cmake_object_order_depends_target_BITMAP_SET_ONLYLIB
+  DEP_FILE = Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../Bitmap_set_only
+  OBJECT_DIR = Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir
+  OBJECT_FILE_DIR = Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target BITMAP_SET_ONLYLIB
+
+
+#############################################
+# Link the static library Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
+
+build Bitmap_set_only/libBITMAP_SET_ONLYLIB.a: CXX_STATIC_LIBRARY_LINKER__BITMAP_SET_ONLYLIB_Debug Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
+  TARGET_PDB = BITMAP_SET_ONLYLIB.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -238,32 +367,26 @@ build UniPrint/edit_cache: phony UniPrint/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_UNIPRINTLIB: phony || UniPrint/CMakeFiles/UNIPRINTLIB.dir
 
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o: CXX_COMPILER__UNIPRINTLIB_ ../UniPrint/print_basic.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_basic.cpp || cmake_object_order_depends_target_UNIPRINTLIB
   DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint
   OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
   OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  TARGET_COMPILE_PDB = UniPrint/CMakeFiles/UNIPRINTLIB.dir/UNIPRINTLIB.pdb
-  TARGET_PDB = UniPrint/libUNIPRINTLIB.pdb
 
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o: CXX_COMPILER__UNIPRINTLIB_ ../UniPrint/print_HuffChar.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_HuffChar.cpp || cmake_object_order_depends_target_UNIPRINTLIB
   DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint
   OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
   OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  TARGET_COMPILE_PDB = UniPrint/CMakeFiles/UNIPRINTLIB.dir/UNIPRINTLIB.pdb
-  TARGET_PDB = UniPrint/libUNIPRINTLIB.pdb
 
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o: CXX_COMPILER__UNIPRINTLIB_ ../UniPrint/print_int_array.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_int_array.cpp || cmake_object_order_depends_target_UNIPRINTLIB
   DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint
   OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
   OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  TARGET_COMPILE_PDB = UniPrint/CMakeFiles/UNIPRINTLIB.dir/UNIPRINTLIB.pdb
-  TARGET_PDB = UniPrint/libUNIPRINTLIB.pdb
 
 
 # =============================================================================
@@ -273,14 +396,116 @@ build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o: CXX_COMPILER__U
 #############################################
 # Link the static library UniPrint/libUNIPRINTLIB.a
 
-build UniPrint/libUNIPRINTLIB.a: CXX_STATIC_LIBRARY_LINKER__UNIPRINTLIB_ UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o
+build UniPrint/libUNIPRINTLIB.a: CXX_STATIC_LIBRARY_LINKER__UNIPRINTLIB_Debug UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o
   ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = UniPrint/CMakeFiles/UNIPRINTLIB.dir/UNIPRINTLIB.pdb
   TARGET_FILE = UniPrint/libUNIPRINTLIB.a
-  TARGET_PDB = UniPrint/libUNIPRINTLIB.pdb
+  TARGET_PDB = UNIPRINTLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target FACTORIAL
+
+
+#############################################
+# Order-only phony target for FACTORIAL
+
+build cmake_object_order_depends_target_FACTORIAL: phony || cmake_object_order_depends_target_FACTORIALLIB
+
+build factorial/CMakeFiles/FACTORIAL.dir/main.cpp.o: CXX_COMPILER__FACTORIAL_Debug ../factorial/main.cpp || cmake_object_order_depends_target_FACTORIAL
+  DEP_FILE = factorial/CMakeFiles/FACTORIAL.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../factorial
+  OBJECT_DIR = factorial/CMakeFiles/FACTORIAL.dir
+  OBJECT_FILE_DIR = factorial/CMakeFiles/FACTORIAL.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FACTORIAL
+
+
+#############################################
+# Link the executable factorial/FACTORIAL
+
+build factorial/FACTORIAL: CXX_EXECUTABLE_LINKER__FACTORIAL_Debug factorial/CMakeFiles/FACTORIAL.dir/main.cpp.o | factorial/libFACTORIALLIB.a || factorial/libFACTORIALLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = factorial/libFACTORIALLIB.a
+  OBJECT_DIR = factorial/CMakeFiles/FACTORIAL.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = factorial/FACTORIAL
+  TARGET_PDB = FACTORIAL.dbg
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build factorial/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/factorial && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build factorial/rebuild_cache: phony factorial/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build factorial/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/factorial && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build factorial/edit_cache: phony factorial/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target FACTORIALLIB
+
+
+#############################################
+# Order-only phony target for FACTORIALLIB
+
+build cmake_object_order_depends_target_FACTORIALLIB: phony || factorial/CMakeFiles/FACTORIALLIB.dir
+
+build factorial/CMakeFiles/FACTORIALLIB.dir/fac_iterative.cpp.o: CXX_COMPILER__FACTORIALLIB_Debug ../factorial/fac_iterative.cpp || cmake_object_order_depends_target_FACTORIALLIB
+  DEP_FILE = factorial/CMakeFiles/FACTORIALLIB.dir/fac_iterative.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../factorial
+  OBJECT_DIR = factorial/CMakeFiles/FACTORIALLIB.dir
+  OBJECT_FILE_DIR = factorial/CMakeFiles/FACTORIALLIB.dir
+
+build factorial/CMakeFiles/FACTORIALLIB.dir/fac_recursive.cpp.o: CXX_COMPILER__FACTORIALLIB_Debug ../factorial/fac_recursive.cpp || cmake_object_order_depends_target_FACTORIALLIB
+  DEP_FILE = factorial/CMakeFiles/FACTORIALLIB.dir/fac_recursive.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../factorial
+  OBJECT_DIR = factorial/CMakeFiles/FACTORIALLIB.dir
+  OBJECT_FILE_DIR = factorial/CMakeFiles/FACTORIALLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target FACTORIALLIB
+
+
+#############################################
+# Link the static library factorial/libFACTORIALLIB.a
+
+build factorial/libFACTORIALLIB.a: CXX_STATIC_LIBRARY_LINKER__FACTORIALLIB_Debug factorial/CMakeFiles/FACTORIALLIB.dir/fac_iterative.cpp.o factorial/CMakeFiles/FACTORIALLIB.dir/fac_recursive.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = factorial/CMakeFiles/FACTORIALLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = factorial/libFACTORIALLIB.a
+  TARGET_PDB = FACTORIALLIB.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -319,14 +544,12 @@ build hashtable/edit_cache: phony hashtable/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_hashtable: phony || cmake_object_order_depends_target_PRIMELIB cmake_object_order_depends_target_UNIPRINTLIB
 
-build hashtable/CMakeFiles/hashtable.dir/main.cpp.o: CXX_COMPILER__hashtable_ ../hashtable/main.cpp || cmake_object_order_depends_target_hashtable
+build hashtable/CMakeFiles/hashtable.dir/main.cpp.o: CXX_COMPILER__hashtable_Debug ../hashtable/main.cpp || cmake_object_order_depends_target_hashtable
   DEP_FILE = hashtable/CMakeFiles/hashtable.dir/main.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../_share -I../UniPrint -I../prime
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint -I../prime
   OBJECT_DIR = hashtable/CMakeFiles/hashtable.dir
   OBJECT_FILE_DIR = hashtable/CMakeFiles/hashtable.dir
-  TARGET_COMPILE_PDB = hashtable/CMakeFiles/hashtable.dir/
-  TARGET_PDB = hashtable/hashtable.pdb
 
 
 # =============================================================================
@@ -336,16 +559,15 @@ build hashtable/CMakeFiles/hashtable.dir/main.cpp.o: CXX_COMPILER__hashtable_ ..
 #############################################
 # Link the executable hashtable/hashtable
 
-build hashtable/hashtable: CXX_EXECUTABLE_LINKER__hashtable_ hashtable/CMakeFiles/hashtable.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a prime/libPRIMELIB.a || UniPrint/libUNIPRINTLIB.a prime/libPRIMELIB.a
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+build hashtable/hashtable: CXX_EXECUTABLE_LINKER__hashtable_Debug hashtable/CMakeFiles/hashtable.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a prime/libPRIMELIB.a || UniPrint/libUNIPRINTLIB.a prime/libPRIMELIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
-  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a  prime/libPRIMELIB.a
+  LINK_LIBRARIES = -lSHARELIB  UniPrint/libUNIPRINTLIB.a  prime/libPRIMELIB.a
   OBJECT_DIR = hashtable/CMakeFiles/hashtable.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = hashtable/CMakeFiles/hashtable.dir/
   TARGET_FILE = hashtable/hashtable
-  TARGET_PDB = hashtable/hashtable.pdb
+  TARGET_PDB = hashtable.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -384,14 +606,12 @@ build prime/edit_cache: phony prime/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_PRIME: phony || prime/CMakeFiles/PRIME.dir
 
-build prime/CMakeFiles/PRIME.dir/main.cpp.o: CXX_COMPILER__PRIME_ ../prime/main.cpp || cmake_object_order_depends_target_PRIME
+build prime/CMakeFiles/PRIME.dir/main.cpp.o: CXX_COMPILER__PRIME_Debug ../prime/main.cpp || cmake_object_order_depends_target_PRIME
   DEP_FILE = prime/CMakeFiles/PRIME.dir/main.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../
   OBJECT_DIR = prime/CMakeFiles/PRIME.dir
   OBJECT_FILE_DIR = prime/CMakeFiles/PRIME.dir
-  TARGET_COMPILE_PDB = prime/CMakeFiles/PRIME.dir/
-  TARGET_PDB = prime/PRIME.pdb
 
 
 # =============================================================================
@@ -401,15 +621,14 @@ build prime/CMakeFiles/PRIME.dir/main.cpp.o: CXX_COMPILER__PRIME_ ../prime/main.
 #############################################
 # Link the executable prime/PRIME
 
-build prime/PRIME: CXX_EXECUTABLE_LINKER__PRIME_ prime/CMakeFiles/PRIME.dir/main.cpp.o
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+build prime/PRIME: CXX_EXECUTABLE_LINKER__PRIME_Debug prime/CMakeFiles/PRIME.dir/main.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
   OBJECT_DIR = prime/CMakeFiles/PRIME.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = prime/CMakeFiles/PRIME.dir/
   TARGET_FILE = prime/PRIME
-  TARGET_PDB = prime/PRIME.pdb
+  TARGET_PDB = PRIME.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target PRIMELIB
@@ -420,23 +639,19 @@ build prime/PRIME: CXX_EXECUTABLE_LINKER__PRIME_ prime/CMakeFiles/PRIME.dir/main
 
 build cmake_object_order_depends_target_PRIMELIB: phony || prime/CMakeFiles/PRIMELIB.dir
 
-build prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o: CXX_COMPILER__PRIMELIB_ ../prime/Eratosthenes.cpp || cmake_object_order_depends_target_PRIMELIB
+build prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o: CXX_COMPILER__PRIMELIB_Debug ../prime/Eratosthenes.cpp || cmake_object_order_depends_target_PRIMELIB
   DEP_FILE = prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../prime
   OBJECT_DIR = prime/CMakeFiles/PRIMELIB.dir
   OBJECT_FILE_DIR = prime/CMakeFiles/PRIMELIB.dir
-  TARGET_COMPILE_PDB = prime/CMakeFiles/PRIMELIB.dir/PRIMELIB.pdb
-  TARGET_PDB = prime/libPRIMELIB.pdb
 
-build prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o: CXX_COMPILER__PRIMELIB_ ../prime/primeNLT.cpp || cmake_object_order_depends_target_PRIMELIB
+build prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o: CXX_COMPILER__PRIMELIB_Debug ../prime/primeNLT.cpp || cmake_object_order_depends_target_PRIMELIB
   DEP_FILE = prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../prime
   OBJECT_DIR = prime/CMakeFiles/PRIMELIB.dir
   OBJECT_FILE_DIR = prime/CMakeFiles/PRIMELIB.dir
-  TARGET_COMPILE_PDB = prime/CMakeFiles/PRIMELIB.dir/PRIMELIB.pdb
-  TARGET_PDB = prime/libPRIMELIB.pdb
 
 
 # =============================================================================
@@ -446,14 +661,14 @@ build prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o: CXX_COMPILER__PRIMELIB_ ../p
 #############################################
 # Link the static library prime/libPRIMELIB.a
 
-build prime/libPRIMELIB.a: CXX_STATIC_LIBRARY_LINKER__PRIMELIB_ prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o
+build prime/libPRIMELIB.a: CXX_STATIC_LIBRARY_LINKER__PRIMELIB_Debug prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o
   ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = prime/CMakeFiles/PRIMELIB.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = prime/CMakeFiles/PRIMELIB.dir/PRIMELIB.pdb
   TARGET_FILE = prime/libPRIMELIB.a
-  TARGET_PDB = prime/libPRIMELIB.pdb
+  TARGET_PDB = PRIMELIB.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -492,14 +707,12 @@ build vector/edit_cache: phony vector/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_vector: phony || vector/CMakeFiles/vector.dir
 
-build vector/CMakeFiles/vector.dir/main.cpp.o: CXX_COMPILER__vector_ ../vector/main.cpp || cmake_object_order_depends_target_vector
+build vector/CMakeFiles/vector.dir/main.cpp.o: CXX_COMPILER__vector_Debug ../vector/main.cpp || cmake_object_order_depends_target_vector
   DEP_FILE = vector/CMakeFiles/vector.dir/main.cpp.o.d
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../
   OBJECT_DIR = vector/CMakeFiles/vector.dir
   OBJECT_FILE_DIR = vector/CMakeFiles/vector.dir
-  TARGET_COMPILE_PDB = vector/CMakeFiles/vector.dir/
-  TARGET_PDB = vector/vector.pdb
 
 
 # =============================================================================
@@ -509,20 +722,29 @@ build vector/CMakeFiles/vector.dir/main.cpp.o: CXX_COMPILER__vector_ ../vector/m
 #############################################
 # Link the executable vector/vector
 
-build vector/vector: CXX_EXECUTABLE_LINKER__vector_ vector/CMakeFiles/vector.dir/main.cpp.o
-  FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+build vector/vector: CXX_EXECUTABLE_LINKER__vector_Debug vector/CMakeFiles/vector.dir/main.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
   OBJECT_DIR = vector/CMakeFiles/vector.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = vector/CMakeFiles/vector.dir/
   TARGET_FILE = vector/vector
-  TARGET_PDB = vector/vector.pdb
+  TARGET_PDB = vector.dbg
 
 # =============================================================================
 # Target aliases.
 
 build AVL: phony AVL/AVL
+
+build BITMAPLIB: phony BitMap/libBITMAPLIB.a
+
+build BITMAP_SET_ONLYLIB: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
+
+build BST: phony BST/BST
+
+build FACTORIAL: phony factorial/FACTORIAL
+
+build FACTORIALLIB: phony factorial/libFACTORIALLIB.a
 
 build PRIME: phony prime/PRIME
 
@@ -531,6 +753,12 @@ build PRIMELIB: phony prime/libPRIMELIB.a
 build UNIPRINTLIB: phony UniPrint/libUNIPRINTLIB.a
 
 build hashtable: phony hashtable/hashtable
+
+build libBITMAPLIB.a: phony BitMap/libBITMAPLIB.a
+
+build libBITMAP_SET_ONLYLIB.a: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
+
+build libFACTORIALLIB.a: phony factorial/libFACTORIALLIB.a
 
 build libPRIMELIB.a: phony prime/libPRIMELIB.a
 
@@ -546,7 +774,7 @@ build vector: phony vector/vector
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
-build all: phony _share/all BST/all BTree/all AVL/all UniPrint/all hashtable/all prime/all vector/all
+build all: phony AVL/all BST/all BTree/all BitMap/all Bitmap_set_only/all UniPrint/all factorial/all hashtable/all prime/all vector/all
 
 # =============================================================================
 
@@ -560,7 +788,7 @@ build AVL/all: phony AVL/AVL
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BST
 
-build BST/all: phony
+build BST/all: phony BST/BST
 
 # =============================================================================
 
@@ -572,6 +800,20 @@ build BTree/all: phony
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BitMap
+
+build BitMap/all: phony BitMap/libBITMAPLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/Bitmap_set_only
+
+build Bitmap_set_only/all: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint
 
 build UniPrint/all: phony UniPrint/libUNIPRINTLIB.a
@@ -579,9 +821,9 @@ build UniPrint/all: phony UniPrint/libUNIPRINTLIB.a
 # =============================================================================
 
 #############################################
-# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/_share
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/factorial
 
-build _share/all: phony
+build factorial/all: phony factorial/FACTORIAL factorial/libFACTORIALLIB.a
 
 # =============================================================================
 
@@ -611,14 +853,14 @@ build vector/all: phony vector/vector
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../_share/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystem.cmake.in /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../_share/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystem.cmake.in /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
+build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
 
 
 #############################################

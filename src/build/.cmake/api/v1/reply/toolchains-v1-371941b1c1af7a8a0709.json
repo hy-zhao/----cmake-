@@ -5,30 +5,37 @@
 		{
 			"compiler" : 
 			{
-				"id" : "AppleClang",
+				"id" : "GNU",
 				"implicit" : 
 				{
 					"includeDirectories" : 
 					[
-						"/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0/include",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0/include-fixed",
 						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include",
-						"/Library/Developer/CommandLineTools/usr/include"
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
 					],
 					"linkDirectories" : 
 					[
 						"/usr/local/opt/zlib/lib",
 						"/usr/local/opt/bzip2/lib",
 						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11",
 						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib"
 					],
 					"linkFrameworkDirectories" : 
 					[
 						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
 					],
-					"linkLibraries" : []
+					"linkLibraries" : 
+					[
+						"gcc_ext.10.5",
+						"gcc"
+					]
 				},
-				"path" : "/Library/Developer/CommandLineTools/usr/bin/cc",
-				"version" : "12.0.5.12050022"
+				"path" : "/usr/local/bin/gcc-11",
+				"version" : "11.1.0"
 			},
 			"language" : "C",
 			"sourceFileExtensions" : 
@@ -40,21 +47,26 @@
 		{
 			"compiler" : 
 			{
-				"id" : "AppleClang",
+				"id" : "GNU",
 				"implicit" : 
 				{
 					"includeDirectories" : 
 					[
-						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1",
-						"/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include",
+						"/usr/local/Cellar/gcc/11.1.0/include/c++/11.1.0",
+						"/usr/local/Cellar/gcc/11.1.0/include/c++/11.1.0/x86_64-apple-darwin20",
+						"/usr/local/Cellar/gcc/11.1.0/include/c++/11.1.0/backward",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0/include",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0/include-fixed",
 						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include",
-						"/Library/Developer/CommandLineTools/usr/include"
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
 					],
 					"linkDirectories" : 
 					[
 						"/usr/local/opt/zlib/lib",
 						"/usr/local/opt/bzip2/lib",
 						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0",
+						"/usr/local/Cellar/gcc/11.1.0/lib/gcc/11",
 						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib"
 					],
 					"linkFrameworkDirectories" : 
@@ -63,11 +75,13 @@
 					],
 					"linkLibraries" : 
 					[
-						"c++"
+						"stdc++",
+						"gcc_ext.10.5",
+						"gcc"
 					]
 				},
-				"path" : "/Library/Developer/CommandLineTools/usr/bin/c++",
-				"version" : "12.0.5.12050022"
+				"path" : "/usr/local/bin/g++-11",
+				"version" : "11.1.0"
 			},
 			"language" : "CXX",
 			"sourceFileExtensions" : 

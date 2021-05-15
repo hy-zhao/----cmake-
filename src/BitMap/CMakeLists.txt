@@ -1,9 +1,8 @@
-set(PROJECT_NAME Bitmap)
+set(PROJECT_NAME BITMAP)
 project(${PROJECT_NAME})
-################################################################################
-# Source groups
-################################################################################
-# set(SOURCE_LIST
-#     "Bitmap_O1_init.h"
-# )
-add_executable(${PROJECT_NAME}, "main_O1_init.cpp.cpp")
+
+add_library(BITMAPLIB 
+    "main_O1_init.cpp"
+)
+
+target_include_directories(BITMAPLIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

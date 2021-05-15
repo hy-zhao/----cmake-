@@ -5,7 +5,6 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
-
 /*DSA*/#include "fac.h"
 
 int main ( int argc, char* argv[] ) { //阶乘运算测试

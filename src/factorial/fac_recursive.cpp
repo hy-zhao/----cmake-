@@ -5,5 +5,7 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+#include "fac.h"
 
-__int64 facR ( int n ) { return ( n < 1 ) ? 1 : n * facR ( n - 1 ); } //阶乘运算（递归版）
+// __int64 facR ( int n ) { return ( n < 1 ) ? 1 : n * facR ( n - 1 ); } //阶乘运算（递归版）
+int64_t facR ( int n ) { return ( n < 1 ) ? 1 : n * facR ( n - 1 ); } //阶乘运算（递归版）

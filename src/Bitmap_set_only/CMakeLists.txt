@@ -1,9 +1,10 @@
-set(PROJECT_NAME Bitmap_set_only)
+set(PROJECT_NAME BITMAP_SET_ONLY)
 
 ################################################################################
 # Source groups
 ################################################################################
-set(SOURCE_LIB
-    "Bitmap_O1_init_set_only.h"
+add_library(BITMAP_SET_ONLYLIB 
+    "main_O1_init_set_only.cpp"
 )
-# source_group("婢跺
+
+target_include_directories(BITMAP_SET_ONLYLIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
