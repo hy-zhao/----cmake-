@@ -26,6 +26,31 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../UniPrint -Ibubblesort -Irandom -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o bubblesort/CMakeFiles/BUBBLESORT.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -Ibubblesort -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -Ibubblesort -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1A.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble1A.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble1A.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -Ibubblesort -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1B.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble1B.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble1B.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -Ibubblesort -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble2.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble2.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort/bubble2.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint/print_basic.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint/print_basic.cpp"
 },
@@ -78,6 +103,16 @@
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queue/CMakeFiles/QUEUE.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queue/main.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queue/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -Irandom -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o random/CMakeFiles/RANDOMLIB.dir/randomSortedVector.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/random/randomSortedVector.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/random/randomSortedVector.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -Irandom -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o random/CMakeFiles/RANDOMLIB.dir/Shuffle.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/random/Shuffle.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/random/Shuffle.cpp"
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",

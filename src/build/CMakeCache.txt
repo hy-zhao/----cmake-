@@ -39,6 +39,12 @@ BST_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/b
 BST_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/BST
 
 //Value Computed by CMake
+BUBBLESORT_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort
+
+//Value Computed by CMake
+BUBBLESORT_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort
+
+//Value Computed by CMake
 Bitmap_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BitMap
 
 //Value Computed by CMake
@@ -268,6 +274,12 @@ QUEUE_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src
 QUEUE_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queue
 
 //Value Computed by CMake
+RANDOM_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random
+
+//Value Computed by CMake
+RANDOM_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/random
+
+//Value Computed by CMake
 UniPrint_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint
 
 //Value Computed by CMake
@@ -400,7 +412,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

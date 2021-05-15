@@ -98,6 +98,30 @@
 			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/BST"
 		},
 		{
+			"name" : "BUBBLESORT_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort"
+		},
+		{
+			"name" : "BUBBLESORT_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort"
+		},
+		{
 			"name" : "Bitmap_BINARY_DIR",
 			"properties" : 
 			[
@@ -867,7 +891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "13"
+			"value" : "15"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1336,6 +1360,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queue"
+		},
+		{
+			"name" : "RANDOM_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random"
+		},
+		{
+			"name" : "RANDOM_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/random"
 		},
 		{
 			"name" : "UniPrint_BINARY_DIR",

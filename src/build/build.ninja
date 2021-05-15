@@ -397,6 +397,122 @@ build BTree/edit_cache: phony BTree/CMakeFiles/edit_cache.util
 # /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target BUBBLESORT
+
+
+#############################################
+# Order-only phony target for BUBBLESORT
+
+build cmake_object_order_depends_target_BUBBLESORT: phony || cmake_object_order_depends_target_BUBBLESORTLIB cmake_object_order_depends_target_RANDOMLIB cmake_object_order_depends_target_UNIPRINTLIB
+
+build bubblesort/CMakeFiles/BUBBLESORT.dir/main.cpp.o: CXX_COMPILER__BUBBLESORT_Debug ../bubblesort/main.cpp || cmake_object_order_depends_target_BUBBLESORT
+  DEP_FILE = bubblesort/CMakeFiles/BUBBLESORT.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint -Ibubblesort -Irandom
+  OBJECT_DIR = bubblesort/CMakeFiles/BUBBLESORT.dir
+  OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORT.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BUBBLESORT
+
+
+#############################################
+# Link the executable bubblesort/BUBBLESORT
+
+build bubblesort/BUBBLESORT: CXX_EXECUTABLE_LINKER__BUBBLESORT_Debug bubblesort/CMakeFiles/BUBBLESORT.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a bubblesort/libBUBBLESORTLIB.a random/libRANDOMLIB.a || UniPrint/libUNIPRINTLIB.a bubblesort/libBUBBLESORTLIB.a random/libRANDOMLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a  bubblesort/libBUBBLESORTLIB.a  random/libRANDOMLIB.a
+  OBJECT_DIR = bubblesort/CMakeFiles/BUBBLESORT.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bubblesort/BUBBLESORT
+  TARGET_PDB = BUBBLESORT.dbg
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build bubblesort/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build bubblesort/rebuild_cache: phony bubblesort/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build bubblesort/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build bubblesort/edit_cache: phony bubblesort/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target BUBBLESORTLIB
+
+
+#############################################
+# Order-only phony target for BUBBLESORTLIB
+
+build cmake_object_order_depends_target_BUBBLESORTLIB: phony || bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+
+build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -Ibubblesort
+  OBJECT_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+  OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+
+build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1A.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble1A.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1A.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -Ibubblesort
+  OBJECT_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+  OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+
+build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1B.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble1B.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1B.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -Ibubblesort
+  OBJECT_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+  OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+
+build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble2.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble2.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble2.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -Ibubblesort
+  OBJECT_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+  OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target BUBBLESORTLIB
+
+
+#############################################
+# Link the static library bubblesort/libBUBBLESORTLIB.a
+
+build bubblesort/libBUBBLESORTLIB.a: CXX_STATIC_LIBRARY_LINKER__BUBBLESORTLIB_Debug bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble.cpp.o bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1A.cpp.o bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1B.cpp.o bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble2.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bubblesort/libBUBBLESORTLIB.a
+  TARGET_PDB = BUBBLESORTLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
 
 #############################################
 # Utility command for rebuild_cache
@@ -803,6 +919,74 @@ build queue/QUEUE: CXX_EXECUTABLE_LINKER__QUEUE_Debug queue/CMakeFiles/QUEUE.dir
 #############################################
 # Utility command for rebuild_cache
 
+build random/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build random/rebuild_cache: phony random/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build random/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build random/edit_cache: phony random/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target RANDOMLIB
+
+
+#############################################
+# Order-only phony target for RANDOMLIB
+
+build cmake_object_order_depends_target_RANDOMLIB: phony || random/CMakeFiles/RANDOMLIB.dir
+
+build random/CMakeFiles/RANDOMLIB.dir/randomSortedVector.cpp.o: CXX_COMPILER__RANDOMLIB_Debug ../random/randomSortedVector.cpp || cmake_object_order_depends_target_RANDOMLIB
+  DEP_FILE = random/CMakeFiles/RANDOMLIB.dir/randomSortedVector.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -Irandom
+  OBJECT_DIR = random/CMakeFiles/RANDOMLIB.dir
+  OBJECT_FILE_DIR = random/CMakeFiles/RANDOMLIB.dir
+
+build random/CMakeFiles/RANDOMLIB.dir/Shuffle.cpp.o: CXX_COMPILER__RANDOMLIB_Debug ../random/Shuffle.cpp || cmake_object_order_depends_target_RANDOMLIB
+  DEP_FILE = random/CMakeFiles/RANDOMLIB.dir/Shuffle.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -Irandom
+  OBJECT_DIR = random/CMakeFiles/RANDOMLIB.dir
+  OBJECT_FILE_DIR = random/CMakeFiles/RANDOMLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target RANDOMLIB
+
+
+#############################################
+# Link the static library random/libRANDOMLIB.a
+
+build random/libRANDOMLIB.a: CXX_STATIC_LIBRARY_LINKER__RANDOMLIB_Debug random/CMakeFiles/RANDOMLIB.dir/randomSortedVector.cpp.o random/CMakeFiles/RANDOMLIB.dir/Shuffle.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = random/CMakeFiles/RANDOMLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = random/libRANDOMLIB.a
+  TARGET_PDB = RANDOMLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build vector/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -868,6 +1052,10 @@ build BITMAP_SET_ONLYLIB: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
 
 build BST: phony BST/BST
 
+build BUBBLESORT: phony bubblesort/BUBBLESORT
+
+build BUBBLESORTLIB: phony bubblesort/libBUBBLESORTLIB.a
+
 build FACTORIAL: phony factorial/FACTORIAL
 
 build FACTORIALLIB: phony factorial/libFACTORIALLIB.a
@@ -878,6 +1066,8 @@ build PRIMELIB: phony prime/libPRIMELIB.a
 
 build QUEUE: phony queue/QUEUE
 
+build RANDOMLIB: phony random/libRANDOMLIB.a
+
 build UNIPRINTLIB: phony UniPrint/libUNIPRINTLIB.a
 
 build hashtable: phony hashtable/hashtable
@@ -886,9 +1076,13 @@ build libBITMAPLIB.a: phony BitMap/libBITMAPLIB.a
 
 build libBITMAP_SET_ONLYLIB.a: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
 
+build libBUBBLESORTLIB.a: phony bubblesort/libBUBBLESORTLIB.a
+
 build libFACTORIALLIB.a: phony factorial/libFACTORIALLIB.a
 
 build libPRIMELIB.a: phony prime/libPRIMELIB.a
+
+build libRANDOMLIB.a: phony random/libRANDOMLIB.a
 
 build libUNIPRINTLIB.a: phony UniPrint/libUNIPRINTLIB.a
 
@@ -902,7 +1096,7 @@ build vector: phony vector/vector
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
-build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all UniPrint/all factorial/all hashtable/all prime/all queue/all vector/all
+build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all UniPrint/all factorial/all hashtable/all prime/all queue/all random/all vector/all
 
 # =============================================================================
 
@@ -956,6 +1150,13 @@ build binTree/all: phony binTree/BINTREE
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort
+
+build bubblesort/all: phony bubblesort/BUBBLESORT bubblesort/libBUBBLESORTLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/factorial
 
 build factorial/all: phony factorial/FACTORIAL factorial/libFACTORIALLIB.a
@@ -984,6 +1185,13 @@ build queue/all: phony queue/QUEUE
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random
+
+build random/all: phony random/libRANDOMLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector
 
 build vector/all: phony vector/vector
@@ -995,14 +1203,14 @@ build vector/all: phony vector/vector
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
+build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -17,6 +17,10 @@
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BST/CMakeFiles/BST.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BTree/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BTree/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort/CMakeFiles/BUBBLESORT.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort/CMakeFiles/rebuild_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/bubblesort/CMakeFiles/BUBBLESORTLIB.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/UNIPRINTLIB.dir
@@ -34,6 +38,9 @@
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queue/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queue/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queue/CMakeFiles/QUEUE.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random/CMakeFiles/rebuild_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/random/CMakeFiles/RANDOMLIB.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector/CMakeFiles/vector.dir
