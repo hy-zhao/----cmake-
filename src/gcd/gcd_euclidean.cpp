@@ -5,6 +5,7 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+#include "cstdint"
 
 int64_t gcdEU_R ( int64_t a, int64_t b ) { //assert: 0 <= min(a, b)
    return ( 0 == b ) ? a : gcdEU_R ( b, a % b );

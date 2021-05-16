@@ -844,71 +844,57 @@ build cursor_list/CURSOR_LIST: CXX_EXECUTABLE_LINKER__CURSOR_LIST_Debug cursor_l
 #############################################
 # Utility command for rebuild_cache
 
-build UniPrint/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+build daxue/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/daxue && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build UniPrint/rebuild_cache: phony UniPrint/CMakeFiles/rebuild_cache.util
+build daxue/rebuild_cache: phony daxue/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build UniPrint/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build daxue/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/daxue && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build UniPrint/edit_cache: phony UniPrint/CMakeFiles/edit_cache.util
+build daxue/edit_cache: phony daxue/CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target UNIPRINTLIB
+# Object build statements for EXECUTABLE target DAXUE
 
 
 #############################################
-# Order-only phony target for UNIPRINTLIB
+# Order-only phony target for DAXUE
 
-build cmake_object_order_depends_target_UNIPRINTLIB: phony || UniPrint/CMakeFiles/UNIPRINTLIB.dir
+build cmake_object_order_depends_target_DAXUE: phony || daxue/CMakeFiles/DAXUE.dir
 
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_basic.cpp || cmake_object_order_depends_target_UNIPRINTLIB
-  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o.d
+build daxue/CMakeFiles/DAXUE.dir/main.cpp.o: CXX_COMPILER__DAXUE_Debug ../daxue/main.cpp || cmake_object_order_depends_target_DAXUE
+  DEP_FILE = daxue/CMakeFiles/DAXUE.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../UniPrint
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_HuffChar.cpp || cmake_object_order_depends_target_UNIPRINTLIB
-  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../UniPrint
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_int_array.cpp || cmake_object_order_depends_target_UNIPRINTLIB
-  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../UniPrint
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  INCLUDES = -I../
+  OBJECT_DIR = daxue/CMakeFiles/DAXUE.dir
+  OBJECT_FILE_DIR = daxue/CMakeFiles/DAXUE.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target UNIPRINTLIB
+# Link build statements for EXECUTABLE target DAXUE
 
 
 #############################################
-# Link the static library UniPrint/libUNIPRINTLIB.a
+# Link the executable daxue/DAXUE
 
-build UniPrint/libUNIPRINTLIB.a: CXX_STATIC_LIBRARY_LINKER__UNIPRINTLIB_Debug UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o
-  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+build daxue/DAXUE: CXX_EXECUTABLE_LINKER__DAXUE_Debug daxue/CMakeFiles/DAXUE.dir/main.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  OBJECT_DIR = daxue/CMakeFiles/DAXUE.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = UniPrint/libUNIPRINTLIB.a
-  TARGET_PDB = UNIPRINTLIB.a.dbg
+  TARGET_FILE = daxue/DAXUE
+  TARGET_PDB = DAXUE.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1011,6 +997,408 @@ build factorial/libFACTORIALLIB.a: CXX_STATIC_LIBRARY_LINKER__FACTORIALLIB_Debug
   PRE_LINK = :
   TARGET_FILE = factorial/libFACTORIALLIB.a
   TARGET_PDB = FACTORIALLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target FIBONACCI
+
+
+#############################################
+# Order-only phony target for FIBONACCI
+
+build cmake_object_order_depends_target_FIBONACCI: phony || cmake_object_order_depends_target_FIBONACCILIB
+
+build fibonacci/CMakeFiles/FIBONACCI.dir/main.cpp.o: CXX_COMPILER__FIBONACCI_Debug ../fibonacci/main.cpp || cmake_object_order_depends_target_FIBONACCI
+  DEP_FILE = fibonacci/CMakeFiles/FIBONACCI.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../
+  OBJECT_DIR = fibonacci/CMakeFiles/FIBONACCI.dir
+  OBJECT_FILE_DIR = fibonacci/CMakeFiles/FIBONACCI.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FIBONACCI
+
+
+#############################################
+# Link the executable fibonacci/FIBONACCI
+
+build fibonacci/FIBONACCI: CXX_EXECUTABLE_LINKER__FIBONACCI_Debug fibonacci/CMakeFiles/FIBONACCI.dir/main.cpp.o | fibonacci/libFIBONACCILIB.a || fibonacci/libFIBONACCILIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = fibonacci/libFIBONACCILIB.a
+  OBJECT_DIR = fibonacci/CMakeFiles/FIBONACCI.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = fibonacci/FIBONACCI
+  TARGET_PDB = FIBONACCI.dbg
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build fibonacci/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/fibonacci && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build fibonacci/rebuild_cache: phony fibonacci/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build fibonacci/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/fibonacci && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build fibonacci/edit_cache: phony fibonacci/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target FIBONACCILIB
+
+
+#############################################
+# Order-only phony target for FIBONACCILIB
+
+build cmake_object_order_depends_target_FIBONACCILIB: phony || fibonacci/CMakeFiles/FIBONACCILIB.dir
+
+build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib0.cpp.o: CXX_COMPILER__FIBONACCILIB_Debug ../fibonacci/Fib0.cpp || cmake_object_order_depends_target_FIBONACCILIB
+  DEP_FILE = fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib0.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../fibonacci
+  OBJECT_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
+  OBJECT_FILE_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
+
+build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib1.cpp.o: CXX_COMPILER__FIBONACCILIB_Debug ../fibonacci/Fib1.cpp || cmake_object_order_depends_target_FIBONACCILIB
+  DEP_FILE = fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib1.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../fibonacci
+  OBJECT_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
+  OBJECT_FILE_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
+
+build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib2.cpp.o: CXX_COMPILER__FIBONACCILIB_Debug ../fibonacci/Fib2.cpp || cmake_object_order_depends_target_FIBONACCILIB
+  DEP_FILE = fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib2.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../fibonacci
+  OBJECT_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
+  OBJECT_FILE_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target FIBONACCILIB
+
+
+#############################################
+# Link the static library fibonacci/libFIBONACCILIB.a
+
+build fibonacci/libFIBONACCILIB.a: CXX_STATIC_LIBRARY_LINKER__FIBONACCILIB_Debug fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib0.cpp.o fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib1.cpp.o fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib2.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = fibonacci/libFIBONACCILIB.a
+  TARGET_PDB = FIBONACCILIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build gcd/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/gcd && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build gcd/rebuild_cache: phony gcd/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build gcd/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/gcd && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build gcd/edit_cache: phony gcd/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target GCD
+
+
+#############################################
+# Order-only phony target for GCD
+
+build cmake_object_order_depends_target_GCD: phony || cmake_object_order_depends_target_GCDLIB
+
+build gcd/CMakeFiles/GCD.dir/main.cpp.o: CXX_COMPILER__GCD_Debug ../gcd/main.cpp || cmake_object_order_depends_target_GCD
+  DEP_FILE = gcd/CMakeFiles/GCD.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../
+  OBJECT_DIR = gcd/CMakeFiles/GCD.dir
+  OBJECT_FILE_DIR = gcd/CMakeFiles/GCD.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target GCD
+
+
+#############################################
+# Link the executable gcd/GCD
+
+build gcd/GCD: CXX_EXECUTABLE_LINKER__GCD_Debug gcd/CMakeFiles/GCD.dir/main.cpp.o | gcd/libGCDLIB.a || gcd/libGCDLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = gcd/libGCDLIB.a
+  OBJECT_DIR = gcd/CMakeFiles/GCD.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = gcd/GCD
+  TARGET_PDB = GCD.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target GCDLIB
+
+
+#############################################
+# Order-only phony target for GCDLIB
+
+build cmake_object_order_depends_target_GCDLIB: phony || gcd/CMakeFiles/GCDLIB.dir
+
+build gcd/CMakeFiles/GCDLIB.dir/gcd_chinese.cpp.o: CXX_COMPILER__GCDLIB_Debug ../gcd/gcd_chinese.cpp || cmake_object_order_depends_target_GCDLIB
+  DEP_FILE = gcd/CMakeFiles/GCDLIB.dir/gcd_chinese.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../gcd
+  OBJECT_DIR = gcd/CMakeFiles/GCDLIB.dir
+  OBJECT_FILE_DIR = gcd/CMakeFiles/GCDLIB.dir
+
+build gcd/CMakeFiles/GCDLIB.dir/gcd_euclidean.cpp.o: CXX_COMPILER__GCDLIB_Debug ../gcd/gcd_euclidean.cpp || cmake_object_order_depends_target_GCDLIB
+  DEP_FILE = gcd/CMakeFiles/GCDLIB.dir/gcd_euclidean.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../gcd
+  OBJECT_DIR = gcd/CMakeFiles/GCDLIB.dir
+  OBJECT_FILE_DIR = gcd/CMakeFiles/GCDLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target GCDLIB
+
+
+#############################################
+# Link the static library gcd/libGCDLIB.a
+
+build gcd/libGCDLIB.a: CXX_STATIC_LIBRARY_LINKER__GCDLIB_Debug gcd/CMakeFiles/GCDLIB.dir/gcd_chinese.cpp.o gcd/CMakeFiles/GCDLIB.dir/gcd_euclidean.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = gcd/CMakeFiles/GCDLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = gcd/libGCDLIB.a
+  TARGET_PDB = GCDLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build greatest_slice/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/greatest_slice && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build greatest_slice/rebuild_cache: phony greatest_slice/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build greatest_slice/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/greatest_slice && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build greatest_slice/edit_cache: phony greatest_slice/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target GREATEST_SLICE
+
+
+#############################################
+# Order-only phony target for GREATEST_SLICE
+
+build cmake_object_order_depends_target_GREATEST_SLICE: phony || cmake_object_order_depends_target_GREATEST_SLICELIB
+
+build greatest_slice/CMakeFiles/GREATEST_SLICE.dir/test.cpp.o: CXX_COMPILER__GREATEST_SLICE_Debug ../greatest_slice/test.cpp || cmake_object_order_depends_target_GREATEST_SLICE
+  DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICE.dir/test.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../
+  OBJECT_DIR = greatest_slice/CMakeFiles/GREATEST_SLICE.dir
+  OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICE.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target GREATEST_SLICE
+
+
+#############################################
+# Link the executable greatest_slice/GREATEST_SLICE
+
+build greatest_slice/GREATEST_SLICE: CXX_EXECUTABLE_LINKER__GREATEST_SLICE_Debug greatest_slice/CMakeFiles/GREATEST_SLICE.dir/test.cpp.o | greatest_slice/libGREATEST_SLICELIB.a || greatest_slice/libGREATEST_SLICELIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = greatest_slice/libGREATEST_SLICELIB.a
+  OBJECT_DIR = greatest_slice/CMakeFiles/GREATEST_SLICE.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = greatest_slice/GREATEST_SLICE
+  TARGET_PDB = GREATEST_SLICE.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target GREATEST_SLICELIB
+
+
+#############################################
+# Order-only phony target for GREATEST_SLICELIB
+
+build cmake_object_order_depends_target_GREATEST_SLICELIB: phony || greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+
+build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_bf.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_bf.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_bf.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../greatest_slice
+  OBJECT_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+  OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+
+build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_dc.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_dc.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_dc.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../greatest_slice
+  OBJECT_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+  OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+
+build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ic.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_ic.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ic.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../greatest_slice
+  OBJECT_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+  OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+
+build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ls.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_ls.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ls.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../greatest_slice
+  OBJECT_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+  OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target GREATEST_SLICELIB
+
+
+#############################################
+# Link the static library greatest_slice/libGREATEST_SLICELIB.a
+
+build greatest_slice/libGREATEST_SLICELIB.a: CXX_STATIC_LIBRARY_LINKER__GREATEST_SLICELIB_Debug greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_bf.cpp.o greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_dc.cpp.o greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ic.cpp.o greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ls.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = greatest_slice/libGREATEST_SLICELIB.a
+  TARGET_PDB = GREATEST_SLICELIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build UniPrint/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build UniPrint/rebuild_cache: phony UniPrint/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build UniPrint/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build UniPrint/edit_cache: phony UniPrint/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target UNIPRINTLIB
+
+
+#############################################
+# Order-only phony target for UNIPRINTLIB
+
+build cmake_object_order_depends_target_UNIPRINTLIB: phony || UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_basic.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_HuffChar.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_int_array.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target UNIPRINTLIB
+
+
+#############################################
+# Link the static library UniPrint/libUNIPRINTLIB.a
+
+build UniPrint/libUNIPRINTLIB.a: CXX_STATIC_LIBRARY_LINKER__UNIPRINTLIB_Debug UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = UniPrint/libUNIPRINTLIB.a
+  TARGET_PDB = UNIPRINTLIB.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1395,9 +1783,23 @@ build COUNTONESLIB: phony countOnes/libCOUNTONESLIB.a
 
 build CURSOR_LIST: phony cursor_list/CURSOR_LIST
 
+build DAXUE: phony daxue/DAXUE
+
 build FACTORIAL: phony factorial/FACTORIAL
 
 build FACTORIALLIB: phony factorial/libFACTORIALLIB.a
+
+build FIBONACCI: phony fibonacci/FIBONACCI
+
+build FIBONACCILIB: phony fibonacci/libFIBONACCILIB.a
+
+build GCD: phony gcd/GCD
+
+build GCDLIB: phony gcd/libGCDLIB.a
+
+build GREATEST_SLICE: phony greatest_slice/GREATEST_SLICE
+
+build GREATEST_SLICELIB: phony greatest_slice/libGREATEST_SLICELIB.a
 
 build PRIME: phony prime/PRIME
 
@@ -1425,6 +1827,12 @@ build libCOUNTONESLIB.a: phony countOnes/libCOUNTONESLIB.a
 
 build libFACTORIALLIB.a: phony factorial/libFACTORIALLIB.a
 
+build libFIBONACCILIB.a: phony fibonacci/libFIBONACCILIB.a
+
+build libGCDLIB.a: phony gcd/libGCDLIB.a
+
+build libGREATEST_SLICELIB.a: phony greatest_slice/libGREATEST_SLICELIB.a
+
 build libPRIMELIB.a: phony prime/libPRIMELIB.a
 
 build libRANDOMLIB.a: phony random/libRANDOMLIB.a
@@ -1441,7 +1849,7 @@ build vector: phony vector/vector
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
-build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all UniPrint/all factorial/all hashtable/all prime/all queue/all random/all vector/all
+build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all daxue/all factorial/all fibonacci/all gcd/all greatest_slice/all UniPrint/all hashtable/all prime/all queue/all random/all vector/all
 
 # =============================================================================
 
@@ -1530,9 +1938,37 @@ build cursor_list/all: phony cursor_list/CURSOR_LIST
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/daxue
+
+build daxue/all: phony daxue/DAXUE
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/factorial
 
 build factorial/all: phony factorial/FACTORIAL factorial/libFACTORIALLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/fibonacci
+
+build fibonacci/all: phony fibonacci/FIBONACCI fibonacci/libFIBONACCILIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/gcd
+
+build gcd/all: phony gcd/GCD gcd/libGCDLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/greatest_slice
+
+build greatest_slice/all: phony greatest_slice/GREATEST_SLICE greatest_slice/libGREATEST_SLICELIB.a
 
 # =============================================================================
 
@@ -1576,14 +2012,14 @@ build vector/all: phony vector/vector
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../factorial/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
+build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
 
 
 #############################################

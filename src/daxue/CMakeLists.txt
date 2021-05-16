@@ -1,9 +1,5 @@
-set(PROJECT_NAME daxue)
+set(PROJECT_NAME DAXUE)
 
-################################################################################
-# Source groups
-################################################################################
-# set(
-#     "main.cpp"
-# )
-# source_group("濠
+project(${PROJECT_NAME})
+
+add_executable(${PROJECT_NAME} main.cpp)

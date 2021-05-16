@@ -8,6 +8,7 @@
 
 #include<ctime>
 #include<iostream>
+#include<cstdint>
 using namespace std;
 
 #include "Fib.h"
