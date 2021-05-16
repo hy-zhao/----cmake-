@@ -1,10 +1,15 @@
 set(PROJECT_NAME simu)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "Customer.h"
-    "simu.h"
+project(${PROJECT_NAME})
+
+add_library(SIMULIB
+    bestWindow.cpp
+    displayProgress.cpp
+    simu.cpp
 )
-# source_group("婢跺
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(SIMULIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(${PROJECT_NAME} SIMULIB)

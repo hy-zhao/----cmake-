@@ -19,6 +19,6 @@ template <typename T> BinNodePosi<T> Splay<T>::insert ( const T& e ) { //将关�
       t->parent = this->_root = new BinNode<T> ( e, NULL, t->lc, t ); //2 + 3个
       if ( HasLChild ( *t ) ) { t->lc->parent = this->_root; t->lc = NULL; } //<= 2个
    }
-   updateHeightAbove ( t ); //更新t及其祖先（实际上只有this->_root一个）的高度
+   this->updateHeightAbove ( t ); //更新t及其祖先（实际上只有this->_root一个）的高度
    return this->_root; //新节点必然置于树根，返回之
 } //无论e是否存在于原树中，返回时总有this->_root->data == e

@@ -1,9 +1,7 @@
 set(PROJECT_NAME selection)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "quickselect.h"
-)
-# source_group("婢跺
+project(${PROJECT_NAME})
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} UNIPRINTLIB)

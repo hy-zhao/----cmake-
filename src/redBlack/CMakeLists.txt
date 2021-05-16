@@ -1,48 +1,15 @@
 set(PROJECT_NAME RedBlack)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    # "../_share/rand.h"
-    # "../_share/release.h"
-    # "../_share/util.h"
-    # "../binTree/BinNode.h"
-    # "../binTree/BinNode_implementation.h"
-    # "../binTree/BinNode_insert.h"
-    # "../binTree/BinNode_macro.h"
-    # "../binTree/BinNode_travInorder.h"
-    # "../binTree/BinNode_travLevel.h"
-    # "../binTree/BinNode_travPostorder.h"
-    # "../binTree/BinNode_travPreorder.h"
-    # "../binTree/BinTree.h"
-    # "../binTree/BinTree_implementation.h"
-    # "../binTree/BinTree_remove.h"
-    # "../binTree/BinTreethis->_size.h"
-    # "../binTree/BinTree_test.h"
-    # "../binTree/BinTree_updateHeight.h"
-    # "../BST/BST_connect34.h"
-    # "../BST/BST_RotateAt.h"
-    # "../UniPrint/print.h"
-    # "../UniPrint/print_binNode.h"
-    # "../UniPrint/print_bintree.h"
-    # "../UniPrint/print_btree.h"
-    # "../UniPrint/print_Entry.h"
-    # "../UniPrint/print_HashTable.h"
-    # "../UniPrint/print_implementation.h"
-    # "../UniPrint/print_PQ_ComplHeap.h"
-    # "../UniPrint/print_PQ_LeftHeap.h"
-    # "../UniPrint/print_PQ_list.h"
-    # "../UniPrint/print_Quadlist.h"
-    # "../UniPrint/print_Skiplist.h"
-    # "../UniPrint/print_traversable.h"
-    "RedBlack.h"
-    "RedBlack_implementation.h"
-    "RedBlack_Insert.h"
-    "RedBlack_remove.h"
-    "RedBlack_solveDoubleBlack.h"
-    "RedBlack_solveDoubleRed.h"
-    "RedBlack_test.h"
-    "RedBlack_updateHeight.h"
-)
-# source_group("婢跺
+project(${PROJECT_NAME})
+
+# add_library(REDBLACKLIB
+#     displayProgress.cpp
+#     placeQueens.cpp
+# )
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+# target_include_directories(QUEEN_STACKLIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+# target_link_libraries(${PROJECT_NAME} PREFIX_FREE_CODESLIB UNIPRINTLIB)
+target_link_libraries(${PROJECT_NAME} UNIPRINTLIB)

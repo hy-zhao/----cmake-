@@ -1,12 +1,9 @@
 set(PROJECT_NAME string_pm_kmp)
+project(${PROJECT_NAME})
 
-################################################################################
-# Source groups
-################################################################################
-
-set(
-    "../string_pm/string_pm_test.cpp"
-    "pm_kmp.cpp"
-    "pm_kmp_next.cpp"
+add_library(STRING_PM_KMPLIB 
+    pm_kmp_next.cpp
+    pm_kmp.cpp
 )
-source_group("濠
+
+target_include_directories(STRING_PM_KMPLIB  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

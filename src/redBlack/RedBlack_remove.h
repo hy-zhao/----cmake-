@@ -9,7 +9,7 @@
 #pragma once
 
 template <typename T> bool RedBlack<T>::remove ( const T& e ) { //从红黑树中删除关键码e
-   BinNodePosi<T> & x = search ( e ); if ( !x ) return false; //确认目标存在（留意this->_hot的设置）
+   BinNodePosi<T> & x = this->search ( e ); if ( !x ) return false; //确认目标存在（留意this->_hot的设置）
    BinNodePosi<T> r = removeAt ( x, this->_hot ); if ( ! ( --this->_size ) ) return true; //实施删除
 // assert: this->_hot某一孩子刚被删除，且被r所指节点（可能是NULL）接替。以下检查是否失衡，并做必要调整
    if ( ! this->_hot ) //若刚被删除的是根节点，则将其置黑，并更新黑高度

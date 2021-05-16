@@ -1,13 +1,19 @@
 set(PROJECT_NAME rpn)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    # "../_share/rand.h"
-    # "../_share/release.h"
-    # "../_share/util.h"
-    "priority.h"
-    "rpn.h"
+project(${PROJECT_NAME})
+
+add_library(RPNLIB
+    append2RPN.cpp
+    calculation.cpp
+    displayProgress.cpp
+    priority.cpp
+    readNumber.cpp
+    rpn.cpp
 )
-# source_group("婢跺
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(RPNLIB PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(${PROJECT_NAME} RPNLIB UNIPRINTLIB)
+# target_link_libraries(${PROJECT_NAME} UNIPRINTLIB)

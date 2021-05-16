@@ -1,3 +1,5 @@
+#include <cstdint>
+
 // 按定义蛮力地计算直方图H[]中的最大矩形（多个并列时取最靠左侧者）
 int64_t mr_BRUTE( int H[], int n, int& mr_r, int& mr_s, int& mr_t ) { //蛮力：O(n^2)
    int64_t maxRect = 0;

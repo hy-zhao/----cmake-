@@ -5,6 +5,7 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+#include<cstdint>
 
 int64_t power2BF_I ( int n ) { //幂函数2^n算法（蛮力迭代版），n >= 0
    int64_t pow = 1; //O(1)：累积器初始化为2^0

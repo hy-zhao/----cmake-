@@ -1,35 +1,18 @@
-set(PROJECT_NAME Prefix_free_Codes)
+set(PROJECT_NAME PREFIX_FREE_CODES)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    # "../_share/rand.h"
-    # "../_share/release.h"
-    "../_share/util.h"
-    "../binTree/BinTree.h"
-    # "../BitMap/Bitmap.h"
-    # "../huffman/HuffComp.h"
-    # "../PQ_leftheap/PQ_LeftHeap.h"
-    # "../PQ_leftheap/PQ_LeftHeap_delMax.h"
-    # "../PQ_leftheap/PQ_LeftHeap_getMax.h"
-    # "../PQ_leftheap/PQ_LeftHeap_implementation.h"
-    # "../PQ_leftheap/PQ_LeftHeap_insert.h"
-    # "../PQ_leftheap/PQ_Leftheap_merge.h"
-    # "../prime/primeNLT.h"
-    "../UniPrint/print.h"
-    # "../UniPrint/print_binNode.h"
-    # "../UniPrint/print_bintree.h"
-    # "../UniPrint/print_Entry.h"
-    # "../UniPrint/print_HashTable.h"
-    # "../UniPrint/print_implementation.h"
-    # "../UniPrint/print_PQ_ComplHeap.h"
-    # "../UniPrint/print_PQ_LeftHeap.h"
-    # "../UniPrint/print_PQ_list.h"
-    # "../UniPrint/print_Quadlist.h"
-    # "../UniPrint/print_Skiplist.h"
-    # "../UniPrint/print_traversable.h"
-    # "PFC.h"
-    "PFC_test.h"
+project(${PROJECT_NAME})
+
+add_library(PREFIX_FREE_CODESLIB
+    PFC_decode.cpp
+    PFC_encode.cpp
+    PFC_generateTable.cpp
+    PFC_generateTree.cpp
+    PFC_initForest.cpp
 )
-# source_group("婢跺
+
+add_executable(${PROJECT_NAME} PFC_Test.cpp)
+
+target_include_directories(PREFIX_FREE_CODESLIB PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+# target_link_libraries(${PROJECT_NAME} PREFIX_FREE_CODESLIB UNIPRINTLIB)
+target_link_libraries(${PROJECT_NAME} PREFIX_FREE_CODESLIB UNIPRINTLIB)

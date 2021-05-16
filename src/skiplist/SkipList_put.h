@@ -10,7 +10,7 @@
 
 template <typename K, typename V> bool Skiplist<K, V>::put ( K k, V v ) { //跳转表词条插入算法
    Entry<K, V> e = Entry<K, V> ( k, v ); //待插入的词条（将被随机地插入多个副本）
-   if ( this->empty() ) insertAsFirst ( new Quadlist<Entry<K, V>> ); //插入首个Entry
+   if ( this->empty() ) this->insertAsFirst ( new Quadlist<Entry<K, V>> ); //插入首个Entry
    ListNode<Quadlist<Entry<K, V>>*>* qlist = this->first(); //从顶层四联表的
    QuadlistNode<Entry<K, V>>* p = qlist->data->first(); //首节点出发
    if ( skipSearch ( qlist, p, k ) ) //查找适当的插入位置（不大于关键码k的最后一个节点p）
@@ -21,7 +21,7 @@ template <typename K, typename V> bool Skiplist<K, V>::put ( K k, V v ) { //跳�
       while ( qlist->data->valid ( p ) && !p->above ) p = p->pred; //找出不低于此高度的最近前驱
       if ( !qlist->data->valid ( p ) ) { //若该前驱是header
          if ( qlist == this->first() ) //且当前已是最顶层，则意味着必须
-            insertAsFirst ( new Quadlist<Entry<K, V>> ); //首先创建新的一层，然后
+            this->insertAsFirst ( new Quadlist<Entry<K, V>> ); //首先创建新的一层，然后
          p = qlist->pred->data->first()->pred; //将p转至上一层Skiplist的header
       } else //否则，可径自
          p = p->above; //将p提升至该高度

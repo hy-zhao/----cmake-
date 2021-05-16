@@ -41,14 +41,14 @@ BinNodePosi<T> Splay<T>::splay ( BinNodePosi<T> v ) { //v为因最近访问而�
       if ( !gg ) v->parent = NULL; //若*v原先的曾祖父*gg不存在，则*v现在应为树根
       else //否则，*gg此后应该以*v作为左或右孩子
          ( g == gg->lc ) ? attachAsLChild ( gg, v ) : attachAsRChild ( gg, v );
-      updateHeight ( g ); updateHeight ( p ); updateHeight ( v );
+      this->updateHeight ( g ); this->updateHeight ( p ); this->updateHeight ( v );
    } //双层伸展结束时，必有g == NULL，但p可能非空
    if ( p = v->parent ) { //若p果真非空，则额外再做一次单旋
       /*DSA*/if ( IsLChild ( *v ) ) { printf ( "\tzIg :" ); print ( p ); print ( v ); printf ( "\n" ); }
       /*DSA*/else              { printf ( "\tzAg :" ); print ( p ); print ( v ); printf ( "\n" ); }
       if ( IsLChild ( *v ) ) { attachAsLChild ( p, v->rc ); attachAsRChild ( v, p ); }
       else                   { attachAsRChild ( p, v->lc ); attachAsLChild ( v, p ); }
-      updateHeight ( p ); updateHeight ( v );
+      this->updateHeight ( p ); this->updateHeight ( v );
    }
    v->parent = NULL; return v;
 } //调整之后新树根应为被伸展的节点，故返回该节点的位置以便上层函数更新树根

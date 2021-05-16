@@ -292,6 +292,12 @@ GCD_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/b
 GCD_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/gcd
 
 //Value Computed by CMake
+GRAPH_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/graph
+
+//Value Computed by CMake
+GRAPH_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/graph
+
+//Value Computed by CMake
 GREATEST_SLICE_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/greatest_slice
 
 //Value Computed by CMake
@@ -328,6 +334,24 @@ MAJORITY_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/
 MAJORITY_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/majority
 
 //Value Computed by CMake
+MAXRECT_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/maxRect
+
+//Value Computed by CMake
+MAXRECT_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect
+
+//Value Computed by CMake
+PQ_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/PQ
+
+//Value Computed by CMake
+PQ_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/PQ
+
+//Value Computed by CMake
+PREFIX_FREE_CODES_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/Prefix_free_Codes
+
+//Value Computed by CMake
+PREFIX_FREE_CODES_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes
+
+//Value Computed by CMake
 PRIME_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/prime
 
 //Value Computed by CMake
@@ -346,6 +370,24 @@ RANDOM_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/sr
 RANDOM_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/random
 
 //Value Computed by CMake
+RedBlack_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/redBlack
+
+//Value Computed by CMake
+RedBlack_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/redBlack
+
+//Value Computed by CMake
+STACK_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/stack
+
+//Value Computed by CMake
+STACK_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/stack
+
+//Value Computed by CMake
+Splay_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/splay
+
+//Value Computed by CMake
+Splay_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/splay
+
+//Value Computed by CMake
 UniPrint_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint
 
 //Value Computed by CMake
@@ -362,6 +404,150 @@ hashtable_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE
 
 //Value Computed by CMake
 hashtable_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/hashtable
+
+//Value Computed by CMake
+median1_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/median1
+
+//Value Computed by CMake
+median1_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/median1
+
+//Value Computed by CMake
+median2_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/median2
+
+//Value Computed by CMake
+median2_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/median2
+
+//Value Computed by CMake
+nest_recursive_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/nest_recursive
+
+//Value Computed by CMake
+nest_recursive_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/nest_recursive
+
+//Value Computed by CMake
+nest_stack_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/nest_stack
+
+//Value Computed by CMake
+nest_stack_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/nest_stack
+
+//Value Computed by CMake
+power_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/power
+
+//Value Computed by CMake
+power_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/power
+
+//Value Computed by CMake
+queen_brute_force_1_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_1
+
+//Value Computed by CMake
+queen_brute_force_1_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1
+
+//Value Computed by CMake
+queen_brute_force_2_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_2
+
+//Value Computed by CMake
+queen_brute_force_2_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2
+
+//Value Computed by CMake
+queen_recursive_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_recursive
+
+//Value Computed by CMake
+queen_recursive_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_recursive
+
+//Value Computed by CMake
+queen_stack_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_stack
+
+//Value Computed by CMake
+queen_stack_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_stack
+
+//Value Computed by CMake
+reverse_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/reverse
+
+//Value Computed by CMake
+reverse_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/reverse
+
+//Value Computed by CMake
+rpn_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/rpn
+
+//Value Computed by CMake
+rpn_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn
+
+//Value Computed by CMake
+selection_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/selection
+
+//Value Computed by CMake
+selection_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/selection
+
+//Value Computed by CMake
+shiftK_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/shiftK
+
+//Value Computed by CMake
+shiftK_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/shiftK
+
+//Value Computed by CMake
+simu_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/simu
+
+//Value Computed by CMake
+simu_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu
+
+//Value Computed by CMake
+skiplist_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/skiplist
+
+//Value Computed by CMake
+skiplist_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/skiplist
+
+//Value Computed by CMake
+string_pm_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm
+
+//Value Computed by CMake
+string_pm_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm
+
+//Value Computed by CMake
+string_pm_bf1_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bf1
+
+//Value Computed by CMake
+string_pm_bf1_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_bf1
+
+//Value Computed by CMake
+string_pm_bf2_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bf2
+
+//Value Computed by CMake
+string_pm_bf2_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_bf2
+
+//Value Computed by CMake
+string_pm_bm_bc+gs_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc+gs
+
+//Value Computed by CMake
+string_pm_bm_bc+gs_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_bm_bc+gs
+
+//Value Computed by CMake
+string_pm_bm_bc_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc
+
+//Value Computed by CMake
+string_pm_bm_bc_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_bm_bc
+
+//Value Computed by CMake
+string_pm_kmp_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp
+
+//Value Computed by CMake
+string_pm_kmp_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_kmp
+
+//Value Computed by CMake
+string_pm_kmp_improved_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp_improved
+
+//Value Computed by CMake
+string_pm_kmp_improved_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_kmp_improved
+
+//Value Computed by CMake
+string_pm_kr_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kr
+
+//Value Computed by CMake
+string_pm_kr_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_kr
+
+//Value Computed by CMake
+sum_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/sum
+
+//Value Computed by CMake
+sum_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum
 
 //Value Computed by CMake
 vector_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector
@@ -470,7 +656,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=42
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

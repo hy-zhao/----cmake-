@@ -24,6 +24,6 @@ template <typename T> bool Splay<T>::remove ( const T& e ) { //从伸展树中�
       this->_root->lc = lTree; lTree->parent = this->_root; //只需将原左子树接回原位即可
    }
    release ( w->data ); release ( w ); (this->_size)--; //释放节点，更新规模
-   if ( this->_root ) updateHeight ( this->_root ); //此后，若树非空，则树根的高度需要更新
+   if ( this->_root ) this->updateHeight ( this->_root ); //此后，若树非空，则树根的高度需要更新
    return true; //返回成功标志
 } //若目标节点存在且被删除，返回true；否则返回false

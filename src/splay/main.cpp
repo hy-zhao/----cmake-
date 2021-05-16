@@ -28,17 +28,22 @@ template <typename T> void  testSplayRandom ( int n ) { //随机访问测试
          }
          case 1: { //删除，成功率 <= 33.3%
             printf ( "Removing " ); print ( e ); printf ( " ...\n" );
-            splay.remove ( e ) ?
-            printf ( "Removal done\n" ) :
-            print ( e ), printf ( " not exists\n" );
+            if (splay.remove ( e ) ){
+               printf ( "Removal done\n" ) ;
+            }else{
+               print ( e ); printf ( " not exists\n" );
+            }
             break;
          }
          default: {//插入，成功率 == 100%
             printf ( "Inserting " ); print ( e ); printf ( " ...\n" );
             splay.insert ( e );
-            ( e == splay.root()->data ) ?
-            printf ( "Insertion done with" ), print ( splay.root() ), printf ( "\n" ) :
-            print ( e ), "duplicated";
+            if ( e == splay.root()->data ) {
+               printf ( "Insertion done with" ); print ( splay.root() ); printf ( "\n" ) ;
+            }else
+            {
+               print ( e ); "duplicated";
+            }
             break;
          }
       } //switch
@@ -47,7 +52,12 @@ template <typename T> void  testSplayRandom ( int n ) { //随机访问测试
    while ( splay.size() > 0 ) {
       T e = dice ( ( T ) n * 3 ); //[0, 3n)范围内的e
       printf ( "Removing " ); print ( e ); printf ( " ...\n" );
-      splay.remove ( e ) ? printf ( "Removal done\n" ), print ( splay ) : print ( e ), printf ( " not exists\n" );
+      if (splay.remove ( e )) {
+         printf ( "Removal done\n" ); print ( splay ) ;
+      } else
+      {
+         print ( e ); printf ( " not exists\n" );
+      }
    }
 } //课后：利用这一接口，针对不同分布的访问，验证课上对Splay分摊分析的结论
 

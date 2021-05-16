@@ -1,10 +1,7 @@
 set(PROJECT_NAME string_pm_bf2)
 
-################################################################################
-# Source groups
-################################################################################
+project(${PROJECT_NAME})
 
-################################################################################
-# Target
-################################################################################
-add_executable(${PROJECT_NAME} "pm_brute2.cpp")
+add_library(STRING_PM_BF2LIB pm_brute2.cpp)
+
+target_include_directories(STRING_PM_BF2LIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

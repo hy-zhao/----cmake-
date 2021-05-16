@@ -1,12 +1,15 @@
 set(PROJECT_NAME sum)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    # "../random/Shuffle.h"
-    # "../reverse/reverse.h"
-    # "../UniPrint/print_int_array.h"
-    "sum.h"
+project(${PROJECT_NAME})
+
+add_library(SUMLIB 
+    sum0.cpp
+    sum1.cpp
+    sum2.cpp
 )
-# source_group("婢跺
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(SUMLIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(${PROJECT_NAME} SUMLIB )

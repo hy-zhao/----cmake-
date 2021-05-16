@@ -1,11 +1,7 @@
 set(PROJECT_NAME median2)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    # "../median1/trivialMedian.h"
-    # "../random/randomSortedvector.h"
-    "median.h"
-)
-# source_group("婢跺
+project(${PROJECT_NAME})
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} UNIPRINTLIB RANDOMLIB)

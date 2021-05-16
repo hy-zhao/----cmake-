@@ -5,6 +5,7 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+#include<cstdint>
 
 inline int64_t sqr ( int64_t a ) { return a * a; } //平方：若是连续执行，很快就会数值溢出！
 int64_t power2 ( int n ) { //幂函数2^n算法（优化递归版），n >= 0

@@ -1,9 +1,13 @@
 set(PROJECT_NAME nest_stack)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "nest.h"
+project(${PROJECT_NAME})
+
+add_library(NEST_STACKLIB
+    nest.cpp
 )
-# source_group("婢跺
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(NEST_STACKLIB PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(${PROJECT_NAME} NEST_STACKLIB NEST_RECURSIVELIB UNIPRINTLIB)

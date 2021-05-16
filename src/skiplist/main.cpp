@@ -24,14 +24,24 @@ void testSkiplist ( int n ) {
             K key = dice ( ( K ) n * 3 ); //[0, 3n)范围内的key
             printf ( "Searching for " ); print ( key ); printf ( " ... " );
             V* pValue = L.get ( key );
-            pValue ? printf ( "found with " ), print ( *pValue ) : printf ( "Not found" ); printf ( "\n" );
+            if (pValue)
+            {
+               printf ( "found with " ); print ( *pValue ) ;
+            }else
+            {
+               printf ( "Not found" ); printf ( "\n" );
+            }
             break;
          }
          case 1: { //删除，成功率 <= 33.3%
             K key = dice ( ( K ) n * 3 ); //[0, 3n)范围内的key
             printf ( "Removing " ); print ( key ); printf ( " ... " );
-            L.remove ( key ) ? printf ( "Done\n" ) : printf ( "Entry not exists\n" );
-            print ( L );
+            if (L.remove ( key )) {
+               printf ( "Done\n" ) ;
+            } else
+            {
+               printf ( "Entry not exists\n" ); print ( L );
+            }
             break;
          }
          default: {//插入，成功率 == 100%
@@ -45,7 +55,11 @@ void testSkiplist ( int n ) {
    while ( L.size() > 0 ) {
       K key = dice ( ( K ) n * 3 ); //[0, 3n)范围内的key
       printf ( "Removing " ); print ( key ); printf ( " ... " );
-      L.remove ( key ) ? printf ( "Done\n" ) : printf ( "Entry not exists\n" );
+      if (L.remove ( key )){
+         printf ( "Done\n" ) ;
+      } else {
+         printf ( "Entry not exists\n" );
+      }
       print ( L );
    }
 }

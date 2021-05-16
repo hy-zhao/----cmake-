@@ -6,6 +6,20 @@
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
 
-/*DSA*/#include "simu.h"
+#pragma once
+#pragma warning(disable : 4996)
 
-void simulate ( int nWin, int servTime ) { //
+#include <cstdio>
+#include <cstdlib>
+#include <ctime>
+#include <climits>
+
+#include "queue/queue.h" //引入队列
+#include "Customer.h" //顾客类
+
+int bestWindow ( Queue<Customer> window[], int nWin );
+void printCustomer ( Customer c );
+void displayProgress ( Queue<Customer> window[], int nWin, int now );
+void simulate ( int, int );
+
+extern int delay; //控制进度显示的延迟
