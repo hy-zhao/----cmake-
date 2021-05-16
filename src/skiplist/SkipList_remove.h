@@ -19,7 +19,7 @@ template <typename K, typename V> bool Skiplist<K, V>::remove ( K k ) { //跳转
       p = lower; qlist = qlist->succ; //转入下一层
    } while ( qlist->succ ); //如上不断重复，直到塔基
    while ( !this->empty() && this->first()->data->empty() ) //逐一地
+      List<Quadlist<Entry<K, V>>*>::remove ( this->first() ); //清除已可能不含词条的顶层Quadlist
       // this->remove ( this->first() ); //清除已可能不含词条的顶层Quadlist
-      List::remove ( this->first() ); //清除已可能不含词条的顶层Quadlist
    return true; //删除操作成功完成
 }
