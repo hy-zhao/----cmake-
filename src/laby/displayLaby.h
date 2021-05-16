@@ -39,4 +39,14 @@ void displayLaby() { //┘└┐┌│─
       ( j < 10 ) ? printf ( "%2X", j ) : printf ( " %c", 'A' - 10 + j );
       for ( int i = 0; i < labySize; i++ )
          if ( goalCell == &laby[i][j] )
-            printf ( "
+            printf ( "﹩" );
+         else
+            switch ( laby[i][j].status ) {
+               case WALL:  printf ( "█" );   break;
+               case BACKTRACKED: printf ( "○" );   break;
+               case AVAILABLE: printf ( "  " );   break;
+               default   : printf ( "%s", pattern[laby[i][j].outgoing][laby[i][j].incoming] );   break;
+            }
+      printf ( "\n" );
+   }//for
+}//displayLaby

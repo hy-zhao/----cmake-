@@ -35,9 +35,11 @@ template <typename T> void  testBST ( int n ) {
          }
          case 1: { //删除，成功率 <= 33.3%
             printf ( "Removing " ); print ( e ); printf ( " ... " );
-            bst.remove ( e ) ?
-            printf ( "Done\n" ), print ( bst ) :
-            printf ( "not exists\n" );
+            if (bst.remove ( e )){
+               printf ( "Done\n" ), print ( bst ) ;
+            }else{
+               printf ( "not exists\n" );
+            }
             break;
          }
          default: {//插入，成功率 == 100%
@@ -50,7 +52,14 @@ template <typename T> void  testBST ( int n ) {
    while ( bst.size() > 0 ) { //清空
       T e = dice ( ( T ) n * 3 ); //[0, 3n)范围内的e
       printf ( "Removing " ); print ( e ); printf ( " ... " );
-      bst.remove ( e ) ? printf ( "Done\n" ), print ( bst ) : printf ( "not exists\n" );
+      if (bst.remove ( e ))
+      {
+         printf ( "Done\n" ); print ( bst ) ; 
+      }else
+      {
+         printf ( "not exists\n" );
+      }
+      
    }
 }
 

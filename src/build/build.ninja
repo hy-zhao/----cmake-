@@ -95,6 +95,7 @@ build AVL/edit_cache: phony AVL/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_AVL: phony || cmake_object_order_depends_target_UNIPRINTLIB
 
 build AVL/CMakeFiles/AVL.dir/main.cpp.o: CXX_COMPILER__AVL_Debug ../AVL/main.cpp || cmake_object_order_depends_target_AVL
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = AVL/CMakeFiles/AVL.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint
@@ -157,6 +158,7 @@ build binTree/edit_cache: phony binTree/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_BINTREE: phony || cmake_object_order_depends_target_UNIPRINTLIB
 
 build binTree/CMakeFiles/BINTREE.dir/main.cpp.o: CXX_COMPILER__BINTREE_Debug ../binTree/main.cpp || cmake_object_order_depends_target_BINTREE
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = binTree/CMakeFiles/BINTREE.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint
@@ -219,6 +221,7 @@ build BitMap/edit_cache: phony BitMap/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_BITMAPLIB: phony || BitMap/CMakeFiles/BITMAPLIB.dir
 
 build BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o: CXX_COMPILER__BITMAPLIB_Debug ../BitMap/main_O1_init.cpp || cmake_object_order_depends_target_BITMAPLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../BitMap
@@ -280,6 +283,7 @@ build Bitmap_set_only/edit_cache: phony Bitmap_set_only/CMakeFiles/edit_cache.ut
 build cmake_object_order_depends_target_BITMAP_SET_ONLYLIB: phony || Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir
 
 build Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o: CXX_COMPILER__BITMAP_SET_ONLYLIB_Debug ../Bitmap_set_only/main_O1_init_set_only.cpp || cmake_object_order_depends_target_BITMAP_SET_ONLYLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = Bitmap_set_only/CMakeFiles/BITMAP_SET_ONLYLIB.dir/main_O1_init_set_only.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../Bitmap_set_only
@@ -338,12 +342,13 @@ build BST/edit_cache: phony BST/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for BST
 
-build cmake_object_order_depends_target_BST: phony || BST/CMakeFiles/BST.dir
+build cmake_object_order_depends_target_BST: phony || cmake_object_order_depends_target_UNIPRINTLIB
 
 build BST/CMakeFiles/BST.dir/main.cpp.o: CXX_COMPILER__BST_Debug ../BST/main.cpp || cmake_object_order_depends_target_BST
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = BST/CMakeFiles/BST.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../
+  INCLUDES = -I../ -I../UniPrint
   OBJECT_DIR = BST/CMakeFiles/BST.dir
   OBJECT_FILE_DIR = BST/CMakeFiles/BST.dir
 
@@ -355,9 +360,10 @@ build BST/CMakeFiles/BST.dir/main.cpp.o: CXX_COMPILER__BST_Debug ../BST/main.cpp
 #############################################
 # Link the executable BST/BST
 
-build BST/BST: CXX_EXECUTABLE_LINKER__BST_Debug BST/CMakeFiles/BST.dir/main.cpp.o
+build BST/BST: CXX_EXECUTABLE_LINKER__BST_Debug BST/CMakeFiles/BST.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
   OBJECT_DIR = BST/CMakeFiles/BST.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -407,6 +413,7 @@ build BTree/edit_cache: phony BTree/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_BUBBLESORT: phony || cmake_object_order_depends_target_BUBBLESORTLIB cmake_object_order_depends_target_RANDOMLIB cmake_object_order_depends_target_UNIPRINTLIB
 
 build bubblesort/CMakeFiles/BUBBLESORT.dir/main.cpp.o: CXX_COMPILER__BUBBLESORT_Debug ../bubblesort/main.cpp || cmake_object_order_depends_target_BUBBLESORT
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = bubblesort/CMakeFiles/BUBBLESORT.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint -Ibubblesort -Irandom
@@ -464,6 +471,7 @@ build bubblesort/edit_cache: phony bubblesort/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_BUBBLESORTLIB: phony || bubblesort/CMakeFiles/BUBBLESORTLIB.dir
 
 build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -Ibubblesort
@@ -471,6 +479,7 @@ build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble.cpp.o: CXX_COMPILER__BUBBLE
   OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
 
 build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1A.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble1A.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1A.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -Ibubblesort
@@ -478,6 +487,7 @@ build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1A.cpp.o: CXX_COMPILER__BUBB
   OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
 
 build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1B.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble1B.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1B.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -Ibubblesort
@@ -485,6 +495,7 @@ build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble1B.cpp.o: CXX_COMPILER__BUBB
   OBJECT_FILE_DIR = bubblesort/CMakeFiles/BUBBLESORTLIB.dir
 
 build bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble2.cpp.o: CXX_COMPILER__BUBBLESORTLIB_Debug ../bubblesort/bubble2.cpp || cmake_object_order_depends_target_BUBBLESORTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = bubblesort/CMakeFiles/BUBBLESORTLIB.dir/bubble2.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -Ibubblesort
@@ -546,6 +557,7 @@ build conversion/edit_cache: phony conversion/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_CONVERSION: phony || cmake_object_order_depends_target_CONVERSIONLIB cmake_object_order_depends_target_UNIPRINTLIB
 
 build conversion/CMakeFiles/CONVERSION.dir/main.cpp.o: CXX_COMPILER__CONVERSION_Debug ../conversion/main.cpp || cmake_object_order_depends_target_CONVERSION
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = conversion/CMakeFiles/CONVERSION.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../conversion -I../UniPrint
@@ -580,6 +592,7 @@ build conversion/CONVERSION: CXX_EXECUTABLE_LINKER__CONVERSION_Debug conversion/
 build cmake_object_order_depends_target_CONVERSIONLIB: phony || conversion/CMakeFiles/CONVERSIONLIB.dir
 
 build conversion/CMakeFiles/CONVERSIONLIB.dir/convert.cpp.o: CXX_COMPILER__CONVERSIONLIB_Debug ../conversion/convert.cpp || cmake_object_order_depends_target_CONVERSIONLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = conversion/CMakeFiles/CONVERSIONLIB.dir/convert.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../conversion
@@ -641,6 +654,7 @@ build conversion_recursive/edit_cache: phony conversion_recursive/CMakeFiles/edi
 build cmake_object_order_depends_target_CONVERSION_RECURSIVELIB: phony || conversion_recursive/CMakeFiles/CONVERSION_RECURSIVELIB.dir
 
 build conversion_recursive/CMakeFiles/CONVERSION_RECURSIVELIB.dir/convert.cpp.o: CXX_COMPILER__CONVERSION_RECURSIVELIB_Debug ../conversion_recursive/convert.cpp || cmake_object_order_depends_target_CONVERSION_RECURSIVELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = conversion_recursive/CMakeFiles/CONVERSION_RECURSIVELIB.dir/convert.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../conversion_recursive
@@ -702,6 +716,7 @@ build countOnes/edit_cache: phony countOnes/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_COUNTONES: phony || cmake_object_order_depends_target_COUNTONESLIB
 
 build countOnes/CMakeFiles/COUNTONES.dir/main.cpp.o: CXX_COMPILER__COUNTONES_Debug ../countOnes/main.cpp || cmake_object_order_depends_target_COUNTONES
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = countOnes/CMakeFiles/COUNTONES.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../
@@ -736,6 +751,7 @@ build countOnes/COUNTONES: CXX_EXECUTABLE_LINKER__COUNTONES_Debug countOnes/CMak
 build cmake_object_order_depends_target_COUNTONESLIB: phony || countOnes/CMakeFiles/COUNTONESLIB.dir
 
 build countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_1.cpp.o: CXX_COMPILER__COUNTONESLIB_Debug ../countOnes/countOnes_1.cpp || cmake_object_order_depends_target_COUNTONESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_1.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../countOnes
@@ -743,6 +759,7 @@ build countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_1.cpp.o: CXX_COMPILER__COU
   OBJECT_FILE_DIR = countOnes/CMakeFiles/COUNTONESLIB.dir
 
 build countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_2.cpp.o: CXX_COMPILER__COUNTONESLIB_Debug ../countOnes/countOnes_2.cpp || cmake_object_order_depends_target_COUNTONESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_2.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../countOnes
@@ -750,6 +767,7 @@ build countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_2.cpp.o: CXX_COMPILER__COU
   OBJECT_FILE_DIR = countOnes/CMakeFiles/COUNTONESLIB.dir
 
 build countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes.cpp.o: CXX_COMPILER__COUNTONESLIB_Debug ../countOnes/countOnes.cpp || cmake_object_order_depends_target_COUNTONESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../countOnes
@@ -811,6 +829,7 @@ build cursor_list/edit_cache: phony cursor_list/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_CURSOR_LIST: phony || cmake_object_order_depends_target_UNIPRINTLIB
 
 build cursor_list/CMakeFiles/CURSOR_LIST.dir/test.cpp.o: CXX_COMPILER__CURSOR_LIST_Debug ../cursor_list/test.cpp || cmake_object_order_depends_target_CURSOR_LIST
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = cursor_list/CMakeFiles/CURSOR_LIST.dir/test.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint
@@ -873,6 +892,7 @@ build daxue/edit_cache: phony daxue/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_DAXUE: phony || daxue/CMakeFiles/DAXUE.dir
 
 build daxue/CMakeFiles/DAXUE.dir/main.cpp.o: CXX_COMPILER__DAXUE_Debug ../daxue/main.cpp || cmake_object_order_depends_target_DAXUE
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = daxue/CMakeFiles/DAXUE.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../
@@ -911,6 +931,7 @@ build daxue/DAXUE: CXX_EXECUTABLE_LINKER__DAXUE_Debug daxue/CMakeFiles/DAXUE.dir
 build cmake_object_order_depends_target_FACTORIAL: phony || cmake_object_order_depends_target_FACTORIALLIB
 
 build factorial/CMakeFiles/FACTORIAL.dir/main.cpp.o: CXX_COMPILER__FACTORIAL_Debug ../factorial/main.cpp || cmake_object_order_depends_target_FACTORIAL
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = factorial/CMakeFiles/FACTORIAL.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../factorial
@@ -968,6 +989,7 @@ build factorial/edit_cache: phony factorial/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_FACTORIALLIB: phony || factorial/CMakeFiles/FACTORIALLIB.dir
 
 build factorial/CMakeFiles/FACTORIALLIB.dir/fac_iterative.cpp.o: CXX_COMPILER__FACTORIALLIB_Debug ../factorial/fac_iterative.cpp || cmake_object_order_depends_target_FACTORIALLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = factorial/CMakeFiles/FACTORIALLIB.dir/fac_iterative.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../factorial
@@ -975,6 +997,7 @@ build factorial/CMakeFiles/FACTORIALLIB.dir/fac_iterative.cpp.o: CXX_COMPILER__F
   OBJECT_FILE_DIR = factorial/CMakeFiles/FACTORIALLIB.dir
 
 build factorial/CMakeFiles/FACTORIALLIB.dir/fac_recursive.cpp.o: CXX_COMPILER__FACTORIALLIB_Debug ../factorial/fac_recursive.cpp || cmake_object_order_depends_target_FACTORIALLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = factorial/CMakeFiles/FACTORIALLIB.dir/fac_recursive.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../factorial
@@ -1013,6 +1036,7 @@ build factorial/libFACTORIALLIB.a: CXX_STATIC_LIBRARY_LINKER__FACTORIALLIB_Debug
 build cmake_object_order_depends_target_FIBONACCI: phony || cmake_object_order_depends_target_FIBONACCILIB
 
 build fibonacci/CMakeFiles/FIBONACCI.dir/main.cpp.o: CXX_COMPILER__FIBONACCI_Debug ../fibonacci/main.cpp || cmake_object_order_depends_target_FIBONACCI
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = fibonacci/CMakeFiles/FIBONACCI.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../
@@ -1070,6 +1094,7 @@ build fibonacci/edit_cache: phony fibonacci/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_FIBONACCILIB: phony || fibonacci/CMakeFiles/FIBONACCILIB.dir
 
 build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib0.cpp.o: CXX_COMPILER__FIBONACCILIB_Debug ../fibonacci/Fib0.cpp || cmake_object_order_depends_target_FIBONACCILIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib0.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../fibonacci
@@ -1077,6 +1102,7 @@ build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib0.cpp.o: CXX_COMPILER__FIBONACCIL
   OBJECT_FILE_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
 
 build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib1.cpp.o: CXX_COMPILER__FIBONACCILIB_Debug ../fibonacci/Fib1.cpp || cmake_object_order_depends_target_FIBONACCILIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib1.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../fibonacci
@@ -1084,6 +1110,7 @@ build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib1.cpp.o: CXX_COMPILER__FIBONACCIL
   OBJECT_FILE_DIR = fibonacci/CMakeFiles/FIBONACCILIB.dir
 
 build fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib2.cpp.o: CXX_COMPILER__FIBONACCILIB_Debug ../fibonacci/Fib2.cpp || cmake_object_order_depends_target_FIBONACCILIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = fibonacci/CMakeFiles/FIBONACCILIB.dir/Fib2.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../fibonacci
@@ -1145,6 +1172,7 @@ build gcd/edit_cache: phony gcd/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_GCD: phony || cmake_object_order_depends_target_GCDLIB
 
 build gcd/CMakeFiles/GCD.dir/main.cpp.o: CXX_COMPILER__GCD_Debug ../gcd/main.cpp || cmake_object_order_depends_target_GCD
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = gcd/CMakeFiles/GCD.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../
@@ -1179,6 +1207,7 @@ build gcd/GCD: CXX_EXECUTABLE_LINKER__GCD_Debug gcd/CMakeFiles/GCD.dir/main.cpp.
 build cmake_object_order_depends_target_GCDLIB: phony || gcd/CMakeFiles/GCDLIB.dir
 
 build gcd/CMakeFiles/GCDLIB.dir/gcd_chinese.cpp.o: CXX_COMPILER__GCDLIB_Debug ../gcd/gcd_chinese.cpp || cmake_object_order_depends_target_GCDLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = gcd/CMakeFiles/GCDLIB.dir/gcd_chinese.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../gcd
@@ -1186,6 +1215,7 @@ build gcd/CMakeFiles/GCDLIB.dir/gcd_chinese.cpp.o: CXX_COMPILER__GCDLIB_Debug ..
   OBJECT_FILE_DIR = gcd/CMakeFiles/GCDLIB.dir
 
 build gcd/CMakeFiles/GCDLIB.dir/gcd_euclidean.cpp.o: CXX_COMPILER__GCDLIB_Debug ../gcd/gcd_euclidean.cpp || cmake_object_order_depends_target_GCDLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = gcd/CMakeFiles/GCDLIB.dir/gcd_euclidean.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../gcd
@@ -1247,6 +1277,7 @@ build greatest_slice/edit_cache: phony greatest_slice/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_GREATEST_SLICE: phony || cmake_object_order_depends_target_GREATEST_SLICELIB
 
 build greatest_slice/CMakeFiles/GREATEST_SLICE.dir/test.cpp.o: CXX_COMPILER__GREATEST_SLICE_Debug ../greatest_slice/test.cpp || cmake_object_order_depends_target_GREATEST_SLICE
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICE.dir/test.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../
@@ -1281,6 +1312,7 @@ build greatest_slice/GREATEST_SLICE: CXX_EXECUTABLE_LINKER__GREATEST_SLICE_Debug
 build cmake_object_order_depends_target_GREATEST_SLICELIB: phony || greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
 
 build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_bf.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_bf.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_bf.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../greatest_slice
@@ -1288,6 +1320,7 @@ build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_bf.cpp.o: CXX_COMPILER_
   OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
 
 build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_dc.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_dc.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_dc.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../greatest_slice
@@ -1295,6 +1328,7 @@ build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_dc.cpp.o: CXX_COMPILER_
   OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
 
 build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ic.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_ic.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ic.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../greatest_slice
@@ -1302,6 +1336,7 @@ build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ic.cpp.o: CXX_COMPILER_
   OBJECT_FILE_DIR = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir
 
 build greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ls.cpp.o: CXX_COMPILER__GREATEST_SLICELIB_Debug ../greatest_slice/gs_ls.cpp || cmake_object_order_depends_target_GREATEST_SLICELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = greatest_slice/CMakeFiles/GREATEST_SLICELIB.dir/gs_ls.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../greatest_slice
@@ -1334,71 +1369,109 @@ build greatest_slice/libGREATEST_SLICELIB.a: CXX_STATIC_LIBRARY_LINKER__GREATEST
 #############################################
 # Utility command for rebuild_cache
 
-build UniPrint/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+build hanoi/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hanoi && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build UniPrint/rebuild_cache: phony UniPrint/CMakeFiles/rebuild_cache.util
+build hanoi/rebuild_cache: phony hanoi/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build UniPrint/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build hanoi/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hanoi && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build UniPrint/edit_cache: phony UniPrint/CMakeFiles/edit_cache.util
+build hanoi/edit_cache: phony hanoi/CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target UNIPRINTLIB
+# Object build statements for EXECUTABLE target HANOI
 
 
 #############################################
-# Order-only phony target for UNIPRINTLIB
+# Order-only phony target for HANOI
 
-build cmake_object_order_depends_target_UNIPRINTLIB: phony || UniPrint/CMakeFiles/UNIPRINTLIB.dir
+build cmake_object_order_depends_target_HANOI: phony || cmake_object_order_depends_target_HANOILIB
 
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_basic.cpp || cmake_object_order_depends_target_UNIPRINTLIB
-  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o.d
+build hanoi/CMakeFiles/HANOI.dir/main.cpp.o: CXX_COMPILER__HANOI_Debug ../hanoi/main.cpp || cmake_object_order_depends_target_HANOI
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = hanoi/CMakeFiles/HANOI.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../UniPrint
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_HuffChar.cpp || cmake_object_order_depends_target_UNIPRINTLIB
-  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../UniPrint
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-
-build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_int_array.cpp || cmake_object_order_depends_target_UNIPRINTLIB
-  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../UniPrint
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
-  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  INCLUDES = -I../
+  OBJECT_DIR = hanoi/CMakeFiles/HANOI.dir
+  OBJECT_FILE_DIR = hanoi/CMakeFiles/HANOI.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target UNIPRINTLIB
+# Link build statements for EXECUTABLE target HANOI
 
 
 #############################################
-# Link the static library UniPrint/libUNIPRINTLIB.a
+# Link the executable hanoi/HANOI
 
-build UniPrint/libUNIPRINTLIB.a: CXX_STATIC_LIBRARY_LINKER__UNIPRINTLIB_Debug UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o
-  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+build hanoi/HANOI: CXX_EXECUTABLE_LINKER__HANOI_Debug hanoi/CMakeFiles/HANOI.dir/main.cpp.o | hanoi/libHANOILIB.a || hanoi/libHANOILIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = hanoi/libHANOILIB.a
+  OBJECT_DIR = hanoi/CMakeFiles/HANOI.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = UniPrint/libUNIPRINTLIB.a
-  TARGET_PDB = UNIPRINTLIB.a.dbg
+  TARGET_FILE = hanoi/HANOI
+  TARGET_PDB = HANOI.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target HANOILIB
+
+
+#############################################
+# Order-only phony target for HANOILIB
+
+build cmake_object_order_depends_target_HANOILIB: phony || hanoi/CMakeFiles/HANOILIB.dir
+
+build hanoi/CMakeFiles/HANOILIB.dir/display.cpp.o: CXX_COMPILER__HANOILIB_Debug ../hanoi/display.cpp || cmake_object_order_depends_target_HANOILIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = hanoi/CMakeFiles/HANOILIB.dir/display.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../hanoi
+  OBJECT_DIR = hanoi/CMakeFiles/HANOILIB.dir
+  OBJECT_FILE_DIR = hanoi/CMakeFiles/HANOILIB.dir
+
+build hanoi/CMakeFiles/HANOILIB.dir/hanoi.cpp.o: CXX_COMPILER__HANOILIB_Debug ../hanoi/hanoi.cpp || cmake_object_order_depends_target_HANOILIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = hanoi/CMakeFiles/HANOILIB.dir/hanoi.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../hanoi
+  OBJECT_DIR = hanoi/CMakeFiles/HANOILIB.dir
+  OBJECT_FILE_DIR = hanoi/CMakeFiles/HANOILIB.dir
+
+build hanoi/CMakeFiles/HANOILIB.dir/move_disk.cpp.o: CXX_COMPILER__HANOILIB_Debug ../hanoi/move_disk.cpp || cmake_object_order_depends_target_HANOILIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = hanoi/CMakeFiles/HANOILIB.dir/move_disk.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../hanoi
+  OBJECT_DIR = hanoi/CMakeFiles/HANOILIB.dir
+  OBJECT_FILE_DIR = hanoi/CMakeFiles/HANOILIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target HANOILIB
+
+
+#############################################
+# Link the static library hanoi/libHANOILIB.a
+
+build hanoi/libHANOILIB.a: CXX_STATIC_LIBRARY_LINKER__HANOILIB_Debug hanoi/CMakeFiles/HANOILIB.dir/display.cpp.o hanoi/CMakeFiles/HANOILIB.dir/hanoi.cpp.o hanoi/CMakeFiles/HANOILIB.dir/move_disk.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = hanoi/CMakeFiles/HANOILIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = hanoi/libHANOILIB.a
+  TARGET_PDB = HANOILIB.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1438,6 +1511,7 @@ build hashtable/edit_cache: phony hashtable/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_hashtable: phony || cmake_object_order_depends_target_PRIMELIB cmake_object_order_depends_target_UNIPRINTLIB
 
 build hashtable/CMakeFiles/hashtable.dir/main.cpp.o: CXX_COMPILER__hashtable_Debug ../hashtable/main.cpp || cmake_object_order_depends_target_hashtable
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = hashtable/CMakeFiles/hashtable.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint -I../prime
@@ -1455,12 +1529,341 @@ build hashtable/CMakeFiles/hashtable.dir/main.cpp.o: CXX_COMPILER__hashtable_Deb
 build hashtable/hashtable: CXX_EXECUTABLE_LINKER__hashtable_Debug hashtable/CMakeFiles/hashtable.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a prime/libPRIMELIB.a || UniPrint/libUNIPRINTLIB.a prime/libPRIMELIB.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
-  LINK_LIBRARIES = -lSHARELIB  UniPrint/libUNIPRINTLIB.a  prime/libPRIMELIB.a
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a  prime/libPRIMELIB.a
   OBJECT_DIR = hashtable/CMakeFiles/hashtable.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = hashtable/hashtable
   TARGET_PDB = hashtable.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build huffman/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/huffman && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build huffman/rebuild_cache: phony huffman/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build huffman/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/huffman && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build huffman/edit_cache: phony huffman/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target HUFFMANLIB
+
+
+#############################################
+# Order-only phony target for HUFFMANLIB
+
+build cmake_object_order_depends_target_HUFFMANLIB: phony || huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/Huffman_PQ_Test.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/Huffman_PQ_Test.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/Huffman_PQ_Test.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/Huffman_PQ_generateTree.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/Huffman_PQ_generateTree.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/Huffman_PQ_generateTree.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/huffman_PQ_initForest.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/huffman_PQ_initForest.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/huffman_PQ_initForest.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/huffman_decode.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/huffman_decode.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/huffman_decode.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/huffman_encode.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/huffman_encode.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/huffman_encode.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/huffman_generateTable.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/huffman_generateTable.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/huffman_generateTable.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/huffman_generateTree.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/huffman_generateTree.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/huffman_generateTree.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/huffman_initForest.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/huffman_initForest.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/huffman_initForest.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+build huffman/CMakeFiles/HUFFMANLIB.dir/huffman_statistics.cpp.o: CXX_COMPILER__HUFFMANLIB_Debug ../huffman/huffman_statistics.cpp || cmake_object_order_depends_target_HUFFMANLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = huffman/CMakeFiles/HUFFMANLIB.dir/huffman_statistics.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../huffman
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  OBJECT_FILE_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target HUFFMANLIB
+
+
+#############################################
+# Link the static library huffman/libHUFFMANLIB.a
+
+build huffman/libHUFFMANLIB.a: CXX_STATIC_LIBRARY_LINKER__HUFFMANLIB_Debug huffman/CMakeFiles/HUFFMANLIB.dir/Huffman_PQ_Test.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/Huffman_PQ_generateTree.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/huffman_PQ_initForest.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/huffman_decode.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/huffman_encode.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/huffman_generateTable.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/huffman_generateTree.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/huffman_initForest.cpp.o huffman/CMakeFiles/HUFFMANLIB.dir/huffman_statistics.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = huffman/CMakeFiles/HUFFMANLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = huffman/libHUFFMANLIB.a
+  TARGET_PDB = HUFFMANLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build laby/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/laby && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build laby/rebuild_cache: phony laby/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build laby/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/laby && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build laby/edit_cache: phony laby/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LABY
+
+
+#############################################
+# Order-only phony target for LABY
+
+build cmake_object_order_depends_target_LABY: phony || laby/CMakeFiles/LABY.dir
+
+build laby/CMakeFiles/LABY.dir/main.cpp.o: CXX_COMPILER__LABY_Debug ../laby/main.cpp || cmake_object_order_depends_target_LABY
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = laby/CMakeFiles/LABY.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../
+  OBJECT_DIR = laby/CMakeFiles/LABY.dir
+  OBJECT_FILE_DIR = laby/CMakeFiles/LABY.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LABY
+
+
+#############################################
+# Link the executable laby/LABY
+
+build laby/LABY: CXX_EXECUTABLE_LINKER__LABY_Debug laby/CMakeFiles/LABY.dir/main.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  OBJECT_DIR = laby/CMakeFiles/LABY.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = laby/LABY
+  TARGET_PDB = LABY.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build list/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/list && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build list/rebuild_cache: phony list/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build list/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/list && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build list/edit_cache: phony list/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LIST
+
+
+#############################################
+# Order-only phony target for LIST
+
+build cmake_object_order_depends_target_LIST: phony || cmake_object_order_depends_target_UNIPRINTLIB
+
+build list/CMakeFiles/LIST.dir/main.cpp.o: CXX_COMPILER__LIST_Debug ../list/main.cpp || cmake_object_order_depends_target_LIST
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = list/CMakeFiles/LIST.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = list/CMakeFiles/LIST.dir
+  OBJECT_FILE_DIR = list/CMakeFiles/LIST.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LIST
+
+
+#############################################
+# Link the executable list/LIST
+
+build list/LIST: CXX_EXECUTABLE_LINKER__LIST_Debug list/CMakeFiles/LIST.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
+  OBJECT_DIR = list/CMakeFiles/LIST.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = list/LIST
+  TARGET_PDB = LIST.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build UniPrint/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build UniPrint/rebuild_cache: phony UniPrint/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build UniPrint/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build UniPrint/edit_cache: phony UniPrint/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target UNIPRINTLIB
+
+
+#############################################
+# Order-only phony target for UNIPRINTLIB
+
+build cmake_object_order_depends_target_UNIPRINTLIB: phony || UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_basic.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_HuffChar.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+build UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o: CXX_COMPILER__UNIPRINTLIB_Debug ../UniPrint/print_int_array.cpp || cmake_object_order_depends_target_UNIPRINTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  OBJECT_FILE_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target UNIPRINTLIB
+
+
+#############################################
+# Link the static library UniPrint/libUNIPRINTLIB.a
+
+build UniPrint/libUNIPRINTLIB.a: CXX_STATIC_LIBRARY_LINKER__UNIPRINTLIB_Debug UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_HuffChar.cpp.o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_int_array.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = UniPrint/CMakeFiles/UNIPRINTLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = UniPrint/libUNIPRINTLIB.a
+  TARGET_PDB = UNIPRINTLIB.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1497,12 +1900,13 @@ build prime/edit_cache: phony prime/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for PRIME
 
-build cmake_object_order_depends_target_PRIME: phony || prime/CMakeFiles/PRIME.dir
+build cmake_object_order_depends_target_PRIME: phony || cmake_object_order_depends_target_PRIMELIB
 
 build prime/CMakeFiles/PRIME.dir/main.cpp.o: CXX_COMPILER__PRIME_Debug ../prime/main.cpp || cmake_object_order_depends_target_PRIME
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = prime/CMakeFiles/PRIME.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../
+  INCLUDES = -I../ -I../prime
   OBJECT_DIR = prime/CMakeFiles/PRIME.dir
   OBJECT_FILE_DIR = prime/CMakeFiles/PRIME.dir
 
@@ -1514,9 +1918,10 @@ build prime/CMakeFiles/PRIME.dir/main.cpp.o: CXX_COMPILER__PRIME_Debug ../prime/
 #############################################
 # Link the executable prime/PRIME
 
-build prime/PRIME: CXX_EXECUTABLE_LINKER__PRIME_Debug prime/CMakeFiles/PRIME.dir/main.cpp.o
+build prime/PRIME: CXX_EXECUTABLE_LINKER__PRIME_Debug prime/CMakeFiles/PRIME.dir/main.cpp.o | prime/libPRIMELIB.a || prime/libPRIMELIB.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = prime/libPRIMELIB.a
   OBJECT_DIR = prime/CMakeFiles/PRIME.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -1533,6 +1938,7 @@ build prime/PRIME: CXX_EXECUTABLE_LINKER__PRIME_Debug prime/CMakeFiles/PRIME.dir
 build cmake_object_order_depends_target_PRIMELIB: phony || prime/CMakeFiles/PRIMELIB.dir
 
 build prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o: CXX_COMPILER__PRIMELIB_Debug ../prime/Eratosthenes.cpp || cmake_object_order_depends_target_PRIMELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../prime
@@ -1540,6 +1946,7 @@ build prime/CMakeFiles/PRIMELIB.dir/Eratosthenes.cpp.o: CXX_COMPILER__PRIMELIB_D
   OBJECT_FILE_DIR = prime/CMakeFiles/PRIMELIB.dir
 
 build prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o: CXX_COMPILER__PRIMELIB_Debug ../prime/primeNLT.cpp || cmake_object_order_depends_target_PRIMELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../prime
@@ -1601,6 +2008,7 @@ build queue/edit_cache: phony queue/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_QUEUE: phony || cmake_object_order_depends_target_UNIPRINTLIB
 
 build queue/CMakeFiles/QUEUE.dir/main.cpp.o: CXX_COMPILER__QUEUE_Debug ../queue/main.cpp || cmake_object_order_depends_target_QUEUE
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = queue/CMakeFiles/QUEUE.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -I../UniPrint
@@ -1663,6 +2071,7 @@ build random/edit_cache: phony random/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_RANDOMLIB: phony || random/CMakeFiles/RANDOMLIB.dir
 
 build random/CMakeFiles/RANDOMLIB.dir/randomSortedVector.cpp.o: CXX_COMPILER__RANDOMLIB_Debug ../random/randomSortedVector.cpp || cmake_object_order_depends_target_RANDOMLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = random/CMakeFiles/RANDOMLIB.dir/randomSortedVector.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -Irandom
@@ -1670,6 +2079,7 @@ build random/CMakeFiles/RANDOMLIB.dir/randomSortedVector.cpp.o: CXX_COMPILER__RA
   OBJECT_FILE_DIR = random/CMakeFiles/RANDOMLIB.dir
 
 build random/CMakeFiles/RANDOMLIB.dir/Shuffle.cpp.o: CXX_COMPILER__RANDOMLIB_Debug ../random/Shuffle.cpp || cmake_object_order_depends_target_RANDOMLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = random/CMakeFiles/RANDOMLIB.dir/Shuffle.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
   INCLUDES = -I../ -Irandom
@@ -1728,12 +2138,13 @@ build vector/edit_cache: phony vector/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for vector
 
-build cmake_object_order_depends_target_vector: phony || vector/CMakeFiles/vector.dir
+build cmake_object_order_depends_target_vector: phony || cmake_object_order_depends_target_UNIPRINTLIB
 
 build vector/CMakeFiles/vector.dir/main.cpp.o: CXX_COMPILER__vector_Debug ../vector/main.cpp || cmake_object_order_depends_target_vector
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = vector/CMakeFiles/vector.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../
+  INCLUDES = -I../ -I../UniPrint
   OBJECT_DIR = vector/CMakeFiles/vector.dir
   OBJECT_FILE_DIR = vector/CMakeFiles/vector.dir
 
@@ -1745,9 +2156,10 @@ build vector/CMakeFiles/vector.dir/main.cpp.o: CXX_COMPILER__vector_Debug ../vec
 #############################################
 # Link the executable vector/vector
 
-build vector/vector: CXX_EXECUTABLE_LINKER__vector_Debug vector/CMakeFiles/vector.dir/main.cpp.o
+build vector/vector: CXX_EXECUTABLE_LINKER__vector_Debug vector/CMakeFiles/vector.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
   OBJECT_DIR = vector/CMakeFiles/vector.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -1801,6 +2213,16 @@ build GREATEST_SLICE: phony greatest_slice/GREATEST_SLICE
 
 build GREATEST_SLICELIB: phony greatest_slice/libGREATEST_SLICELIB.a
 
+build HANOI: phony hanoi/HANOI
+
+build HANOILIB: phony hanoi/libHANOILIB.a
+
+build HUFFMANLIB: phony huffman/libHUFFMANLIB.a
+
+build LABY: phony laby/LABY
+
+build LIST: phony list/LIST
+
 build PRIME: phony prime/PRIME
 
 build PRIMELIB: phony prime/libPRIMELIB.a
@@ -1833,6 +2255,10 @@ build libGCDLIB.a: phony gcd/libGCDLIB.a
 
 build libGREATEST_SLICELIB.a: phony greatest_slice/libGREATEST_SLICELIB.a
 
+build libHANOILIB.a: phony hanoi/libHANOILIB.a
+
+build libHUFFMANLIB.a: phony huffman/libHUFFMANLIB.a
+
 build libPRIMELIB.a: phony prime/libPRIMELIB.a
 
 build libRANDOMLIB.a: phony random/libRANDOMLIB.a
@@ -1849,7 +2275,7 @@ build vector: phony vector/vector
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
-build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all daxue/all factorial/all fibonacci/all gcd/all greatest_slice/all UniPrint/all hashtable/all prime/all queue/all random/all vector/all
+build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all daxue/all factorial/all fibonacci/all gcd/all greatest_slice/all hanoi/all hashtable/all huffman/all laby/all list/all UniPrint/all prime/all queue/all random/all vector/all
 
 # =============================================================================
 
@@ -1973,9 +2399,37 @@ build greatest_slice/all: phony greatest_slice/GREATEST_SLICE greatest_slice/lib
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hanoi
+
+build hanoi/all: phony hanoi/HANOI hanoi/libHANOILIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hashtable
 
 build hashtable/all: phony hashtable/hashtable
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/huffman
+
+build huffman/all: phony huffman/libHUFFMANLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/laby
+
+build laby/all: phony laby/LABY
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/list
+
+build list/all: phony list/LIST
 
 # =============================================================================
 
@@ -2012,14 +2466,14 @@ build vector/all: phony vector/vector
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hashtable/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
+build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
 
 
 #############################################

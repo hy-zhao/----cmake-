@@ -8,7 +8,7 @@
 
 #pragma once
 
-// #include "stack/stack.h"
+#include "stack/stack.h"
 
 #define Put( K, s, t ) { if ( 1 < (t) - (s) ) { K.push(s); K.push(t); } }
 #define Get( K, s, t ) { t = K.pop(); s = K.pop(); }

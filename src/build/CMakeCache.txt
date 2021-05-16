@@ -44,12 +44,6 @@ BUBBLESORT_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAK
 //Value Computed by CMake
 BUBBLESORT_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/bubblesort
 
-//Value Computed by CMake
-Bitmap_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BitMap
-
-//Value Computed by CMake
-Bitmap_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/BitMap
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -298,16 +292,40 @@ GCD_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/b
 GCD_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/gcd
 
 //Value Computed by CMake
-GRAPH_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/graph
-
-//Value Computed by CMake
-GRAPH_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/graph
-
-//Value Computed by CMake
 GREATEST_SLICE_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/greatest_slice
 
 //Value Computed by CMake
 GREATEST_SLICE_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/greatest_slice
+
+//Value Computed by CMake
+HANOI_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hanoi
+
+//Value Computed by CMake
+HANOI_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/hanoi
+
+//Value Computed by CMake
+HUFFMAN_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/huffman
+
+//Value Computed by CMake
+HUFFMAN_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/huffman
+
+//Value Computed by CMake
+LABY_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/laby
+
+//Value Computed by CMake
+LABY_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/laby
+
+//Value Computed by CMake
+LIST_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/list
+
+//Value Computed by CMake
+LIST_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/list
+
+//Value Computed by CMake
+MAJORITY_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/majority
+
+//Value Computed by CMake
+MAJORITY_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/majority
 
 //Value Computed by CMake
 PRIME_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/prime
@@ -334,34 +352,16 @@ UniPrint_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/
 UniPrint_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint
 
 //Value Computed by CMake
-cursor_list_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list
-
-//Value Computed by CMake
-cursor_list_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/cursor_list
-
-//Value Computed by CMake
 dsacpp_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
 //Value Computed by CMake
 dsacpp_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src
 
 //Value Computed by CMake
-gcd_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/gcd
-
-//Value Computed by CMake
-gcd_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/gcd
-
-//Value Computed by CMake
 hashtable_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/hashtable
 
 //Value Computed by CMake
 hashtable_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/hashtable
-
-//Value Computed by CMake
-share_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/_share
-
-//Value Computed by CMake
-share_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/_share
 
 //Value Computed by CMake
 vector_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector
@@ -438,8 +438,6 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -472,7 +470,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

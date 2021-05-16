@@ -1,11 +1,9 @@
-set(PROJECT_NAME majority)
+set(PROJECT_NAME MAJORITY)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "majority.h"
-    "majorityCandidate.h"
-    "majorityCheck.h"
-)
-# source_group("婢跺
+project(${PROJECT_NAME})
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+# target_include_directories(FIBONACCILIB PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+# target_link_libraries(${PROJECT_NAME} FIBONACCILIB)

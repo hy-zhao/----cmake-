@@ -14,7 +14,6 @@
  * 在export尚未被编译器支持前，如此可将定义与实现分离，以便课程讲解
  ******************************************************************************************/
 // #define DSA_STACK_VECTOR true
-// #include "stack_vector/stack_vector.h"
 
 #include "_share/release.h"
 #include "_share/util.h"

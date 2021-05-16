@@ -5,6 +5,8 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+// #define DSA_STACK_VECTOR true
+// #define DSA_STACK_LIST false
 
 #include <cstdio>
 #include <cstring>

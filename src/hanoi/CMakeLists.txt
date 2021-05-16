@@ -1,9 +1,15 @@
-set(PROJECT_NAME hanoi)
+set(PROJECT_NAME HANOI)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "hanoi.h"
+project(${PROJECT_NAME})
+
+add_library(HANOILIB
+    display.cpp
+    hanoi.cpp
+    move_disk.cpp
 )
-# source_group("婢跺
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(HANOILIB PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(${PROJECT_NAME} HANOILIB)

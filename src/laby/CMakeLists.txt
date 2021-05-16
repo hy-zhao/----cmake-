@@ -1,15 +1,13 @@
-set(PROJECT_NAME laby)
+set(PROJECT_NAME LABY)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "advance.h"
-    "Cell.h"
-    "displayLaby.h"
-    "Laby.h"
-    "neighbor.h"
-    "randLaby.h"
-    "readLaby.h"
-)
-# source_group("婢跺
+project(${PROJECT_NAME})
+
+# add_library(LABYLIB
+#     Fib0.cpp
+#     Fib1.cpp
+#     Fib2.cpp
+# )
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+# target_include_directories(FIBONACCILIB PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})

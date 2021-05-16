@@ -8,6 +8,7 @@
 
 #pragma once
 
+
 template <typename T> //在有序列表内节点p（可能是trailer）的n个（真）前驱中，找到不大于e的最后者
 ListNodePosi<T> List<T>::search ( T const& e, int n, ListNodePosi<T> p ) const {
 // assert: 0 <= n <= rank(p) < _size

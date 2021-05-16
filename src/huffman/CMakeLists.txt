@@ -1,28 +1,21 @@
-set(PROJECT_NAME huffman)
+set(PROJECT_NAME HUFFMAN)
+project(${PROJECT_NAME})
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    # "../binTree/BinNode.h"
-    # "../binTree/BinNode_implementation.h"
-    # "../binTree/BinNode_insert.h"
-    # "../binTree/BinNode_travInorder.h"
-    # "../binTree/BinNode_travLevel.h"
-    # "../binTree/BinNode_travPostorder.h"
-    # "../binTree/BinNode_travPreorder.h"
-    # "../binTree/BinNode_updateHeight.h"
-    # "../binTree/BinTree.h"
-    # "../binTree/BinTree_implementation.h"
-    # "../binTree/BinTree_remove.h"
-    # "../binTree/BinTree_size.h"
-    "huffChar.h"
-    "HuffCode.h"
-    "Huffman_Forest_list.h"
-    "Huffman_PQ.h"
-    "Huffman_PQ_test.h"
-    "huffman_test.h"
-    "HuffTable.h"
-    "HuffTree.h"
+set(CPP_LIST
+    Huffman_PQ_Test.cpp
+    Huffman_PQ_generateTree.cpp
+    huffman_PQ_initForest.cpp
+    huffman_decode.cpp
+    huffman_encode.cpp
+    huffman_generateTable.cpp
+    huffman_generateTree.cpp
+    huffman_initForest.cpp
+    huffman_statistics.cpp 
 )
-# source_group("婢跺
+
+add_library(HUFFMANLIB ${CPP_LIST})
+
+target_include_directories(HUFFMANLIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+# target_link_libraries(${PROJECT_NAME} UNIPRINTLIB)
+

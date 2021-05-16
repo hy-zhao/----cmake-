@@ -34,7 +34,8 @@ public:
 // 遍历
    void traverse ( void (* ) ( T& ) ); //遍历各节点，依次实施指定操作（函数指针，只读或局部修改）
    template <typename VST> //操作器
-   void traverse ( VST& ); //遍历各节点，依次实施指定操作（函数对象，可全局性修改节点）
+   void traverse ( VST ); //遍历各节点，依次实施指定操作（函数对象，可全局性修改节点）
+   // void traverse ( VST& ); //遍历各节点，依次实施指定操作（函数对象，可全局性修改节点）
 }; //Quadlist
 
 #include "Quadlist_implementation.h"

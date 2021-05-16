@@ -16,21 +16,15 @@ using namespace std;
  * 测试、演示用小工具
  ******************************************************************************************/
 
-
-
 #include <cstdio>
 #include <cstdlib>
 #include <cstdint>
+#include <cstddef>
 #include <ctime>
 #include <climits>
 #include <cmath>
 #include <typeinfo>
 #include "comparator.h"
-
-// #define DSA_STACK_VECTOR true
-#define DSA_STACK_LIST true
-
-#include "stack/stack.h" //随机数
 
 #include "checkOrder_Elem.h"
 #include "checkOrder_list.h"

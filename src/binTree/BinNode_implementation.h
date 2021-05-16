@@ -14,8 +14,6 @@
  * 在export尚未被编译器支持前，如此可将定义与实现分离，以便课程讲解
  ******************************************************************************************/
 
-// #define DSA_STACK_LIST true
-// #include "stack/stack.h"
 #include "BinNode_macro.h"
 #include "BinNode_size.h" //后代数目
 #include "BinNode_insert.h" //插入

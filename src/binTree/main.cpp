@@ -5,7 +5,6 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
-
 #include "binTree_test.h"
 
 int testID = 0; //测试编号

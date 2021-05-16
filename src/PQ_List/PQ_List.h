@@ -14,8 +14,8 @@ template <typename T> class PQ_List : public PQ<T>, public List<T> { //基于列
    /*DSA*/friend class UniPrint; //演示输出使用，否则不必设置友类
 public:
    PQ_List() { } //默认构造
-   PQ_List ( T* E, int n ) { while ( 0 < n-- ) insertAsFirst ( ( E[n] ) ); } //批量构造
+   PQ_List ( T* E, int n ) { while ( 0 < n-- ) this->insertAsFirst ( ( E[n] ) ); } //批量构造
    void insert ( T e ) { this->insertAsLast ( e ); } //直接将新元素插至队列末尾
    T getMax() { return this->selectMax()->data; } //取出优先级最高的元素
-   T delMax() { return remove ( this->selectMax() ); } //删除优先级最高的元素
+   T delMax() { return this->remove ( this->selectMax() ); } //删除优先级最高的元素
 }; //PQ_List
