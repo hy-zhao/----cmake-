@@ -30,8 +30,8 @@ class GraphMatrix : public Graph<Tv, Te> { //基于向量，以邻接矩阵形�
 private:
    Vector< Vertex< Tv > > V; //顶点集（向量）
    Vector< Vector< Edge< Te > * > > E; //边集（邻接矩阵）
-   int n,e;
 public:
+   int n,e;
    GraphMatrix() { n = e = 0; } //构造
    ~GraphMatrix() { //析构
       for ( int j = 0; j < n; j++ ) //所有动态创建的

@@ -8,8 +8,10 @@
 
 #pragma once
 
-using VStatus = enum { UNDISCOVERED, DISCOVERED, VISITED }; //顶点状态
-using EType = enum { UNDETERMINED, TREE, CROSS, FORWARD, BACKWARD }; //边在遍历树中所属的类型
+// using VStatus = enum { UNDISCOVERED, DISCOVERED, VISITED }; //顶点状态
+// using EType = enum { UNDETERMINED, TREE, CROSS, FORWARD, BACKWARD }; //边在遍历树中所属的类型
+enum VStatus { UNDISCOVERED, DISCOVERED, VISITED }; //顶点状态
+enum EType { UNDETERMINED, TREE, CROSS, FORWARD, BACKWARD }; //边在遍历树中所属的类型
 
 template <typename Tv, typename Te> //顶点类型、边类型
 class Graph { //图Graph模板类

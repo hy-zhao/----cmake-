@@ -3,9 +3,9 @@ set(PROJECT_NAME UniPrint)
 project(${PROJECT_NAME})
 
 set(CPP_FILE
-print_basic.cpp 
-print_HuffChar.cpp 
-print_int_array.cpp
+    print_basic.cpp 
+    print_HuffChar.cpp 
+    print_int_array.cpp
 )
 
 add_library(UNIPRINTLIB ${CPP_FILE})

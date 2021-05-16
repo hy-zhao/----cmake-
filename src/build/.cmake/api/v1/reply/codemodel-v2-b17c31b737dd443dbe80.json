@@ -50,7 +50,14 @@
 						40,
 						41,
 						42,
-						43
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -272,18 +279,32 @@
 					]
 				},
 				{
-					"build" : "greatest_slice",
+					"build" : "graph",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 13,
+					"source" : "graph",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "greatest_slice",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 14,
 					"source" : "greatest_slice",
 					"targetIndexes" : 
 					[
-						20,
-						21
+						21,
+						22
 					]
 				},
 				{
@@ -293,12 +314,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 14,
+					"projectIndex" : 15,
 					"source" : "hanoi",
 					"targetIndexes" : 
 					[
-						22,
-						23
+						23,
+						24
 					]
 				},
 				{
@@ -308,11 +329,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 15,
+					"projectIndex" : 16,
 					"source" : "hashtable",
 					"targetIndexes" : 
 					[
-						45
+						52
 					]
 				},
 				{
@@ -322,11 +343,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 16,
+					"projectIndex" : 17,
 					"source" : "huffman",
 					"targetIndexes" : 
 					[
-						24
+						25
 					]
 				},
 				{
@@ -336,11 +357,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 17,
+					"projectIndex" : 18,
 					"source" : "laby",
 					"targetIndexes" : 
 					[
-						25
+						26
 					]
 				},
 				{
@@ -350,11 +371,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 18,
+					"projectIndex" : 19,
 					"source" : "list",
 					"targetIndexes" : 
 					[
-						26
+						27
 					]
 				},
 				{
@@ -364,11 +385,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 19,
+					"projectIndex" : 20,
 					"source" : "majority",
 					"targetIndexes" : 
 					[
-						27
+						28
 					]
 				},
 				{
@@ -382,7 +403,7 @@
 					"source" : "max",
 					"targetIndexes" : 
 					[
-						28
+						29
 					]
 				},
 				{
@@ -392,11 +413,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 20,
+					"projectIndex" : 21,
 					"source" : "median1",
 					"targetIndexes" : 
 					[
-						46
+						53
 					]
 				},
 				{
@@ -406,11 +427,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 21,
+					"projectIndex" : 22,
 					"source" : "median2",
 					"targetIndexes" : 
 					[
-						47
+						54
 					]
 				},
 				{
@@ -420,11 +441,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 22,
+					"projectIndex" : 23,
 					"source" : "nest_recursive",
 					"targetIndexes" : 
 					[
-						29
+						30
 					]
 				},
 				{
@@ -434,12 +455,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 23,
+					"projectIndex" : 24,
 					"source" : "nest_stack",
 					"targetIndexes" : 
 					[
-						30,
-						48
+						31,
+						55
 					]
 				},
 				{
@@ -449,12 +470,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 24,
+					"projectIndex" : 25,
 					"source" : "power",
 					"targetIndexes" : 
 					[
-						31,
-						49
+						32,
+						56
 					]
 				},
 				{
@@ -464,11 +485,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 25,
+					"projectIndex" : 26,
 					"source" : "PQ",
 					"targetIndexes" : 
 					[
-						32
+						33
 					]
 				},
 				{
@@ -478,12 +499,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 26,
+					"projectIndex" : 27,
 					"source" : "prime",
 					"targetIndexes" : 
 					[
-						33,
-						34
+						34,
+						35
 					]
 				},
 				{
@@ -493,11 +514,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 27,
+					"projectIndex" : 28,
 					"source" : "queue",
 					"targetIndexes" : 
 					[
-						35
+						36
 					]
 				},
 				{
@@ -507,11 +528,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 28,
+					"projectIndex" : 29,
 					"source" : "random",
 					"targetIndexes" : 
 					[
-						36
+						37
 					]
 				},
 				{
@@ -521,11 +542,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 29,
+					"projectIndex" : 30,
 					"source" : "redBlack",
 					"targetIndexes" : 
 					[
-						38
+						39
 					]
 				},
 				{
@@ -535,11 +556,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 30,
+					"projectIndex" : 31,
 					"source" : "reverse",
 					"targetIndexes" : 
 					[
-						37
+						38
 					]
 				},
 				{
@@ -549,11 +570,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 31,
+					"projectIndex" : 32,
 					"source" : "selection",
 					"targetIndexes" : 
 					[
-						50
+						57
 					]
 				},
 				{
@@ -563,12 +584,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 32,
+					"projectIndex" : 33,
 					"source" : "shiftK",
 					"targetIndexes" : 
 					[
-						39,
-						51
+						40,
+						58
 					]
 				},
 				{
@@ -578,11 +599,25 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 33,
+					"projectIndex" : 34,
 					"source" : "skiplist",
 					"targetIndexes" : 
 					[
-						52
+						59
+					]
+				},
+				{
+					"build" : "splay",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 35,
+					"source" : "splay",
+					"targetIndexes" : 
+					[
+						50
 					]
 				},
 				{
@@ -592,11 +627,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 34,
+					"projectIndex" : 36,
 					"source" : "stack",
 					"targetIndexes" : 
 					[
-						40
+						41
 					]
 				},
 				{
@@ -606,11 +641,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 35,
+					"projectIndex" : 37,
 					"source" : "string_pm",
 					"targetIndexes" : 
 					[
-						41
+						42
 					]
 				},
 				{
@@ -620,11 +655,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 36,
+					"projectIndex" : 38,
 					"source" : "string_pm_bf1",
 					"targetIndexes" : 
 					[
-						42
+						43
 					]
 				},
 				{
@@ -634,11 +669,81 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 37,
+					"projectIndex" : 39,
 					"source" : "string_pm_bf2",
 					"targetIndexes" : 
 					[
-						43
+						44
+					]
+				},
+				{
+					"build" : "string_pm_bm_bc",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 40,
+					"source" : "string_pm_bm_bc",
+					"targetIndexes" : 
+					[
+						46
+					]
+				},
+				{
+					"build" : "string_pm_bm_bc+gs",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 41,
+					"source" : "string_pm_bm_bc+gs",
+					"targetIndexes" : 
+					[
+						45
+					]
+				},
+				{
+					"build" : "string_pm_kmp",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 42,
+					"source" : "string_pm_kmp",
+					"targetIndexes" : 
+					[
+						47
+					]
+				},
+				{
+					"build" : "string_pm_kmp_improved",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 43,
+					"source" : "string_pm_kmp_improved",
+					"targetIndexes" : 
+					[
+						48
+					]
+				},
+				{
+					"build" : "string_pm_kr",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 44,
+					"source" : "string_pm_kr",
+					"targetIndexes" : 
+					[
+						49
 					]
 				},
 				{
@@ -648,11 +753,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 38,
+					"projectIndex" : 45,
 					"source" : "UniPrint",
 					"targetIndexes" : 
 					[
-						44
+						51
 					]
 				},
 				{
@@ -662,11 +767,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 39,
+					"projectIndex" : 46,
 					"source" : "vector",
 					"targetIndexes" : 
 					[
-						53
+						60
 					]
 				}
 			],
@@ -714,7 +819,14 @@
 						36,
 						37,
 						38,
-						39
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46
 					],
 					"directoryIndexes" : 
 					[
@@ -722,14 +834,14 @@
 						4,
 						6,
 						9,
-						23
+						24
 					],
 					"name" : "dsacpp",
 					"targetIndexes" : 
 					[
 						3,
 						9,
-						28
+						29
 					]
 				},
 				{
@@ -887,12 +999,11 @@
 					[
 						16
 					],
-					"name" : "GREATEST_SLICE",
+					"name" : "GRAPH",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						20,
-						21
+						20
 					]
 				},
 				{
@@ -900,12 +1011,12 @@
 					[
 						17
 					],
-					"name" : "HANOI",
+					"name" : "GREATEST_SLICE",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						22,
-						23
+						21,
+						22
 					]
 				},
 				{
@@ -913,11 +1024,12 @@
 					[
 						18
 					],
-					"name" : "hashtable",
+					"name" : "HANOI",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						45
+						23,
+						24
 					]
 				},
 				{
@@ -925,11 +1037,11 @@
 					[
 						19
 					],
-					"name" : "HUFFMAN",
+					"name" : "hashtable",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						24
+						52
 					]
 				},
 				{
@@ -937,7 +1049,7 @@
 					[
 						20
 					],
-					"name" : "LABY",
+					"name" : "HUFFMAN",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -949,7 +1061,7 @@
 					[
 						21
 					],
-					"name" : "LIST",
+					"name" : "LABY",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -961,7 +1073,7 @@
 					[
 						22
 					],
-					"name" : "MAJORITY",
+					"name" : "LIST",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -971,13 +1083,13 @@
 				{
 					"directoryIndexes" : 
 					[
-						24
+						23
 					],
-					"name" : "median1",
+					"name" : "MAJORITY",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						46
+						28
 					]
 				},
 				{
@@ -985,11 +1097,11 @@
 					[
 						25
 					],
-					"name" : "median2",
+					"name" : "median1",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						47
+						53
 					]
 				},
 				{
@@ -997,11 +1109,11 @@
 					[
 						26
 					],
-					"name" : "nest_recursive",
+					"name" : "median2",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						29
+						54
 					]
 				},
 				{
@@ -1009,12 +1121,11 @@
 					[
 						27
 					],
-					"name" : "nest_stack",
+					"name" : "nest_recursive",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						30,
-						48
+						30
 					]
 				},
 				{
@@ -1022,12 +1133,12 @@
 					[
 						28
 					],
-					"name" : "power",
+					"name" : "nest_stack",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						31,
-						49
+						55
 					]
 				},
 				{
@@ -1035,11 +1146,12 @@
 					[
 						29
 					],
-					"name" : "PQ",
+					"name" : "power",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						32
+						32,
+						56
 					]
 				},
 				{
@@ -1047,12 +1159,11 @@
 					[
 						30
 					],
-					"name" : "PRIME",
+					"name" : "PQ",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						33,
-						34
+						33
 					]
 				},
 				{
@@ -1060,10 +1171,11 @@
 					[
 						31
 					],
-					"name" : "QUEUE",
+					"name" : "PRIME",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
+						34,
 						35
 					]
 				},
@@ -1072,7 +1184,7 @@
 					[
 						32
 					],
-					"name" : "RANDOM",
+					"name" : "QUEUE",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1084,19 +1196,7 @@
 					[
 						33
 					],
-					"name" : "RedBlack",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						38
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						34
-					],
-					"name" : "reverse",
+					"name" : "RANDOM",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1106,9 +1206,70 @@
 				{
 					"directoryIndexes" : 
 					[
+						34
+					],
+					"name" : "RedBlack",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						39
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
 						35
 					],
+					"name" : "reverse",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						38
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						36
+					],
 					"name" : "selection",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						57
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						37
+					],
+					"name" : "shiftK",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						40,
+						58
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						38
+					],
+					"name" : "skiplist",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						59
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						39
+					],
+					"name" : "Splay",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1118,46 +1279,9 @@
 				{
 					"directoryIndexes" : 
 					[
-						36
-					],
-					"name" : "shiftK",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						39,
-						51
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						37
-					],
-					"name" : "skiplist",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						52
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						38
+						40
 					],
 					"name" : "STACK",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						40
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						39
-					],
-					"name" : "string_pm",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1167,9 +1291,9 @@
 				{
 					"directoryIndexes" : 
 					[
-						40
+						41
 					],
-					"name" : "string_pm_bf1",
+					"name" : "string_pm",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1179,9 +1303,9 @@
 				{
 					"directoryIndexes" : 
 					[
-						41
+						42
 					],
-					"name" : "string_pm_bf2",
+					"name" : "string_pm_bf1",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1191,9 +1315,9 @@
 				{
 					"directoryIndexes" : 
 					[
-						42
+						43
 					],
-					"name" : "UniPrint",
+					"name" : "string_pm_bf2",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1203,13 +1327,85 @@
 				{
 					"directoryIndexes" : 
 					[
-						43
+						44
+					],
+					"name" : "string_pm_bm_bc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						46
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						45
+					],
+					"name" : "string_pm_bm_bc+gs",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						45
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						46
+					],
+					"name" : "string_pm_kmp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						47
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						47
+					],
+					"name" : "string_pm_kmp_improved",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						48
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						48
+					],
+					"name" : "string_pm_kr",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						49
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						49
+					],
+					"name" : "UniPrint",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						51
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						50
 					],
 					"name" : "vector",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						53
+						60
 					]
 				}
 			],
@@ -1357,241 +1553,290 @@
 				},
 				{
 					"directoryIndex" : 16,
+					"id" : "GRAPH::@24f0212b3bb5eb7e3fe6",
+					"jsonFile" : "target-GRAPH-Debug-a7c36dd72be8d143044f.json",
+					"name" : "GRAPH",
+					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 17,
 					"id" : "GREATEST_SLICE::@42ed384c6a1ec794875c",
 					"jsonFile" : "target-GREATEST_SLICE-Debug-beacac5331ba9c84d5f2.json",
 					"name" : "GREATEST_SLICE",
-					"projectIndex" : 13
+					"projectIndex" : 14
 				},
 				{
-					"directoryIndex" : 16,
+					"directoryIndex" : 17,
 					"id" : "GREATEST_SLICELIB::@42ed384c6a1ec794875c",
 					"jsonFile" : "target-GREATEST_SLICELIB-Debug-0925f892f0fc615565f4.json",
 					"name" : "GREATEST_SLICELIB",
-					"projectIndex" : 13
+					"projectIndex" : 14
 				},
 				{
-					"directoryIndex" : 17,
+					"directoryIndex" : 18,
 					"id" : "HANOI::@b1ce1a4a93f9cfaae3e9",
 					"jsonFile" : "target-HANOI-Debug-82dd368e5546042fec81.json",
 					"name" : "HANOI",
-					"projectIndex" : 14
+					"projectIndex" : 15
 				},
 				{
-					"directoryIndex" : 17,
+					"directoryIndex" : 18,
 					"id" : "HANOILIB::@b1ce1a4a93f9cfaae3e9",
 					"jsonFile" : "target-HANOILIB-Debug-ac0a1ace28a128031cd4.json",
 					"name" : "HANOILIB",
-					"projectIndex" : 14
-				},
-				{
-					"directoryIndex" : 19,
-					"id" : "HUFFMANLIB::@b338ad90c263b7eb5f4d",
-					"jsonFile" : "target-HUFFMANLIB-Debug-4da01ec89dd9d61387dc.json",
-					"name" : "HUFFMANLIB",
-					"projectIndex" : 16
+					"projectIndex" : 15
 				},
 				{
 					"directoryIndex" : 20,
-					"id" : "LABY::@5b06f016750976959238",
-					"jsonFile" : "target-LABY-Debug-c71655fdcfafa6ebce6a.json",
-					"name" : "LABY",
+					"id" : "HUFFMANLIB::@b338ad90c263b7eb5f4d",
+					"jsonFile" : "target-HUFFMANLIB-Debug-4da01ec89dd9d61387dc.json",
+					"name" : "HUFFMANLIB",
 					"projectIndex" : 17
 				},
 				{
 					"directoryIndex" : 21,
-					"id" : "LIST::@9d402429e34d9136414f",
-					"jsonFile" : "target-LIST-Debug-19472a7ea7d6948d262a.json",
-					"name" : "LIST",
+					"id" : "LABY::@5b06f016750976959238",
+					"jsonFile" : "target-LABY-Debug-c71655fdcfafa6ebce6a.json",
+					"name" : "LABY",
 					"projectIndex" : 18
 				},
 				{
 					"directoryIndex" : 22,
-					"id" : "MAJORITY::@40b40ef42f3259368259",
-					"jsonFile" : "target-MAJORITY-Debug-2e6b371887fde5e2d7d9.json",
-					"name" : "MAJORITY",
+					"id" : "LIST::@9d402429e34d9136414f",
+					"jsonFile" : "target-LIST-Debug-19472a7ea7d6948d262a.json",
+					"name" : "LIST",
 					"projectIndex" : 19
 				},
 				{
 					"directoryIndex" : 23,
+					"id" : "MAJORITY::@40b40ef42f3259368259",
+					"jsonFile" : "target-MAJORITY-Debug-2e6b371887fde5e2d7d9.json",
+					"name" : "MAJORITY",
+					"projectIndex" : 20
+				},
+				{
+					"directoryIndex" : 24,
 					"id" : "MAXLIB::@8356d24d12bad41da1e1",
 					"jsonFile" : "target-MAXLIB-Debug-22b6c4ea035cdef9bb34.json",
 					"name" : "MAXLIB",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 26,
+					"directoryIndex" : 27,
 					"id" : "NEST_RECURSIVELIB::@a88197436186ef92a8b1",
 					"jsonFile" : "target-NEST_RECURSIVELIB-Debug-2a0bdaef1efd0d3507a5.json",
 					"name" : "NEST_RECURSIVELIB",
-					"projectIndex" : 22
-				},
-				{
-					"directoryIndex" : 27,
-					"id" : "NEST_STACKLIB::@d7194aa305431bf4a89f",
-					"jsonFile" : "target-NEST_STACKLIB-Debug-f38cf60443173c883a67.json",
-					"name" : "NEST_STACKLIB",
 					"projectIndex" : 23
 				},
 				{
 					"directoryIndex" : 28,
-					"id" : "POWERLIB::@4b667cf2aaa6b3569e64",
-					"jsonFile" : "target-POWERLIB-Debug-11bc2affd008797cfa97.json",
-					"name" : "POWERLIB",
+					"id" : "NEST_STACKLIB::@d7194aa305431bf4a89f",
+					"jsonFile" : "target-NEST_STACKLIB-Debug-f38cf60443173c883a67.json",
+					"name" : "NEST_STACKLIB",
 					"projectIndex" : 24
 				},
 				{
 					"directoryIndex" : 29,
-					"id" : "PQLIB::@861bba77e6856ab58d86",
-					"jsonFile" : "target-PQLIB-Debug-36c8b787332b202b919b.json",
-					"name" : "PQLIB",
+					"id" : "POWERLIB::@4b667cf2aaa6b3569e64",
+					"jsonFile" : "target-POWERLIB-Debug-11bc2affd008797cfa97.json",
+					"name" : "POWERLIB",
 					"projectIndex" : 25
 				},
 				{
 					"directoryIndex" : 30,
-					"id" : "PRIME::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIME-Debug-6159e6a4ad1167303e4a.json",
-					"name" : "PRIME",
-					"projectIndex" : 26
-				},
-				{
-					"directoryIndex" : 30,
-					"id" : "PRIMELIB::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIMELIB-Debug-5838344ad276f5a68021.json",
-					"name" : "PRIMELIB",
+					"id" : "PQLIB::@861bba77e6856ab58d86",
+					"jsonFile" : "target-PQLIB-Debug-36c8b787332b202b919b.json",
+					"name" : "PQLIB",
 					"projectIndex" : 26
 				},
 				{
 					"directoryIndex" : 31,
-					"id" : "QUEUE::@d63f5f69c5a9088733ed",
-					"jsonFile" : "target-QUEUE-Debug-42956319d695474b8de4.json",
-					"name" : "QUEUE",
+					"id" : "PRIME::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIME-Debug-6159e6a4ad1167303e4a.json",
+					"name" : "PRIME",
+					"projectIndex" : 27
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "PRIMELIB::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIMELIB-Debug-5838344ad276f5a68021.json",
+					"name" : "PRIMELIB",
 					"projectIndex" : 27
 				},
 				{
 					"directoryIndex" : 32,
-					"id" : "RANDOMLIB::@043bef6630b23836363a",
-					"jsonFile" : "target-RANDOMLIB-Debug-0f1f28e901034a47a5c5.json",
-					"name" : "RANDOMLIB",
+					"id" : "QUEUE::@d63f5f69c5a9088733ed",
+					"jsonFile" : "target-QUEUE-Debug-42956319d695474b8de4.json",
+					"name" : "QUEUE",
 					"projectIndex" : 28
 				},
 				{
-					"directoryIndex" : 34,
-					"id" : "REVERSELIB::@9ce7867dc36037794b4f",
-					"jsonFile" : "target-REVERSELIB-Debug-9c5597f411cc36543beb.json",
-					"name" : "REVERSELIB",
-					"projectIndex" : 30
-				},
-				{
 					"directoryIndex" : 33,
-					"id" : "RedBlack::@8450e422c3963bc2a70a",
-					"jsonFile" : "target-RedBlack-Debug-d38c61bc79b61614e77a.json",
-					"name" : "RedBlack",
+					"id" : "RANDOMLIB::@043bef6630b23836363a",
+					"jsonFile" : "target-RANDOMLIB-Debug-0f1f28e901034a47a5c5.json",
+					"name" : "RANDOMLIB",
 					"projectIndex" : 29
 				},
 				{
-					"directoryIndex" : 36,
+					"directoryIndex" : 35,
+					"id" : "REVERSELIB::@9ce7867dc36037794b4f",
+					"jsonFile" : "target-REVERSELIB-Debug-9c5597f411cc36543beb.json",
+					"name" : "REVERSELIB",
+					"projectIndex" : 31
+				},
+				{
+					"directoryIndex" : 34,
+					"id" : "RedBlack::@8450e422c3963bc2a70a",
+					"jsonFile" : "target-RedBlack-Debug-d38c61bc79b61614e77a.json",
+					"name" : "RedBlack",
+					"projectIndex" : 30
+				},
+				{
+					"directoryIndex" : 37,
 					"id" : "SHIFTKLIB::@229c93694e34b6c6b3be",
 					"jsonFile" : "target-SHIFTKLIB-Debug-262c5a70cbfa5ef5f47e.json",
 					"name" : "SHIFTKLIB",
-					"projectIndex" : 32
-				},
-				{
-					"directoryIndex" : 38,
-					"id" : "STACK::@b5371760465ddb38638a",
-					"jsonFile" : "target-STACK-Debug-92268ece169c156ce4db.json",
-					"name" : "STACK",
-					"projectIndex" : 34
-				},
-				{
-					"directoryIndex" : 39,
-					"id" : "STRING_PMLIB::@36b15d7f75ac47be665f",
-					"jsonFile" : "target-STRING_PMLIB-Debug-b7105747a57546a9590d.json",
-					"name" : "STRING_PMLIB",
-					"projectIndex" : 35
+					"projectIndex" : 33
 				},
 				{
 					"directoryIndex" : 40,
-					"id" : "STRING_PM_BF1LIB::@0f76b5f47f3332733320",
-					"jsonFile" : "target-STRING_PM_BF1LIB-Debug-3237cf844d277689afef.json",
-					"name" : "STRING_PM_BF1LIB",
+					"id" : "STACK::@b5371760465ddb38638a",
+					"jsonFile" : "target-STACK-Debug-92268ece169c156ce4db.json",
+					"name" : "STACK",
 					"projectIndex" : 36
 				},
 				{
 					"directoryIndex" : 41,
-					"id" : "STRING_PM_BF2LIB::@7576023dcff9a27b65ce",
-					"jsonFile" : "target-STRING_PM_BF2LIB-Debug-2b1d668a2d5a6117443e.json",
-					"name" : "STRING_PM_BF2LIB",
+					"id" : "STRING_PMLIB::@36b15d7f75ac47be665f",
+					"jsonFile" : "target-STRING_PMLIB-Debug-b7105747a57546a9590d.json",
+					"name" : "STRING_PMLIB",
 					"projectIndex" : 37
 				},
 				{
 					"directoryIndex" : 42,
-					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
-					"jsonFile" : "target-UNIPRINTLIB-Debug-571fdcbeb18b10907180.json",
-					"name" : "UNIPRINTLIB",
+					"id" : "STRING_PM_BF1LIB::@0f76b5f47f3332733320",
+					"jsonFile" : "target-STRING_PM_BF1LIB-Debug-3237cf844d277689afef.json",
+					"name" : "STRING_PM_BF1LIB",
 					"projectIndex" : 38
 				},
 				{
-					"directoryIndex" : 18,
+					"directoryIndex" : 43,
+					"id" : "STRING_PM_BF2LIB::@7576023dcff9a27b65ce",
+					"jsonFile" : "target-STRING_PM_BF2LIB-Debug-2b1d668a2d5a6117443e.json",
+					"name" : "STRING_PM_BF2LIB",
+					"projectIndex" : 39
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "STRING_PM_BM_BC+GSLIB::@a861f7e40ad5b25dbcdc",
+					"jsonFile" : "target-STRING_PM_BM_BC+GSLIB-Debug-d3d203a0259570d93f16.json",
+					"name" : "STRING_PM_BM_BC+GSLIB",
+					"projectIndex" : 41
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "STRING_PM_BM_BCLIB::@c9063ac0878a5a85a9b8",
+					"jsonFile" : "target-STRING_PM_BM_BCLIB-Debug-9a941139540b12b41ebf.json",
+					"name" : "STRING_PM_BM_BCLIB",
+					"projectIndex" : 40
+				},
+				{
+					"directoryIndex" : 46,
+					"id" : "STRING_PM_KMPLIB::@fa455766bac37c30d218",
+					"jsonFile" : "target-STRING_PM_KMPLIB-Debug-296e033fd3fbb2212e67.json",
+					"name" : "STRING_PM_KMPLIB",
+					"projectIndex" : 42
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "STRING_PM_KMP_IMPROVEDLIB::@8bed168f83e660757eb5",
+					"jsonFile" : "target-STRING_PM_KMP_IMPROVEDLIB-Debug-8e26ee0774aee3958ce3.json",
+					"name" : "STRING_PM_KMP_IMPROVEDLIB",
+					"projectIndex" : 43
+				},
+				{
+					"directoryIndex" : 48,
+					"id" : "STRING_PM_KRLIB::@25e85d18779d13f2d95a",
+					"jsonFile" : "target-STRING_PM_KRLIB-Debug-3c87a06d459d5fdabe2d.json",
+					"name" : "STRING_PM_KRLIB",
+					"projectIndex" : 44
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "Splay::@9df8627e01919c65f849",
+					"jsonFile" : "target-Splay-Debug-4bc193cb7f6ff13f56ce.json",
+					"name" : "Splay",
+					"projectIndex" : 35
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
+					"jsonFile" : "target-UNIPRINTLIB-Debug-571fdcbeb18b10907180.json",
+					"name" : "UNIPRINTLIB",
+					"projectIndex" : 45
+				},
+				{
+					"directoryIndex" : 19,
 					"id" : "hashtable::@5b24f28f0f334b38317d",
 					"jsonFile" : "target-hashtable-Debug-edabfd830e95ef768ddc.json",
 					"name" : "hashtable",
-					"projectIndex" : 15
-				},
-				{
-					"directoryIndex" : 24,
-					"id" : "median1::@c09babbb151b4970729d",
-					"jsonFile" : "target-median1-Debug-7f05dd745272834eac65.json",
-					"name" : "median1",
-					"projectIndex" : 20
+					"projectIndex" : 16
 				},
 				{
 					"directoryIndex" : 25,
-					"id" : "median2::@88da331c750feeee3a07",
-					"jsonFile" : "target-median2-Debug-a7ce8394d209abc3ebc4.json",
-					"name" : "median2",
+					"id" : "median1::@c09babbb151b4970729d",
+					"jsonFile" : "target-median1-Debug-7f05dd745272834eac65.json",
+					"name" : "median1",
 					"projectIndex" : 21
 				},
 				{
-					"directoryIndex" : 27,
-					"id" : "nest_stack::@d7194aa305431bf4a89f",
-					"jsonFile" : "target-nest_stack-Debug-0c5f696186f5db36082c.json",
-					"name" : "nest_stack",
-					"projectIndex" : 23
+					"directoryIndex" : 26,
+					"id" : "median2::@88da331c750feeee3a07",
+					"jsonFile" : "target-median2-Debug-a7ce8394d209abc3ebc4.json",
+					"name" : "median2",
+					"projectIndex" : 22
 				},
 				{
 					"directoryIndex" : 28,
-					"id" : "power::@4b667cf2aaa6b3569e64",
-					"jsonFile" : "target-power-Debug-cdb3335be05c843e83e9.json",
-					"name" : "power",
+					"id" : "nest_stack::@d7194aa305431bf4a89f",
+					"jsonFile" : "target-nest_stack-Debug-0c5f696186f5db36082c.json",
+					"name" : "nest_stack",
 					"projectIndex" : 24
 				},
 				{
-					"directoryIndex" : 35,
-					"id" : "selection::@e48cf01008b78c43b1fe",
-					"jsonFile" : "target-selection-Debug-90795ec6118eb8337cb5.json",
-					"name" : "selection",
-					"projectIndex" : 31
+					"directoryIndex" : 29,
+					"id" : "power::@4b667cf2aaa6b3569e64",
+					"jsonFile" : "target-power-Debug-cdb3335be05c843e83e9.json",
+					"name" : "power",
+					"projectIndex" : 25
 				},
 				{
 					"directoryIndex" : 36,
-					"id" : "shiftK::@229c93694e34b6c6b3be",
-					"jsonFile" : "target-shiftK-Debug-8beb730402c44ee505cd.json",
-					"name" : "shiftK",
+					"id" : "selection::@e48cf01008b78c43b1fe",
+					"jsonFile" : "target-selection-Debug-90795ec6118eb8337cb5.json",
+					"name" : "selection",
 					"projectIndex" : 32
 				},
 				{
 					"directoryIndex" : 37,
-					"id" : "skiplist::@36f88413243c9b6dded2",
-					"jsonFile" : "target-skiplist-Debug-4f0f5256dee7b4ff4a2e.json",
-					"name" : "skiplist",
+					"id" : "shiftK::@229c93694e34b6c6b3be",
+					"jsonFile" : "target-shiftK-Debug-8beb730402c44ee505cd.json",
+					"name" : "shiftK",
 					"projectIndex" : 33
 				},
 				{
-					"directoryIndex" : 43,
+					"directoryIndex" : 38,
+					"id" : "skiplist::@36f88413243c9b6dded2",
+					"jsonFile" : "target-skiplist-Debug-4f0f5256dee7b4ff4a2e.json",
+					"name" : "skiplist",
+					"projectIndex" : 34
+				},
+				{
+					"directoryIndex" : 50,
 					"id" : "vector::@95776985c747069fcc28",
 					"jsonFile" : "target-vector-Debug-1f698695b899d12bfe67.json",
 					"name" : "vector",
-					"projectIndex" : 39
+					"projectIndex" : 46
 				}
 			]
 		}

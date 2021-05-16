@@ -32,7 +32,7 @@ add_subdirectory(fibonacci)
 add_subdirectory(gcd)
 
 ########################
-# add_subdirectory(graph)
+add_subdirectory(graph)
 
 add_subdirectory(greatest_slice)
 add_subdirectory(hanoi)
@@ -78,22 +78,16 @@ add_subdirectory(shiftK)
 ########################
 # add_subdirectory(simu)
 add_subdirectory(skiplist)
-# add_subdirectory(splay)
-
+add_subdirectory(splay)
 add_subdirectory(stack)
-
-########################
 add_subdirectory(string_pm)
-
 add_subdirectory(string_pm_bf1)
 add_subdirectory(string_pm_bf2)
-
-########################
-# add_subdirectory(string_pm_bm_bc)
-# add_subdirectory(string_pm_bm_bc+gs)
-# add_subdirectory(string_pm_kmp)
-# add_subdirectory(string_pm_kmp_improved)
-# add_subdirectory(string_pm_kr)
+add_subdirectory(string_pm_bm_bc)
+add_subdirectory(string_pm_bm_bc+gs)
+add_subdirectory(string_pm_kmp)
+add_subdirectory(string_pm_kmp_improved)
+add_subdirectory(string_pm_kr)
 # add_subdirectory(sum)
 
 add_subdirectory(UniPrint)

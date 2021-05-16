@@ -1248,6 +1248,69 @@ build gcd/libGCDLIB.a: CXX_STATIC_LIBRARY_LINKER__GCDLIB_Debug gcd/CMakeFiles/GC
 #############################################
 # Utility command for rebuild_cache
 
+build graph/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/graph && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build graph/rebuild_cache: phony graph/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build graph/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/graph && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build graph/edit_cache: phony graph/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target GRAPH
+
+
+#############################################
+# Order-only phony target for GRAPH
+
+build cmake_object_order_depends_target_GRAPH: phony || cmake_object_order_depends_target_UNIPRINTLIB
+
+build graph/CMakeFiles/GRAPH.dir/Graph_Test.cpp.o: CXX_COMPILER__GRAPH_Debug ../graph/Graph_Test.cpp || cmake_object_order_depends_target_GRAPH
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = graph/CMakeFiles/GRAPH.dir/Graph_Test.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = graph/CMakeFiles/GRAPH.dir
+  OBJECT_FILE_DIR = graph/CMakeFiles/GRAPH.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target GRAPH
+
+
+#############################################
+# Link the executable graph/GRAPH
+
+build graph/GRAPH: CXX_EXECUTABLE_LINKER__GRAPH_Debug graph/CMakeFiles/GRAPH.dir/Graph_Test.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
+  OBJECT_DIR = graph/CMakeFiles/GRAPH.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = graph/GRAPH
+  TARGET_PDB = GRAPH.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build greatest_slice/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/greatest_slice && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -3063,6 +3126,69 @@ build skiplist/skiplist: CXX_EXECUTABLE_LINKER__skiplist_Debug skiplist/CMakeFil
 #############################################
 # Utility command for rebuild_cache
 
+build splay/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/splay && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build splay/rebuild_cache: phony splay/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build splay/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/splay && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build splay/edit_cache: phony splay/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Splay
+
+
+#############################################
+# Order-only phony target for Splay
+
+build cmake_object_order_depends_target_Splay: phony || cmake_object_order_depends_target_UNIPRINTLIB
+
+build splay/CMakeFiles/Splay.dir/main.cpp.o: CXX_COMPILER__Splay_Debug ../splay/main.cpp || cmake_object_order_depends_target_Splay
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = splay/CMakeFiles/Splay.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = splay/CMakeFiles/Splay.dir
+  OBJECT_FILE_DIR = splay/CMakeFiles/Splay.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Splay
+
+
+#############################################
+# Link the executable splay/Splay
+
+build splay/Splay: CXX_EXECUTABLE_LINKER__Splay_Debug splay/CMakeFiles/Splay.dir/main.cpp.o | UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = UniPrint/libUNIPRINTLIB.a
+  OBJECT_DIR = splay/CMakeFiles/Splay.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = splay/Splay
+  TARGET_PDB = Splay.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build stack/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/stack && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -3312,6 +3438,364 @@ build string_pm_bf2/libSTRING_PM_BF2LIB.a: CXX_STATIC_LIBRARY_LINKER__STRING_PM_
 #############################################
 # Utility command for rebuild_cache
 
+build string_pm_bm_bc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build string_pm_bm_bc/rebuild_cache: phony string_pm_bm_bc/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build string_pm_bm_bc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build string_pm_bm_bc/edit_cache: phony string_pm_bm_bc/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target STRING_PM_BM_BCLIB
+
+
+#############################################
+# Order-only phony target for STRING_PM_BM_BCLIB
+
+build cmake_object_order_depends_target_STRING_PM_BM_BCLIB: phony || string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir
+
+build string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir/pm_bm_bc.cpp.o: CXX_COMPILER__STRING_PM_BM_BCLIB_Debug ../string_pm_bm_bc/pm_bm_bc.cpp || cmake_object_order_depends_target_STRING_PM_BM_BCLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir/pm_bm_bc.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_bm_bc
+  OBJECT_DIR = string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir
+  OBJECT_FILE_DIR = string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir
+
+build string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir/pm_bm_buildBC.cpp.o: CXX_COMPILER__STRING_PM_BM_BCLIB_Debug ../string_pm_bm_bc/pm_bm_buildBC.cpp || cmake_object_order_depends_target_STRING_PM_BM_BCLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir/pm_bm_buildBC.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_bm_bc
+  OBJECT_DIR = string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir
+  OBJECT_FILE_DIR = string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target STRING_PM_BM_BCLIB
+
+
+#############################################
+# Link the static library string_pm_bm_bc/libSTRING_PM_BM_BCLIB.a
+
+build string_pm_bm_bc/libSTRING_PM_BM_BCLIB.a: CXX_STATIC_LIBRARY_LINKER__STRING_PM_BM_BCLIB_Debug string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir/pm_bm_bc.cpp.o string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir/pm_bm_buildBC.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = string_pm_bm_bc/CMakeFiles/STRING_PM_BM_BCLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = string_pm_bm_bc/libSTRING_PM_BM_BCLIB.a
+  TARGET_PDB = STRING_PM_BM_BCLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build string_pm_bm_bc+gs/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc+gs && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build string_pm_bm_bc+gs/rebuild_cache: phony string_pm_bm_bc+gs/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build string_pm_bm_bc+gs/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc+gs && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build string_pm_bm_bc+gs/edit_cache: phony string_pm_bm_bc+gs/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target STRING_PM_BM_BC+GSLIB
+
+
+#############################################
+# Order-only phony target for STRING_PM_BM_BC+GSLIB
+
+build cmake_object_order_depends_target_STRING_PM_BM_BC+GSLIB: phony || string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir
+
+build string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir/pm_bm_bc+gs.cpp.o: CXX_COMPILER__STRING_PM_BM_BC.2bGSLIB_Debug ../string_pm_bm_bc+gs/pm_bm_bc+gs.cpp || cmake_object_order_depends_target_STRING_PM_BM_BC+GSLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir/pm_bm_bc+gs.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_bm_bc+gs
+  OBJECT_DIR = string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir
+  OBJECT_FILE_DIR = string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir
+
+build string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir/pm_bm_buildGS.cpp.o: CXX_COMPILER__STRING_PM_BM_BC.2bGSLIB_Debug ../string_pm_bm_bc+gs/pm_bm_buildGS.cpp || cmake_object_order_depends_target_STRING_PM_BM_BC+GSLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir/pm_bm_buildGS.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_bm_bc+gs
+  OBJECT_DIR = string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir
+  OBJECT_FILE_DIR = string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target STRING_PM_BM_BC+GSLIB
+
+
+#############################################
+# Link the static library string_pm_bm_bc+gs/libSTRING_PM_BM_BC+GSLIB.a
+
+build string_pm_bm_bc+gs/libSTRING_PM_BM_BC+GSLIB.a: CXX_STATIC_LIBRARY_LINKER__STRING_PM_BM_BC.2bGSLIB_Debug string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir/pm_bm_bc+gs.cpp.o string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir/pm_bm_buildGS.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = string_pm_bm_bc+gs/CMakeFiles/STRING_PM_BM_BC+GSLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = string_pm_bm_bc+gs/libSTRING_PM_BM_BC+GSLIB.a
+  TARGET_PDB = STRING_PM_BM_BC+GSLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build string_pm_kmp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build string_pm_kmp/rebuild_cache: phony string_pm_kmp/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build string_pm_kmp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build string_pm_kmp/edit_cache: phony string_pm_kmp/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target STRING_PM_KMPLIB
+
+
+#############################################
+# Order-only phony target for STRING_PM_KMPLIB
+
+build cmake_object_order_depends_target_STRING_PM_KMPLIB: phony || string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir
+
+build string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir/pm_kmp_next.cpp.o: CXX_COMPILER__STRING_PM_KMPLIB_Debug ../string_pm_kmp/pm_kmp_next.cpp || cmake_object_order_depends_target_STRING_PM_KMPLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir/pm_kmp_next.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_kmp
+  OBJECT_DIR = string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir
+  OBJECT_FILE_DIR = string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir
+
+build string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir/pm_kmp.cpp.o: CXX_COMPILER__STRING_PM_KMPLIB_Debug ../string_pm_kmp/pm_kmp.cpp || cmake_object_order_depends_target_STRING_PM_KMPLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir/pm_kmp.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_kmp
+  OBJECT_DIR = string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir
+  OBJECT_FILE_DIR = string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target STRING_PM_KMPLIB
+
+
+#############################################
+# Link the static library string_pm_kmp/libSTRING_PM_KMPLIB.a
+
+build string_pm_kmp/libSTRING_PM_KMPLIB.a: CXX_STATIC_LIBRARY_LINKER__STRING_PM_KMPLIB_Debug string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir/pm_kmp_next.cpp.o string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir/pm_kmp.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = string_pm_kmp/CMakeFiles/STRING_PM_KMPLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = string_pm_kmp/libSTRING_PM_KMPLIB.a
+  TARGET_PDB = STRING_PM_KMPLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build string_pm_kmp_improved/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp_improved && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build string_pm_kmp_improved/rebuild_cache: phony string_pm_kmp_improved/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build string_pm_kmp_improved/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp_improved && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build string_pm_kmp_improved/edit_cache: phony string_pm_kmp_improved/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target STRING_PM_KMP_IMPROVEDLIB
+
+
+#############################################
+# Order-only phony target for STRING_PM_KMP_IMPROVEDLIB
+
+build cmake_object_order_depends_target_STRING_PM_KMP_IMPROVEDLIB: phony || string_pm_kmp_improved/CMakeFiles/STRING_PM_KMP_IMPROVEDLIB.dir
+
+build string_pm_kmp_improved/CMakeFiles/STRING_PM_KMP_IMPROVEDLIB.dir/pm_kmp_next_improved.cpp.o: CXX_COMPILER__STRING_PM_KMP_IMPROVEDLIB_Debug ../string_pm_kmp_improved/pm_kmp_next_improved.cpp || cmake_object_order_depends_target_STRING_PM_KMP_IMPROVEDLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_kmp_improved/CMakeFiles/STRING_PM_KMP_IMPROVEDLIB.dir/pm_kmp_next_improved.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_kmp_improved
+  OBJECT_DIR = string_pm_kmp_improved/CMakeFiles/STRING_PM_KMP_IMPROVEDLIB.dir
+  OBJECT_FILE_DIR = string_pm_kmp_improved/CMakeFiles/STRING_PM_KMP_IMPROVEDLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target STRING_PM_KMP_IMPROVEDLIB
+
+
+#############################################
+# Link the static library string_pm_kmp_improved/libSTRING_PM_KMP_IMPROVEDLIB.a
+
+build string_pm_kmp_improved/libSTRING_PM_KMP_IMPROVEDLIB.a: CXX_STATIC_LIBRARY_LINKER__STRING_PM_KMP_IMPROVEDLIB_Debug string_pm_kmp_improved/CMakeFiles/STRING_PM_KMP_IMPROVEDLIB.dir/pm_kmp_next_improved.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = string_pm_kmp_improved/CMakeFiles/STRING_PM_KMP_IMPROVEDLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = string_pm_kmp_improved/libSTRING_PM_KMP_IMPROVEDLIB.a
+  TARGET_PDB = STRING_PM_KMP_IMPROVEDLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build string_pm_kr/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kr && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build string_pm_kr/rebuild_cache: phony string_pm_kr/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build string_pm_kr/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kr && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build string_pm_kr/edit_cache: phony string_pm_kr/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target STRING_PM_KRLIB
+
+
+#############################################
+# Order-only phony target for STRING_PM_KRLIB
+
+build cmake_object_order_depends_target_STRING_PM_KRLIB: phony || string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+
+build string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr.cpp.o: CXX_COMPILER__STRING_PM_KRLIB_Debug ../string_pm_kr/pm_kr.cpp || cmake_object_order_depends_target_STRING_PM_KRLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_kr
+  OBJECT_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+  OBJECT_FILE_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+
+build string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_check1by1.cpp.o: CXX_COMPILER__STRING_PM_KRLIB_Debug ../string_pm_kr/pm_kr_check1by1.cpp || cmake_object_order_depends_target_STRING_PM_KRLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_check1by1.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_kr
+  OBJECT_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+  OBJECT_FILE_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+
+build string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_prepareDm.cpp.o: CXX_COMPILER__STRING_PM_KRLIB_Debug ../string_pm_kr/pm_kr_prepareDm.cpp || cmake_object_order_depends_target_STRING_PM_KRLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_prepareDm.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_kr
+  OBJECT_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+  OBJECT_FILE_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+
+build string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_updateHash.cpp.o: CXX_COMPILER__STRING_PM_KRLIB_Debug ../string_pm_kr/pm_kr_updateHash.cpp || cmake_object_order_depends_target_STRING_PM_KRLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_updateHash.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../string_pm_kr
+  OBJECT_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+  OBJECT_FILE_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target STRING_PM_KRLIB
+
+
+#############################################
+# Link the static library string_pm_kr/libSTRING_PM_KRLIB.a
+
+build string_pm_kr/libSTRING_PM_KRLIB.a: CXX_STATIC_LIBRARY_LINKER__STRING_PM_KRLIB_Debug string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr.cpp.o string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_check1by1.cpp.o string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_prepareDm.cpp.o string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_updateHash.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = string_pm_kr/libSTRING_PM_KRLIB.a
+  TARGET_PDB = STRING_PM_KRLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build UniPrint/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -3487,6 +3971,8 @@ build GCD: phony gcd/GCD
 
 build GCDLIB: phony gcd/libGCDLIB.a
 
+build GRAPH: phony graph/GRAPH
+
 build GREATEST_SLICE: phony greatest_slice/GREATEST_SLICE
 
 build GREATEST_SLICELIB: phony greatest_slice/libGREATEST_SLICELIB.a
@@ -3534,6 +4020,18 @@ build STRING_PMLIB: phony string_pm/libSTRING_PMLIB.a
 build STRING_PM_BF1LIB: phony string_pm_bf1/libSTRING_PM_BF1LIB.a
 
 build STRING_PM_BF2LIB: phony string_pm_bf2/libSTRING_PM_BF2LIB.a
+
+build STRING_PM_BM_BC+GSLIB: phony string_pm_bm_bc+gs/libSTRING_PM_BM_BC+GSLIB.a
+
+build STRING_PM_BM_BCLIB: phony string_pm_bm_bc/libSTRING_PM_BM_BCLIB.a
+
+build STRING_PM_KMPLIB: phony string_pm_kmp/libSTRING_PM_KMPLIB.a
+
+build STRING_PM_KMP_IMPROVEDLIB: phony string_pm_kmp_improved/libSTRING_PM_KMP_IMPROVEDLIB.a
+
+build STRING_PM_KRLIB: phony string_pm_kr/libSTRING_PM_KRLIB.a
+
+build Splay: phony splay/Splay
 
 build UNIPRINTLIB: phony UniPrint/libUNIPRINTLIB.a
 
@@ -3587,6 +4085,16 @@ build libSTRING_PM_BF1LIB.a: phony string_pm_bf1/libSTRING_PM_BF1LIB.a
 
 build libSTRING_PM_BF2LIB.a: phony string_pm_bf2/libSTRING_PM_BF2LIB.a
 
+build libSTRING_PM_BM_BC+GSLIB.a: phony string_pm_bm_bc+gs/libSTRING_PM_BM_BC+GSLIB.a
+
+build libSTRING_PM_BM_BCLIB.a: phony string_pm_bm_bc/libSTRING_PM_BM_BCLIB.a
+
+build libSTRING_PM_KMPLIB.a: phony string_pm_kmp/libSTRING_PM_KMPLIB.a
+
+build libSTRING_PM_KMP_IMPROVEDLIB.a: phony string_pm_kmp_improved/libSTRING_PM_KMP_IMPROVEDLIB.a
+
+build libSTRING_PM_KRLIB.a: phony string_pm_kr/libSTRING_PM_KRLIB.a
+
 build libUNIPRINTLIB.a: phony UniPrint/libUNIPRINTLIB.a
 
 build median1: phony median1/median1
@@ -3613,7 +4121,7 @@ build vector: phony vector/vector
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
-build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all daxue/all factorial/all fibonacci/all gcd/all greatest_slice/all hanoi/all hashtable/all huffman/all laby/all list/all majority/all max/all median1/all median2/all nest_recursive/all nest_stack/all power/all PQ/all prime/all queue/all random/all redBlack/all reverse/all selection/all shiftK/all skiplist/all stack/all string_pm/all string_pm_bf1/all string_pm_bf2/all UniPrint/all vector/all
+build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all daxue/all factorial/all fibonacci/all gcd/all graph/all greatest_slice/all hanoi/all hashtable/all huffman/all laby/all list/all majority/all max/all median1/all median2/all nest_recursive/all nest_stack/all power/all PQ/all prime/all queue/all random/all redBlack/all reverse/all selection/all shiftK/all skiplist/all splay/all stack/all string_pm/all string_pm_bf1/all string_pm_bf2/all string_pm_bm_bc/all string_pm_bm_bc+gs/all string_pm_kmp/all string_pm_kmp_improved/all string_pm_kr/all UniPrint/all vector/all
 
 # =============================================================================
 
@@ -3733,6 +4241,13 @@ build fibonacci/all: phony fibonacci/FIBONACCI fibonacci/libFIBONACCILIB.a
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/gcd
 
 build gcd/all: phony gcd/GCD gcd/libGCDLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/graph
+
+build graph/all: phony graph/GRAPH
 
 # =============================================================================
 
@@ -3884,6 +4399,13 @@ build skiplist/all: phony skiplist/skiplist
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/splay
+
+build splay/all: phony splay/Splay
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/stack
 
 build stack/all: phony stack/STACK
@@ -3912,6 +4434,41 @@ build string_pm_bf2/all: phony string_pm_bf2/libSTRING_PM_BF2LIB.a
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc
+
+build string_pm_bm_bc/all: phony string_pm_bm_bc/libSTRING_PM_BM_BCLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_bm_bc+gs
+
+build string_pm_bm_bc+gs/all: phony string_pm_bm_bc+gs/libSTRING_PM_BM_BC+GSLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp
+
+build string_pm_kmp/all: phony string_pm_kmp/libSTRING_PM_KMPLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kmp_improved
+
+build string_pm_kmp_improved/all: phony string_pm_kmp_improved/libSTRING_PM_KMP_IMPROVEDLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/string_pm_kr
+
+build string_pm_kr/all: phony string_pm_kr/libSTRING_PM_KRLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector
 
 build vector/all: phony vector/vector
@@ -3923,14 +4480,14 @@ build vector/all: phony vector/vector
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../skiplist/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../graph/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../skiplist/CMakeLists.txt ../splay/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../string_pm_bm_bc+gs/CMakeLists.txt ../string_pm_bm_bc/CMakeLists.txt ../string_pm_kmp/CMakeLists.txt ../string_pm_kmp_improved/CMakeLists.txt ../string_pm_kr/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../skiplist/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
+build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../graph/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../skiplist/CMakeLists.txt ../splay/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../string_pm_bm_bc+gs/CMakeLists.txt ../string_pm_bm_bc/CMakeLists.txt ../string_pm_kmp/CMakeLists.txt ../string_pm_kmp_improved/CMakeLists.txt ../string_pm_kr/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
 
 
 #############################################
