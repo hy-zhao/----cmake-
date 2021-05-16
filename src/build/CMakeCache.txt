@@ -262,6 +262,18 @@ CONVERSION_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAK
 CONVERSION_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion
 
 //Value Computed by CMake
+COUNTONES_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/countOnes
+
+//Value Computed by CMake
+COUNTONES_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes
+
+//Value Computed by CMake
+CURSOR_LIST_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list
+
+//Value Computed by CMake
+CURSOR_LIST_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/cursor_list
+
+//Value Computed by CMake
 FACTORIAL_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/factorial
 
 //Value Computed by CMake
@@ -290,6 +302,12 @@ UniPrint_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/
 
 //Value Computed by CMake
 UniPrint_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint
+
+//Value Computed by CMake
+cursor_list_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list
+
+//Value Computed by CMake
+cursor_list_SOURCE_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/cursor_list
 
 //Value Computed by CMake
 dsacpp_BINARY_DIR:STATIC=/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
@@ -418,7 +436,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

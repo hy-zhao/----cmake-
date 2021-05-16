@@ -891,7 +891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "16"
+			"value" : "19"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1314,6 +1314,54 @@
 			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion"
 		},
 		{
+			"name" : "COUNTONES_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/countOnes"
+		},
+		{
+			"name" : "COUNTONES_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes"
+		},
+		{
+			"name" : "CURSOR_LIST_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list"
+		},
+		{
+			"name" : "CURSOR_LIST_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/cursor_list"
+		},
+		{
 			"name" : "FACTORIAL_BINARY_DIR",
 			"properties" : 
 			[
@@ -1432,6 +1480,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint"
+		},
+		{
+			"name" : "cursor_list_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list"
+		},
+		{
+			"name" : "cursor_list_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/cursor_list"
 		},
 		{
 			"name" : "dsacpp_BINARY_DIR",

@@ -79,6 +79,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion_recursive/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/countOnes/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/cmake_install.cmake")
 endif()
 

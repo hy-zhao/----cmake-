@@ -61,6 +61,36 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../conversion_recursive -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o conversion_recursive/CMakeFiles/CONVERSION_RECURSIVELIB.dir/convert.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion_recursive/convert.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/conversion_recursive/convert.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o countOnes/CMakeFiles/COUNTONES.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../countOnes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_1.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/countOnes_1.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/countOnes_1.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../countOnes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes_2.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/countOnes_2.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/countOnes_2.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../countOnes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o countOnes/CMakeFiles/COUNTONESLIB.dir/countOnes.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/countOnes.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/countOnes/countOnes.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o cursor_list/CMakeFiles/CURSOR_LIST.dir/test.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/cursor_list/test.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/cursor_list/test.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o UniPrint/CMakeFiles/UNIPRINTLIB.dir/print_basic.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint/print_basic.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/UniPrint/print_basic.cpp"
 },

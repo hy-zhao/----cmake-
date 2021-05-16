@@ -1,9 +1,3 @@
-set(PROJECT_NAME conversion_recursive)
+add_library(CONVERSION_RECURSIVELIB convert.cpp)
 
-################################################################################
-# Source groups
-################################################################################
-# set(
-#     "../conversion/convert.h"
-# )
-# # source_group("婢跺
+target_include_directories(CONVERSION_RECURSIVELIB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

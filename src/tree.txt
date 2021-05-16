@@ -1,0 +1,792 @@
+.
+├── AVL
+│   ├── AVL.h
+│   ├── AVL_Insert.h
+│   ├── AVL_implementation.h
+│   ├── AVL_macro.h
+│   ├── AVL_remove.h
+│   ├── AVL_test.h
+│   ├── CMakeLists.txt
+│   └── main.cpp
+├── BST
+│   ├── BST.h
+│   ├── BST_RotateAt.h
+│   ├── BST_connect34.h
+│   ├── BST_search.h
+│   ├── BST_test.h
+│   ├── CMakeLists.txt
+│   ├── bst_implementation.h
+│   ├── bst_insert.h
+│   ├── bst_remove.h
+│   ├── bst_removeAt.h
+│   └── main.cpp
+├── BTree
+│   ├── BTNode.h
+│   ├── BTree.h
+│   ├── BTree_Test.h
+│   ├── BTree_implementation.h
+│   ├── BTree_insert.h
+│   ├── BTree_remove.h
+│   ├── BTree_search.h
+│   ├── BTree_solveOverflow.h
+│   ├── BTree_solveUnderflow.h
+│   ├── CMakeLists.txt
+│   └── main.cpp
+├── BitMap
+│   ├── Bitmap.h
+│   ├── Bitmap_O1_init.h
+│   ├── CMakeLists.txt
+│   └── main_O1_init.cpp
+├── Bitmap_set_only
+│   ├── Bitmap_O1_init_set_only.h
+│   ├── CMakeLists.txt
+│   └── main_O1_init_set_only.cpp
+├── CMakeLists.txt
+├── Dictionary
+│   └── Dictionary.h
+├── Entry
+│   └── Entry.h
+├── Huffman_PQ_ComplHeap
+│   ├── CMakeLists.txt
+│   ├── Huffman_Forest_PQ_ComplHeap.h
+│   └── build
+│       ├── CMakeCache.txt
+│       └── CMakeFiles
+│           ├── 3.20.1
+│           │   ├── CMakeCCompiler.cmake
+│           │   ├── CMakeCXXCompiler.cmake
+│           │   ├── CMakeDetermineCompilerABI_C.bin
+│           │   ├── CMakeDetermineCompilerABI_CXX.bin
+│           │   ├── CMakeSystem.cmake
+│           │   ├── CompilerIdC
+│           │   │   ├── CMakeCCompilerId.c
+│           │   │   ├── CMakeCCompilerId.o
+│           │   │   └── tmp
+│           │   └── CompilerIdCXX
+│           │       ├── CMakeCXXCompilerId.cpp
+│           │       ├── CMakeCXXCompilerId.o
+│           │       └── tmp
+│           ├── CMakeError.log
+│           ├── CMakeOutput.log
+│           ├── CMakeTmp
+│           └── cmake.check_cache
+├── Huffman_PQ_LeftHeap
+│   ├── CMakeLists.txt
+│   └── Huffman_Forest_PQ_LeftHeap.h
+├── Huffman_PQ_List
+│   ├── CMakeLists.txt
+│   └── Huffman_Forest_PQ_List.h
+├── PQ
+│   ├── PQ.h
+│   ├── PQ_Test.cpp
+│   └── PQ_Test.h
+├── PQ_ComplHeap
+│   ├── CMakeLists.txt
+│   ├── PQ_ComplHeap.h
+│   ├── PQ_ComplHeap_Heapify.h
+│   ├── PQ_ComplHeap_delMax.h
+│   ├── PQ_ComplHeap_getMax.h
+│   ├── PQ_ComplHeap_implementation.h
+│   ├── PQ_ComplHeap_insert.h
+│   ├── PQ_ComplHeap_macro.h
+│   ├── PQ_ComplHeap_percolateDown.h
+│   └── PQ_ComplHeap_percolateUp.h
+├── PQ_List
+│   ├── CMakeLists.txt
+│   └── PQ_List.h
+├── PQ_leftheap
+│   ├── CMakeLists.txt
+│   ├── PQ_LeftHeap.h
+│   ├── PQ_LeftHeap_delMax.h
+│   ├── PQ_LeftHeap_getMax.h
+│   ├── PQ_LeftHeap_implementation.h
+│   ├── PQ_LeftHeap_insert.h
+│   └── PQ_Leftheap_merge.h
+├── Prefix_free_Codes
+│   ├── CMakeLists.txt
+│   ├── PFC.h
+│   ├── PFC_Test.cpp
+│   ├── PFC_decode.cpp
+│   ├── PFC_encode.cpp
+│   ├── PFC_generateTable.cpp
+│   ├── PFC_generateTree.cpp
+│   ├── PFC_initForest.cpp
+│   └── PFC_test.h
+├── UniPrint
+│   ├── CMakeLists.txt
+│   ├── print.h
+│   ├── print_Entry.h
+│   ├── print_GraphMatrix.h
+│   ├── print_HashTable.h
+│   ├── print_HuffChar.cpp
+│   ├── print_PQ_ComplHeap.h
+│   ├── print_PQ_LeftHeap.h
+│   ├── print_PQ_List.h
+│   ├── print_QuadList.h
+│   ├── print_SkipList.h
+│   ├── print_basic.cpp
+│   ├── print_binNode.h
+│   ├── print_bintree.h
+│   ├── print_btree.h
+│   ├── print_implementation.h
+│   ├── print_int_array.cpp
+│   ├── print_int_array.h
+│   └── print_traversable.h
+├── _java
+│   ├── Hash.java
+│   ├── TestList.java
+│   ├── TestSequence.cmd
+│   ├── TestTreeMap.java
+│   ├── TestVector.java
+│   └── dsa
+│       ├── AVLTree.java
+│       ├── BFS.java
+│       ├── BFSDistance.java
+│       ├── BSTree.java
+│       ├── BSTreeNode.java
+│       ├── BestFS.java
+│       ├── BestFSDijkstra.java
+│       ├── BestFSPrim.java
+│       ├── BinTree.java
+│       ├── BinTreeNode.java
+│       ├── BinTreePosition.java
+│       ├── BinTree_LinkedList.java
+│       ├── Comparator.java
+│       ├── ComparatorDefault.java
+│       ├── ComparatorLexicographic.java
+│       ├── ComplBinTree.java
+│       ├── ComplBinTreeNode_Rank.java
+│       ├── ComplBinTree_Vector.java
+│       ├── DFS.java
+│       ├── DFSReachableComponent.java
+│       ├── DLNode.java
+│       ├── Deque.java
+│       ├── Deque_DLNode.java
+│       ├── Dictionary.java
+│       ├── Dictionary_DLNode.java
+│       ├── Dictionary_HashTable.java
+│       ├── Edge.java
+│       ├── Edge_List.java
+│       ├── Entry.java
+│       ├── EntryDefault.java
+│       ├── EqualityTester.java
+│       ├── EqualityTesterDefault.java
+│       ├── ExceptionBoundaryViolation.java
+│       ├── ExceptionKeyInvalid.java
+│       ├── ExceptionListEmpty.java
+│       ├── ExceptionNoSuchElement.java
+│       ├── ExceptionPQueueEmpty.java
+│       ├── ExceptionPositionInvalid.java
+│       ├── ExceptionQueueEmpty.java
+│       ├── ExceptionQueueFull.java
+│       ├── ExceptionStackEmpty.java
+│       ├── ExceptionStackFull.java
+│       ├── ExceptionTreeEmpty.java
+│       ├── Graph.java
+│       ├── GraphTraverse.java
+│       ├── Graph_List.java
+│       ├── Iterator.java
+│       ├── IteratorElement.java
+│       ├── IteratorPosition.java
+│       ├── IteratorTree.java
+│       ├── List.java
+│       ├── List_DLNode.java
+│       ├── Map.java
+│       ├── Map_DLNode.java
+│       ├── Map_HashTable.java
+│       ├── Node.java
+│       ├── PM_BM.java
+│       ├── PM_BruteForce.java
+│       ├── PM_KMP.java
+│       ├── PQueue.java
+│       ├── PQueue_Heap.java
+│       ├── PQueue_SortedList.java
+│       ├── PQueue_UnsortedList.java
+│       ├── Point2D.java
+│       ├── Position.java
+│       ├── Queue.java
+│       ├── Queue_Array.java
+│       ├── Queue_List.java
+│       ├── Sequence.java
+│       ├── Sequence_DLNode.java
+│       ├── SortedDictionary.java
+│       ├── SortedDictionary_ExtArray.java
+│       ├── Sorter.java
+│       ├── Sorter_Bubblesort.java
+│       ├── Sorter_Mergesort.java
+│       ├── Sorter_PQueue.java
+│       ├── Sorter_Quicksort.java
+│       ├── SplayTree.java
+│       ├── Stack.java
+│       ├── Stack_Array.java
+│       ├── Stack_List.java
+│       ├── Tree.java
+│       ├── TreeLinkedList.java
+│       ├── Vector.java
+│       ├── Vector_Array.java
+│       ├── Vector_ExtArray.java
+│       ├── Vertex.java
+│       └── Vertex_List.java
+├── _pl
+│   └── Hash.pl
+├── _ps
+│   ├── 2009.ps
+│   ├── 2010.ps
+│   ├── 2011.ps
+│   └── smile.ps
+├── _py
+│   ├── Hash.py
+│   ├── UnionFind_QuickFind.py
+│   ├── UnionFind_test.py
+│   ├── list.py
+│   └── reverse.py
+├── _rb
+│   └── hash.rb
+├── _share
+│   ├── CMakeLists.txt
+│   ├── Hailstone_Elem.h
+│   ├── checkOrder_Elem.h
+│   ├── checkOrder_list.h
+│   ├── checkOrder_vector.h
+│   ├── comparator.h
+│   ├── crc_Elem.h
+│   ├── crc_list.h
+│   ├── crc_vector.h
+│   ├── decrease_Elem.h
+│   ├── decrease_list.h
+│   ├── decrease_vector.h
+│   ├── double_Elem.h
+│   ├── double_vector.h
+│   ├── half_Elem.h
+│   ├── half_list.h
+│   ├── increase_Elem.h
+│   ├── increase_list.h
+│   ├── increase_vector.h
+│   ├── rand.h
+│   ├── release.h
+│   └── util.h
+├── binTree
+│   ├── BinNode.h
+│   ├── BinNode_TravInorder_I1.h
+│   ├── BinNode_TravInorder_I2.h
+│   ├── BinNode_TravInorder_I3.h
+│   ├── BinNode_TravInorder_I4.h
+│   ├── BinNode_TravPreorder_I1.h
+│   ├── BinNode_TravPreorder_I2.h
+│   ├── BinNode_implementation.h
+│   ├── BinNode_insert.h
+│   ├── BinNode_macro.h
+│   ├── BinNode_macro_AVL.h
+│   ├── BinNode_macro_BASIC.h
+│   ├── BinNode_macro_RedBlack.h
+│   ├── BinNode_size.h
+│   ├── BinNode_stretchByZag.h
+│   ├── BinNode_stretchByZig.h
+│   ├── BinNode_succ.h
+│   ├── BinNode_travInorder.h
+│   ├── BinNode_travInorder_R.h
+│   ├── BinNode_travLevel.h
+│   ├── BinNode_travPostorder.h
+│   ├── BinNode_travPostorder_I.h
+│   ├── BinNode_travPostorder_R.h
+│   ├── BinNode_travPreorder.h
+│   ├── BinNode_travPreorder_R.h
+│   ├── BinNode_zag.h
+│   ├── BinNode_zig.h
+│   ├── BinTree.h
+│   ├── BinTree_attach.h
+│   ├── BinTree_implementation.h
+│   ├── BinTree_insert.h
+│   ├── BinTree_remove.h
+│   ├── BinTree_secede.h
+│   ├── BinTree_size.h
+│   ├── BinTree_test.h
+│   ├── BinTree_updateHeight.h
+│   ├── CMakeLists.txt
+│   └── main.cpp
+├── bubblesort
+│   ├── CMakeLists.txt
+│   ├── bubble.cpp
+│   ├── bubble1A.cpp
+│   ├── bubble1B.cpp
+│   ├── bubble2.cpp
+│   └── main.cpp
+├── build
+│   ├── AVL
+│   │   ├── AVL
+│   │   ├── CMakeFiles
+│   │   │   └── AVL.dir
+│   │   │       └── main.cpp.o
+│   │   └── cmake_install.cmake
+│   ├── BST
+│   │   ├── CMakeFiles
+│   │   └── cmake_install.cmake
+│   ├── BTree
+│   │   ├── CMakeFiles
+│   │   └── cmake_install.cmake
+│   ├── BitMap
+│   │   └── CMakeFiles
+│   ├── Bitmap_set_only
+│   │   └── CMakeFiles
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   │   ├── 3.20.2
+│   │   │   ├── CMakeCCompiler.cmake
+│   │   │   ├── CMakeCXXCompiler.cmake
+│   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│   │   │   ├── CMakeSystem.cmake
+│   │   │   ├── CompilerIdC
+│   │   │   │   ├── CMakeCCompilerId.c
+│   │   │   │   ├── a.out
+│   │   │   │   └── tmp
+│   │   │   └── CompilerIdCXX
+│   │   │       ├── CMakeCXXCompilerId.cpp
+│   │   │       ├── a.out
+│   │   │       └── tmp
+│   │   ├── CMakeOutput.log
+│   │   ├── CMakeTmp
+│   │   ├── TargetDirectories.txt
+│   │   ├── cmake.check_cache
+│   │   └── rules.ninja
+│   ├── Dictionary
+│   ├── Entry
+│   ├── UniPrint
+│   │   ├── CMakeFiles
+│   │   │   └── UNIPRINTLIB.dir
+│   │   │       ├── print_HuffChar.cpp.o
+│   │   │       ├── print_basic.cpp.o
+│   │   │       └── print_int_array.cpp.o
+│   │   ├── cmake_install.cmake
+│   │   └── libUNIPRINTLIB.a
+│   ├── _share
+│   │   ├── CMakeFiles
+│   │   └── cmake_install.cmake
+│   ├── build.ninja
+│   ├── cmake_install.cmake
+│   ├── compile_commands.json
+│   ├── hashtable
+│   │   ├── CMakeFiles
+│   │   │   └── hashtable.dir
+│   │   └── cmake_install.cmake
+│   ├── prime
+│   │   ├── CMakeFiles
+│   │   │   ├── PRIME.dir
+│   │   │   └── PRIMELIB.dir
+│   │   └── cmake_install.cmake
+│   └── vector
+│       ├── CMakeFiles
+│       │   └── vector.dir
+│       └── cmake_install.cmake
+├── conversion
+│   ├── CMakeLists.txt
+│   ├── convert.cpp
+│   ├── convert.h
+│   └── main.cpp
+├── conversion_recursive
+│   ├── CMakeLists.txt
+│   └── convert.cpp
+├── countOnes
+│   ├── CMakeLists.txt
+│   ├── countOnes.cpp
+│   ├── countOnes_1.cpp
+│   ├── countOnes_2.cpp
+│   └── main.cpp
+├── cursor_list
+│   ├── CMakeLists.txt
+│   ├── cursor_list.h
+│   ├── cursor_list_implementation.h
+│   └── test.cpp
+├── daxue
+│   ├── CMakeLists.txt
+│   └── main.cpp
+├── factorial
+│   ├── CMakeLists.txt
+│   ├── fac.h
+│   ├── fac_iterative.cpp
+│   ├── fac_recursive.cpp
+│   └── main.cpp
+├── fibonacci
+│   ├── CMakeLists.txt
+│   ├── Fib.h
+│   ├── Fib0.cpp
+│   ├── Fib1.cpp
+│   ├── Fib2.cpp
+│   └── main.cpp
+├── gcd
+│   ├── CMakeLists.txt
+│   ├── gcd_chinese.cpp
+│   ├── gcd_euclidean.cpp
+│   └── main.cpp
+├── graph
+│   ├── Graph.h
+│   ├── Graph_Test.cpp
+│   ├── Graph_Test.h
+│   ├── Graph_bcc.h
+│   ├── Graph_bfs.h
+│   ├── Graph_bfs_PU.h
+│   ├── Graph_dfs.h
+│   ├── Graph_dfs_PU.h
+│   ├── Graph_dijkstra.h
+│   ├── Graph_dijkstra_PU.h
+│   ├── Graph_implementation.h
+│   ├── Graph_pfs.h
+│   ├── Graph_prim.h
+│   ├── Graph_prim_PU.h
+│   └── Graph_tsort.h
+├── graphmatrix
+│   ├── CMakeLists.txt
+│   └── GraphMatrix.h
+├── greatest_slice
+│   ├── CMakeLists.txt
+│   ├── gs_bf.cpp
+│   ├── gs_dc.cpp
+│   ├── gs_ic.cpp
+│   ├── gs_ls.cpp
+│   └── test.cpp
+├── hanoi
+│   ├── CMakeLists.txt
+│   ├── display.cpp
+│   ├── hanoi.cpp
+│   ├── hanoi.h
+│   ├── main.cpp
+│   └── move_disk.cpp
+├── hashtable
+│   ├── CMakeLists.txt
+│   ├── HashTable.h
+│   ├── HashTable_Implementation.h
+│   ├── HashTable_constructor.h
+│   ├── HashTable_destructor.h
+│   ├── HashTable_get.h
+│   ├── HashTable_hashcode.h
+│   ├── HashTable_probe4Free.h
+│   ├── HashTable_put.h
+│   ├── HashTable_rehash.h
+│   ├── HashTable_remove.h
+│   ├── HashTable_test.h
+│   ├── Hashtable_probe4Hit.h
+│   └── main.cpp
+├── huffman
+│   ├── CMakeLists.txt
+│   ├── HuffCode.h
+│   ├── HuffTable.h
+│   ├── HuffTree.h
+│   ├── Huffman_Forest_List.h
+│   ├── Huffman_PQ.h
+│   ├── Huffman_PQ_Test.cpp
+│   ├── Huffman_PQ_generateTree.cpp
+│   ├── Huffman_PQ_test.h
+│   ├── huffChar.h
+│   ├── huffman_PQ_initForest.cpp
+│   ├── huffman_decode.cpp
+│   ├── huffman_encode.cpp
+│   ├── huffman_generateTable.cpp
+│   ├── huffman_generateTree.cpp
+│   ├── huffman_initForest.cpp
+│   ├── huffman_statistics.cpp
+│   └── huffman_test.h
+├── laby
+│   ├── CMakeLists.txt
+│   ├── Cell.h
+│   ├── Laby.h
+│   ├── advance.h
+│   ├── displayLaby.h
+│   ├── main.cpp
+│   ├── neighbor.h
+│   ├── randLaby.h
+│   └── readLaby.h
+├── list
+│   ├── CMakeLists.txt
+│   ├── List_RadixSort.h
+│   ├── List_SelectionSort.h
+│   ├── List_deduplicate.h
+│   ├── List_find.h
+│   ├── List_insert.h
+│   ├── List_insertionsort.h
+│   ├── List_merge.h
+│   ├── List_mergesort.h
+│   ├── List_search.h
+│   ├── List_selectMax.h
+│   ├── List_sort.h
+│   ├── List_traverse.h
+│   ├── List_uniquify.h
+│   ├── list.h
+│   ├── listNode.h
+│   ├── listNode_implementation.h
+│   ├── listNode_insertAsPred.h
+│   ├── listNode_insertAsSucc.h
+│   ├── list_bracket.h
+│   ├── list_clear.h
+│   ├── list_constructor_by_copying.h
+│   ├── list_copyNodes.h
+│   ├── list_destructor.h
+│   ├── list_implementation.h
+│   ├── list_initialize.h
+│   ├── list_remove.h
+│   ├── list_reverse1.h
+│   ├── list_reverse2.h
+│   ├── list_reverse3.h
+│   ├── list_test.h
+│   └── main.cpp
+├── majority
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── majority.h
+│   ├── majorityCandidate.h
+│   └── majorityCheck.h
+├── max
+│   ├── max0.cpp
+│   ├── max1.cpp
+│   └── max2.cpp
+├── maxRect
+│   ├── CMakeLists.txt
+│   ├── mr_BF.cpp
+│   ├── mr_STACK.cpp
+│   ├── mr_STACKS.cpp
+│   └── test.cpp
+├── median1
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── median.h
+│   └── trivialMedian.h
+├── median2
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   └── median.h
+├── nest_recursive
+│   ├── CMakeLists.txt
+│   ├── display.cpp
+│   └── nest.cpp
+├── nest_stack
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── nest.cpp
+│   └── nest.h
+├── power
+│   ├── CMakeLists.txt
+│   ├── Power0.cpp
+│   ├── Power1.cpp
+│   ├── Power2-0-I.cpp
+│   ├── Power2-0-R.cpp
+│   ├── Power2-1-I.cpp
+│   ├── Power2-1-R.cpp
+│   └── main.cpp
+├── prime
+│   ├── CMakeLists.txt
+│   ├── Eratosthenes.cpp
+│   ├── Eratosthenes.h
+│   ├── main.cpp
+│   ├── prime-bitmap.txt
+│   ├── primeNLT.cpp
+│   └── primeNLT.h
+├── queen_brute_force_1
+│   ├── 5queens.cpp
+│   ├── CMakeLists.txt
+│   ├── collision.cpp
+│   ├── displaySolution.cpp
+│   ├── main.cpp
+│   └── queen.h
+├── queen_brute_force_2
+│   ├── 2queens.cpp
+│   ├── 3queens.cpp
+│   ├── 4queens.cpp
+│   ├── 5queens.cpp
+│   ├── CMakeLists.txt
+│   └── main.cpp
+├── queen_recursive
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   └── placeQueens.cpp
+├── queen_stack
+│   ├── CMakeLists.txt
+│   ├── displayProgress.cpp
+│   ├── main.cpp
+│   ├── placeQueens.cpp
+│   ├── queen.h
+│   └── queen_stack.h
+├── queue
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── queue.h
+│   ├── queue_implementation.h
+│   └── queue_test.h
+├── random
+│   ├── Shuffle.cpp
+│   ├── Shuffle.h
+│   ├── randomSortedVector.cpp
+│   └── randomSortedVector.h
+├── redBlack
+│   ├── CMakeLists.txt
+│   ├── RedBlack.h
+│   ├── RedBlack_Insert.h
+│   ├── RedBlack_implementation.h
+│   ├── RedBlack_remove.h
+│   ├── RedBlack_solveDoubleBlack.h
+│   ├── RedBlack_solveDoubleRed.h
+│   ├── RedBlack_test.h
+│   ├── RedBlack_updateHeight.h
+│   └── main.cpp
+├── reverse
+│   ├── reverse-iterative-0.cpp
+│   ├── reverse-iterative-1.cpp
+│   ├── reverse-recursive.cpp
+│   ├── reverse.cpp
+│   └── reverse.h
+├── rpn
+│   ├── CMakeLists.txt
+│   ├── append2RPN.cpp
+│   ├── calculation.cpp
+│   ├── displayProgress.cpp
+│   ├── main.cpp
+│   ├── priority.cpp
+│   ├── priority.h
+│   ├── readNumber.cpp
+│   ├── rpn.cpp
+│   └── rpn.h
+├── selection
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── quickselect.h
+│   └── v
+├── shiftK
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── shift.cpp
+│   ├── shift0.cpp
+│   ├── shift1.cpp
+│   └── shift2.cpp
+├── simu
+│   ├── CMakeLists.txt
+│   ├── Customer.h
+│   ├── bestWindow.cpp
+│   ├── displayProgress.cpp
+│   ├── main.cpp
+│   ├── simu.cpp
+│   └── simu.h
+├── skiplist
+│   ├── CMakeLists.txt
+│   ├── QuadList.h
+│   ├── QuadListNode.h
+│   ├── QuadListNode_implementation.h
+│   ├── QuadListNode_insert.h
+│   ├── QuadList_implementation.h
+│   ├── QuadList_initialize.h
+│   ├── QuadList_insert.h
+│   ├── QuadList_remove.h
+│   ├── QuadList_traverse.h
+│   ├── SkipList.h
+│   ├── SkipList_get.h
+│   ├── SkipList_implementation.h
+│   ├── SkipList_put.h
+│   ├── SkipList_remove.h
+│   ├── SkipList_skipSearch.h
+│   ├── SkipList_test.h
+│   └── main.cpp
+├── splay
+│   ├── CMakeLists.txt
+│   ├── Splay.h
+│   ├── Splay_Insert.h
+│   ├── Splay_implementation.h
+│   ├── Splay_remove.h
+│   ├── Splay_search.h
+│   ├── Splay_splay.h
+│   ├── Splay_test.h
+│   └── main.cpp
+├── stack
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── stack.h
+│   └── stack_test.h
+├── stack_list
+│   ├── CMakeLists.txt
+│   └── stack_list.h
+├── stack_vector
+│   ├── CMakeLists.txt
+│   └── stack_vector.h
+├── string_pm
+│   ├── string_pm_test.cpp
+│   └── string_pm_test.h
+├── string_pm_bf1
+│   ├── CMakeLists.txt
+│   └── pm_brute1.cpp
+├── string_pm_bf2
+│   ├── CMakeLists.txt
+│   └── pm_brute2.cpp
+├── string_pm_bm_bc
+│   ├── CMakeLists.txt
+│   ├── pm_bm.h
+│   ├── pm_bm_bc.cpp
+│   └── pm_bm_buildBC.cpp
+├── string_pm_bm_bc+gs
+│   ├── CMakeLists.txt
+│   ├── pm_bm_bc+gs.cpp
+│   └── pm_bm_buildGS.cpp
+├── string_pm_kmp
+│   ├── CMakeLists.txt
+│   ├── pm_kmp.cpp
+│   └── pm_kmp_next.cpp
+├── string_pm_kmp_improved
+│   ├── CMakeLists.txt
+│   └── pm_kmp_next_improved.cpp
+├── string_pm_kr
+│   ├── CMakeLists.txt
+│   ├── pm_kr.cpp
+│   ├── pm_kr.h
+│   ├── pm_kr_check1by1.cpp
+│   ├── pm_kr_prepareDm.cpp
+│   └── pm_kr_updateHash.cpp
+├── sum
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── sum.h
+│   ├── sum0.cpp
+│   ├── sum1.cpp
+│   └── sum2.cpp
+├── tree.txt
+└── vector
+    ├── CMakeLists.txt
+    ├── Vector_deduplicate.h
+    ├── Vector_insert.h
+    ├── Vector_merge.h
+    ├── Vector_search.h
+    ├── Vector_search_binary_A.h
+    ├── Vector_search_binary_B.h
+    ├── Vector_search_binary_C.h
+    ├── Vector_search_fibonaccian_A.h
+    ├── Vector_search_fibonaccian_B.h
+    ├── Vector_uniquify.h
+    ├── Vector_uniquify_slow.h
+    ├── main.cpp
+    ├── permute.h
+    ├── vector.h
+    ├── vector_assignment.h
+    ├── vector_bracket.h
+    ├── vector_bubblesort_A.h
+    ├── vector_bubblesort_B.h
+    ├── vector_bubblesort_C.h
+    ├── vector_constructor_by_copying.h
+    ├── vector_deduplicate_1.h
+    ├── vector_deduplicate_wrong_1.h
+    ├── vector_expand.h
+    ├── vector_find.h
+    ├── vector_heapSort.h
+    ├── vector_implementation.h
+    ├── vector_mergeSort.h
+    ├── vector_partition_DUP.h
+    ├── vector_partition_DUP1.h
+    ├── vector_partition_LGU.h
+    ├── vector_partition_LUG.h
+    ├── vector_partition_LUG1.h
+    ├── vector_quickSort_iterative.h
+    ├── vector_quickSort_recursive.h
+    ├── vector_remove.h
+    ├── vector_removeInterval.h
+    ├── vector_selectionsort.h
+    ├── vector_shellSort.h
+    ├── vector_shrink.h
+    ├── vector_sort.h
+    ├── vector_test.h
+    ├── vector_traverse.h
+    └── vector_unsort.h
+
+121 directories, 668 files

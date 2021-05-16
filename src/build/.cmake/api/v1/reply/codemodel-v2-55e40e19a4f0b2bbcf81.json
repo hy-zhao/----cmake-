@@ -22,7 +22,10 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -142,17 +145,60 @@
 					]
 				},
 				{
-					"build" : "UniPrint",
+					"build" : "conversion_recursive",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "conversion_recursive",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "countOnes",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 7,
+					"source" : "countOnes",
+					"targetIndexes" : 
+					[
+						10,
+						11
+					]
+				},
+				{
+					"build" : "cursor_list",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "cursor_list",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "UniPrint",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 9,
 					"source" : "UniPrint",
 					"targetIndexes" : 
 					[
-						15
+						19
 					]
 				},
 				{
@@ -162,12 +208,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 8,
+					"projectIndex" : 10,
 					"source" : "factorial",
 					"targetIndexes" : 
 					[
-						9,
-						10
+						13,
+						14
 					]
 				},
 				{
@@ -177,11 +223,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 9,
+					"projectIndex" : 11,
 					"source" : "hashtable",
 					"targetIndexes" : 
 					[
-						16
+						20
 					]
 				},
 				{
@@ -191,12 +237,12 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 10,
+					"projectIndex" : 12,
 					"source" : "prime",
 					"targetIndexes" : 
 					[
-						11,
-						12
+						15,
+						16
 					]
 				},
 				{
@@ -206,11 +252,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 11,
+					"projectIndex" : 13,
 					"source" : "queue",
 					"targetIndexes" : 
 					[
-						13
+						17
 					]
 				},
 				{
@@ -220,11 +266,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 12,
+					"projectIndex" : 14,
 					"source" : "random",
 					"targetIndexes" : 
 					[
-						14
+						18
 					]
 				},
 				{
@@ -234,11 +280,11 @@
 						"string" : "3.15.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 13,
+					"projectIndex" : 15,
 					"source" : "vector",
 					"targetIndexes" : 
 					[
-						17
+						21
 					]
 				}
 			],
@@ -260,18 +306,22 @@
 						10,
 						11,
 						12,
-						13
+						13,
+						14,
+						15
 					],
 					"directoryIndexes" : 
 					[
 						0,
 						4,
-						6
+						6,
+						9
 					],
 					"name" : "dsacpp",
 					"targetIndexes" : 
 					[
-						3
+						3,
+						9
 					]
 				},
 				{
@@ -351,26 +401,14 @@
 				{
 					"directoryIndexes" : 
 					[
-						9
+						10
 					],
-					"name" : "UniPrint",
+					"name" : "COUNTONES",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						15
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						10
-					],
-					"name" : "FACTORIAL",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						9,
-						10
+						10,
+						11
 					]
 				},
 				{
@@ -378,48 +416,48 @@
 					[
 						11
 					],
+					"name" : "CURSOR_LIST",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "UniPrint",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "FACTORIAL",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						13,
+						14
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						14
+					],
 					"name" : "hashtable",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						16
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						12
-					],
-					"name" : "PRIME",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						11,
-						12
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						13
-					],
-					"name" : "QUEUE",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						13
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						14
-					],
-					"name" : "RANDOM",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						14
+						20
 					]
 				},
 				{
@@ -427,11 +465,48 @@
 					[
 						15
 					],
-					"name" : "vector",
+					"name" : "PRIME",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						16
+					],
+					"name" : "QUEUE",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						17
+					],
+					"name" : "RANDOM",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "vector",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						21
 					]
 				}
 			],
@@ -501,67 +576,95 @@
 					"projectIndex" : 6
 				},
 				{
-					"directoryIndex" : 10,
-					"id" : "FACTORIAL::@d94aa637cc44e6c8475a",
-					"jsonFile" : "target-FACTORIAL-Debug-d23a8b7f043ddcd8a239.json",
-					"name" : "FACTORIAL",
-					"projectIndex" : 8
-				},
-				{
-					"directoryIndex" : 10,
-					"id" : "FACTORIALLIB::@d94aa637cc44e6c8475a",
-					"jsonFile" : "target-FACTORIALLIB-Debug-2c13ffcee140ee4fb332.json",
-					"name" : "FACTORIALLIB",
-					"projectIndex" : 8
-				},
-				{
-					"directoryIndex" : 12,
-					"id" : "PRIME::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIME-Debug-78801f8c6c1359b25abb.json",
-					"name" : "PRIME",
-					"projectIndex" : 10
-				},
-				{
-					"directoryIndex" : 12,
-					"id" : "PRIMELIB::@747ebaa991c02475c66e",
-					"jsonFile" : "target-PRIMELIB-Debug-99e0a975716932d76b0f.json",
-					"name" : "PRIMELIB",
-					"projectIndex" : 10
-				},
-				{
-					"directoryIndex" : 13,
-					"id" : "QUEUE::@d63f5f69c5a9088733ed",
-					"jsonFile" : "target-QUEUE-Debug-102cfa123262db6f5138.json",
-					"name" : "QUEUE",
-					"projectIndex" : 11
-				},
-				{
-					"directoryIndex" : 14,
-					"id" : "RANDOMLIB::@043bef6630b23836363a",
-					"jsonFile" : "target-RANDOMLIB-Debug-4b6619143107627c4c02.json",
-					"name" : "RANDOMLIB",
-					"projectIndex" : 12
-				},
-				{
 					"directoryIndex" : 9,
-					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
-					"jsonFile" : "target-UNIPRINTLIB-Debug-96df9cd72f5dc52f9413.json",
-					"name" : "UNIPRINTLIB",
+					"id" : "CONVERSION_RECURSIVELIB::@6ce97e36583ad73ae4ba",
+					"jsonFile" : "target-CONVERSION_RECURSIVELIB-Debug-676ed155575a9e8ca9df.json",
+					"name" : "CONVERSION_RECURSIVELIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "COUNTONES::@3e4f2b44c2348416a92b",
+					"jsonFile" : "target-COUNTONES-Debug-9d0c2f54c891daf9d60e.json",
+					"name" : "COUNTONES",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "COUNTONESLIB::@3e4f2b44c2348416a92b",
+					"jsonFile" : "target-COUNTONESLIB-Debug-1abf08024517c5df04b8.json",
+					"name" : "COUNTONESLIB",
 					"projectIndex" : 7
 				},
 				{
 					"directoryIndex" : 11,
-					"id" : "hashtable::@5b24f28f0f334b38317d",
-					"jsonFile" : "target-hashtable-Debug-7826cd22abed6e8a3db6.json",
-					"name" : "hashtable",
-					"projectIndex" : 9
+					"id" : "CURSOR_LIST::@6035a6b137b4dd3d99bd",
+					"jsonFile" : "target-CURSOR_LIST-Debug-ef73400391b3fa3e58b7.json",
+					"name" : "CURSOR_LIST",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "FACTORIAL::@d94aa637cc44e6c8475a",
+					"jsonFile" : "target-FACTORIAL-Debug-d23a8b7f043ddcd8a239.json",
+					"name" : "FACTORIAL",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "FACTORIALLIB::@d94aa637cc44e6c8475a",
+					"jsonFile" : "target-FACTORIALLIB-Debug-2c13ffcee140ee4fb332.json",
+					"name" : "FACTORIALLIB",
+					"projectIndex" : 10
 				},
 				{
 					"directoryIndex" : 15,
+					"id" : "PRIME::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIME-Debug-78801f8c6c1359b25abb.json",
+					"name" : "PRIME",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "PRIMELIB::@747ebaa991c02475c66e",
+					"jsonFile" : "target-PRIMELIB-Debug-99e0a975716932d76b0f.json",
+					"name" : "PRIMELIB",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "QUEUE::@d63f5f69c5a9088733ed",
+					"jsonFile" : "target-QUEUE-Debug-102cfa123262db6f5138.json",
+					"name" : "QUEUE",
+					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "RANDOMLIB::@043bef6630b23836363a",
+					"jsonFile" : "target-RANDOMLIB-Debug-4b6619143107627c4c02.json",
+					"name" : "RANDOMLIB",
+					"projectIndex" : 14
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "UNIPRINTLIB::@2955e35d017526eaf0cc",
+					"jsonFile" : "target-UNIPRINTLIB-Debug-96df9cd72f5dc52f9413.json",
+					"name" : "UNIPRINTLIB",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "hashtable::@5b24f28f0f334b38317d",
+					"jsonFile" : "target-hashtable-Debug-7826cd22abed6e8a3db6.json",
+					"name" : "hashtable",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 18,
 					"id" : "vector::@95776985c747069fcc28",
 					"jsonFile" : "target-vector-Debug-5eaf20132a166c436967.json",
 					"name" : "vector",
-					"projectIndex" : 13
+					"projectIndex" : 15
 				}
 			]
 		}

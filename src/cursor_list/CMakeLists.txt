@@ -1,10 +1,7 @@
-set(PROJECT_NAME cursor_list)
+set(PROJECT_NAME CURSOR_LIST)
 
-################################################################################
-# Source groups
-################################################################################
-set(SOURCE_LIB
-    "cursor_list.h"
-    "cursor_list_implementation.h"
-)
-# source_group("婢跺
+project(${PROJECT_NAME})
+
+add_executable(${PROJECT_NAME} test.cpp)
+
+target_link_libraries(${PROJECT_NAME} UNIPRINTLIB)

@@ -25,6 +25,16 @@
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/CMakeFiles/CONVERSION.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion/CMakeFiles/CONVERSIONLIB.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion_recursive/CMakeFiles/rebuild_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion_recursive/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/conversion_recursive/CMakeFiles/CONVERSION_RECURSIVELIB.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/countOnes/CMakeFiles/rebuild_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/countOnes/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/countOnes/CMakeFiles/COUNTONES.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/countOnes/CMakeFiles/COUNTONESLIB.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list/CMakeFiles/rebuild_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list/CMakeFiles/edit_cache.dir
+/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/cursor_list/CMakeFiles/CURSOR_LIST.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/rebuild_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/edit_cache.dir
 /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint/CMakeFiles/UNIPRINTLIB.dir
