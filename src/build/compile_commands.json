@@ -11,7 +11,7 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
-  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../BitMap -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/BitMap/main_O1_init.cpp",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o BitMap/CMakeFiles/BITMAP.dir/main_O1_init.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/BitMap/main_O1_init.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/BitMap/main_O1_init.cpp"
 },
 {
@@ -276,6 +276,26 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o maxRect/CMakeFiles/MAXRECT.dir/test.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/test.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/test.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../maxRect -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACK.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/mr_STACK.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/mr_STACK.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../maxRect -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o maxRect/CMakeFiles/MAXRECTLIB.dir/mr_BF.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/mr_BF.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/mr_BF.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../maxRect -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACKS.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/mr_STACKS.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/maxRect/mr_STACKS.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../UniPrint -Irandom -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o median1/CMakeFiles/median1.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/median1/main.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/median1/main.cpp"
 },
@@ -346,6 +366,36 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODES.dir/PFC_Test.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_Test.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_Test.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../Prefix_free_Codes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_decode.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_decode.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_decode.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../Prefix_free_Codes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_encode.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_encode.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_encode.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../Prefix_free_Codes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTable.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_generateTable.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_generateTable.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../Prefix_free_Codes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTree.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_generateTree.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_generateTree.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../Prefix_free_Codes -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_initForest.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_initForest.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/Prefix_free_Codes/PFC_initForest.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../prime -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o prime/CMakeFiles/PRIME.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/prime/main.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/prime/main.cpp"
 },
@@ -358,6 +408,76 @@
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../prime -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o prime/CMakeFiles/PRIMELIB.dir/primeNLT.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/prime/primeNLT.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/prime/primeNLT.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_1/CMakeFiles/queen_brute_force_1.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/5queens.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/5queens.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/5queens.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/collision.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/collision.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/collision.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/displaySolution.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/displaySolution.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_1/displaySolution.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_2/CMakeFiles/queen_brute_force_2.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/2queens.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/2queens.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/2queens.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/3queens.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/3queens.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/3queens.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/4queens.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/4queens.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/4queens.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/5queens.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/5queens.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_brute_force_2/5queens.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_brute_force_1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_recursive/CMakeFiles/queen_recursive.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_recursive/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_recursive/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_recursive -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir/placeQueens.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_recursive/placeQueens.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_recursive/placeQueens.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_stack -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_stack/CMakeFiles/queen_stack.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_stack/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_stack/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_stack -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/displayProgress.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_stack/displayProgress.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_stack/displayProgress.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../queen_stack -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/placeQueens.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_stack/placeQueens.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/queen_stack/placeQueens.cpp"
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
@@ -401,6 +521,41 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../factorial -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o rpn/CMakeFiles/rpn.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../rpn -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o rpn/CMakeFiles/RPNLIB.dir/append2RPN.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/append2RPN.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/append2RPN.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../rpn -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o rpn/CMakeFiles/RPNLIB.dir/calculation.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/calculation.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/calculation.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../rpn -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o rpn/CMakeFiles/RPNLIB.dir/displayProgress.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/displayProgress.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/displayProgress.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../rpn -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o rpn/CMakeFiles/RPNLIB.dir/priority.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/priority.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/priority.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../rpn -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o rpn/CMakeFiles/RPNLIB.dir/readNumber.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/readNumber.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/readNumber.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../rpn -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o rpn/CMakeFiles/RPNLIB.dir/rpn.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/rpn.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/rpn/rpn.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o selection/CMakeFiles/selection.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/selection/main.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/selection/main.cpp"
 },
@@ -431,6 +586,26 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../simu -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o simu/CMakeFiles/simu.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../simu -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o simu/CMakeFiles/SIMULIB.dir/bestWindow.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/bestWindow.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/bestWindow.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../simu -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o simu/CMakeFiles/SIMULIB.dir/displayProgress.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/displayProgress.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/displayProgress.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../simu -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o simu/CMakeFiles/SIMULIB.dir/simu.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/simu.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/simu/simu.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o skiplist/CMakeFiles/skiplist.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/skiplist/main.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/skiplist/main.cpp"
 },
@@ -441,7 +616,7 @@
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
-  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../UniPrint -I../stack -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o stack/CMakeFiles/STACK.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/stack/main.cpp",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../UniPrint -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o stack/CMakeFiles/STACK.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/stack/main.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/stack/main.cpp"
 },
 {
@@ -513,6 +688,26 @@
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
   "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../string_pm_kr -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o string_pm_kr/CMakeFiles/STRING_PM_KRLIB.dir/pm_kr_updateHash.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_kr/pm_kr_updateHash.cpp",
   "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/string_pm_kr/pm_kr_updateHash.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../sum -I../UniPrint -I../reverse -Irandom -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o sum/CMakeFiles/sum.dir/main.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/main.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/main.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../sum -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o sum/CMakeFiles/SUMLIB.dir/sum0.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/sum0.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/sum0.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../sum -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o sum/CMakeFiles/SUMLIB.dir/sum1.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/sum1.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/sum1.cpp"
+},
+{
+  "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",
+  "command": "/usr/local/bin/g++-11 -DDSA_PQ_LIST -DDSA_STACK_LIST -I../ -I../sum -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o sum/CMakeFiles/SUMLIB.dir/sum2.cpp.o -c /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/sum2.cpp",
+  "file": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/sum/sum2.cpp"
 },
 {
   "directory": "/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build",

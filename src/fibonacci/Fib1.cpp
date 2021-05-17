@@ -5,6 +5,7 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+#include<cstdint>
 
 int64_t fib ( int n ) { //计算Fibonacci数列的第n项（二分递归版）：O(2^n)
    return ( 2 > n ) ?

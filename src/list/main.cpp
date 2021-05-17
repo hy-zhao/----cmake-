@@ -10,6 +10,10 @@
  * Test of list
  ******************************************************************************************/
 // #define DSA_STACK_LIST true
+#include "_share/release.h"
+#include "UniPrint/print.h"
+// #include "_share/util.h"
+
 #include "list_test.h"
 
 int testID = 0; //测试编号

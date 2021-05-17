@@ -14,4 +14,12 @@
 #include <ctime>
 #include <climits>
 
-#include "queue/queue.h" //寮
+#include "queue/queue.h" //引入队列
+#include "Customer.h" //顾客类
+
+int bestWindow ( Queue<Customer> window[], int nWin );
+void printCustomer ( Customer c );
+void displayProgress ( Queue<Customer> window[], int nWin, int now );
+void simulate ( int, int );
+
+extern int delay; //控制进度显示的延迟

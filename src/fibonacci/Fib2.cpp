@@ -5,6 +5,7 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+#include<cstdint>
 
 int64_t fib ( int n, int64_t& prev ) { //计算Fibonacci数列第n项（线性递归版）：入口形式fib(n, prev)
    if ( 0 == n ) //若到达递归基，则

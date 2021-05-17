@@ -13,9 +13,9 @@
  * 效果等同于将这些实现直接汇入list.h
  * 在export尚未被编译器支持前，如此可将定义与实现分离，以便课程讲解
  ******************************************************************************************/
-#include "_share/release.h"
-#include "_share/util.h"
-#include "UniPrint/print.h"
+// #include "_share/release.h"
+// #include "_share/util.h"
+// #include "UniPrint/print.h"
 
 #include "ListNode.h"
 

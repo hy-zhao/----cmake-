@@ -1,3 +1,4 @@
+#include "Uniprint/print.h"
 #include "stack/stack.h" //借助栈结构，计算直方图H[]中的最大矩形（并列时取最靠左者）
 
 int64_t mr_STACK( int H[], int n, int& mr_r, int& mr_s, int& mr_t ) { //H[]皆非负

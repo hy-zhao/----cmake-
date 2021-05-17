@@ -212,38 +212,38 @@ build BitMap/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build BitMap/edit_cache: phony BitMap/CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target BITMAPLIB
+# Object build statements for EXECUTABLE target BITMAP
 
 
 #############################################
-# Order-only phony target for BITMAPLIB
+# Order-only phony target for BITMAP
 
-build cmake_object_order_depends_target_BITMAPLIB: phony || BitMap/CMakeFiles/BITMAPLIB.dir
+build cmake_object_order_depends_target_BITMAP: phony || BitMap/CMakeFiles/BITMAP.dir
 
-build BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o: CXX_COMPILER__BITMAPLIB_Debug ../BitMap/main_O1_init.cpp || cmake_object_order_depends_target_BITMAPLIB
+build BitMap/CMakeFiles/BITMAP.dir/main_O1_init.cpp.o: CXX_COMPILER__BITMAP_Debug ../BitMap/main_O1_init.cpp || cmake_object_order_depends_target_BITMAP
   DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
-  DEP_FILE = BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o.d
+  DEP_FILE = BitMap/CMakeFiles/BITMAP.dir/main_O1_init.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../BitMap
-  OBJECT_DIR = BitMap/CMakeFiles/BITMAPLIB.dir
-  OBJECT_FILE_DIR = BitMap/CMakeFiles/BITMAPLIB.dir
+  INCLUDES = -I../
+  OBJECT_DIR = BitMap/CMakeFiles/BITMAP.dir
+  OBJECT_FILE_DIR = BitMap/CMakeFiles/BITMAP.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target BITMAPLIB
+# Link build statements for EXECUTABLE target BITMAP
 
 
 #############################################
-# Link the static library BitMap/libBITMAPLIB.a
+# Link the executable BitMap/BITMAP
 
-build BitMap/libBITMAPLIB.a: CXX_STATIC_LIBRARY_LINKER__BITMAPLIB_Debug BitMap/CMakeFiles/BITMAPLIB.dir/main_O1_init.cpp.o
-  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = BitMap/CMakeFiles/BITMAPLIB.dir
+build BitMap/BITMAP: CXX_EXECUTABLE_LINKER__BITMAP_Debug BitMap/CMakeFiles/BITMAP.dir/main_O1_init.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  OBJECT_DIR = BitMap/CMakeFiles/BITMAP.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = BitMap/libBITMAPLIB.a
-  TARGET_PDB = BITMAPLIB.a.dbg
+  TARGET_FILE = BitMap/BITMAP
+  TARGET_PDB = BITMAP.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -2000,6 +2000,119 @@ build max/libMAXLIB.a: CXX_STATIC_LIBRARY_LINKER__MAXLIB_Debug max/CMakeFiles/MA
 #############################################
 # Utility command for rebuild_cache
 
+build maxRect/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/maxRect && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build maxRect/rebuild_cache: phony maxRect/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build maxRect/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/maxRect && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build maxRect/edit_cache: phony maxRect/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target MAXRECT
+
+
+#############################################
+# Order-only phony target for MAXRECT
+
+build cmake_object_order_depends_target_MAXRECT: phony || cmake_object_order_depends_target_MAXRECTLIB
+
+build maxRect/CMakeFiles/MAXRECT.dir/test.cpp.o: CXX_COMPILER__MAXRECT_Debug ../maxRect/test.cpp || cmake_object_order_depends_target_MAXRECT
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = maxRect/CMakeFiles/MAXRECT.dir/test.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../
+  OBJECT_DIR = maxRect/CMakeFiles/MAXRECT.dir
+  OBJECT_FILE_DIR = maxRect/CMakeFiles/MAXRECT.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target MAXRECT
+
+
+#############################################
+# Link the executable maxRect/MAXRECT
+
+build maxRect/MAXRECT: CXX_EXECUTABLE_LINKER__MAXRECT_Debug maxRect/CMakeFiles/MAXRECT.dir/test.cpp.o | maxRect/libMAXRECTLIB.a || maxRect/libMAXRECTLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = maxRect/libMAXRECTLIB.a
+  OBJECT_DIR = maxRect/CMakeFiles/MAXRECT.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = maxRect/MAXRECT
+  TARGET_PDB = MAXRECT.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target MAXRECTLIB
+
+
+#############################################
+# Order-only phony target for MAXRECTLIB
+
+build cmake_object_order_depends_target_MAXRECTLIB: phony || maxRect/CMakeFiles/MAXRECTLIB.dir
+
+build maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACK.cpp.o: CXX_COMPILER__MAXRECTLIB_Debug ../maxRect/mr_STACK.cpp || cmake_object_order_depends_target_MAXRECTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACK.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../maxRect
+  OBJECT_DIR = maxRect/CMakeFiles/MAXRECTLIB.dir
+  OBJECT_FILE_DIR = maxRect/CMakeFiles/MAXRECTLIB.dir
+
+build maxRect/CMakeFiles/MAXRECTLIB.dir/mr_BF.cpp.o: CXX_COMPILER__MAXRECTLIB_Debug ../maxRect/mr_BF.cpp || cmake_object_order_depends_target_MAXRECTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = maxRect/CMakeFiles/MAXRECTLIB.dir/mr_BF.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../maxRect
+  OBJECT_DIR = maxRect/CMakeFiles/MAXRECTLIB.dir
+  OBJECT_FILE_DIR = maxRect/CMakeFiles/MAXRECTLIB.dir
+
+build maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACKS.cpp.o: CXX_COMPILER__MAXRECTLIB_Debug ../maxRect/mr_STACKS.cpp || cmake_object_order_depends_target_MAXRECTLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACKS.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../maxRect
+  OBJECT_DIR = maxRect/CMakeFiles/MAXRECTLIB.dir
+  OBJECT_FILE_DIR = maxRect/CMakeFiles/MAXRECTLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target MAXRECTLIB
+
+
+#############################################
+# Link the static library maxRect/libMAXRECTLIB.a
+
+build maxRect/libMAXRECTLIB.a: CXX_STATIC_LIBRARY_LINKER__MAXRECTLIB_Debug maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACK.cpp.o maxRect/CMakeFiles/MAXRECTLIB.dir/mr_BF.cpp.o maxRect/CMakeFiles/MAXRECTLIB.dir/mr_STACKS.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = maxRect/CMakeFiles/MAXRECTLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = maxRect/libMAXRECTLIB.a
+  TARGET_PDB = MAXRECTLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build median1/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/median1 && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -2492,6 +2605,135 @@ build PQ/libPQLIB.a: CXX_STATIC_LIBRARY_LINKER__PQLIB_Debug PQ/CMakeFiles/PQLIB.
 #############################################
 # Utility command for rebuild_cache
 
+build Prefix_free_Codes/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/Prefix_free_Codes && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Prefix_free_Codes/rebuild_cache: phony Prefix_free_Codes/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Prefix_free_Codes/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/Prefix_free_Codes && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Prefix_free_Codes/edit_cache: phony Prefix_free_Codes/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target PREFIX_FREE_CODES
+
+
+#############################################
+# Order-only phony target for PREFIX_FREE_CODES
+
+build cmake_object_order_depends_target_PREFIX_FREE_CODES: phony || cmake_object_order_depends_target_PREFIX_FREE_CODESLIB cmake_object_order_depends_target_UNIPRINTLIB
+
+build Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODES.dir/PFC_Test.cpp.o: CXX_COMPILER__PREFIX_FREE_CODES_Debug ../Prefix_free_Codes/PFC_Test.cpp || cmake_object_order_depends_target_PREFIX_FREE_CODES
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODES.dir/PFC_Test.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../UniPrint
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODES.dir
+  OBJECT_FILE_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODES.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PREFIX_FREE_CODES
+
+
+#############################################
+# Link the executable Prefix_free_Codes/PREFIX_FREE_CODES
+
+build Prefix_free_Codes/PREFIX_FREE_CODES: CXX_EXECUTABLE_LINKER__PREFIX_FREE_CODES_Debug Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODES.dir/PFC_Test.cpp.o | Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a UniPrint/libUNIPRINTLIB.a || Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a UniPrint/libUNIPRINTLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a  UniPrint/libUNIPRINTLIB.a
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODES.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Prefix_free_Codes/PREFIX_FREE_CODES
+  TARGET_PDB = PREFIX_FREE_CODES.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target PREFIX_FREE_CODESLIB
+
+
+#############################################
+# Order-only phony target for PREFIX_FREE_CODESLIB
+
+build cmake_object_order_depends_target_PREFIX_FREE_CODESLIB: phony || Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+
+build Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_decode.cpp.o: CXX_COMPILER__PREFIX_FREE_CODESLIB_Debug ../Prefix_free_Codes/PFC_decode.cpp || cmake_object_order_depends_target_PREFIX_FREE_CODESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_decode.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../Prefix_free_Codes
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+  OBJECT_FILE_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+
+build Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_encode.cpp.o: CXX_COMPILER__PREFIX_FREE_CODESLIB_Debug ../Prefix_free_Codes/PFC_encode.cpp || cmake_object_order_depends_target_PREFIX_FREE_CODESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_encode.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../Prefix_free_Codes
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+  OBJECT_FILE_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+
+build Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTable.cpp.o: CXX_COMPILER__PREFIX_FREE_CODESLIB_Debug ../Prefix_free_Codes/PFC_generateTable.cpp || cmake_object_order_depends_target_PREFIX_FREE_CODESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTable.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../Prefix_free_Codes
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+  OBJECT_FILE_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+
+build Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTree.cpp.o: CXX_COMPILER__PREFIX_FREE_CODESLIB_Debug ../Prefix_free_Codes/PFC_generateTree.cpp || cmake_object_order_depends_target_PREFIX_FREE_CODESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTree.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../Prefix_free_Codes
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+  OBJECT_FILE_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+
+build Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_initForest.cpp.o: CXX_COMPILER__PREFIX_FREE_CODESLIB_Debug ../Prefix_free_Codes/PFC_initForest.cpp || cmake_object_order_depends_target_PREFIX_FREE_CODESLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_initForest.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../Prefix_free_Codes
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+  OBJECT_FILE_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target PREFIX_FREE_CODESLIB
+
+
+#############################################
+# Link the static library Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a
+
+build Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a: CXX_STATIC_LIBRARY_LINKER__PREFIX_FREE_CODESLIB_Debug Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_decode.cpp.o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_encode.cpp.o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTable.cpp.o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_generateTree.cpp.o Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir/PFC_initForest.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Prefix_free_Codes/CMakeFiles/PREFIX_FREE_CODESLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a
+  TARGET_PDB = PREFIX_FREE_CODESLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build prime/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/prime && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -2587,6 +2829,442 @@ build prime/libPRIMELIB.a: CXX_STATIC_LIBRARY_LINKER__PRIMELIB_Debug prime/CMake
   PRE_LINK = :
   TARGET_FILE = prime/libPRIMELIB.a
   TARGET_PDB = PRIMELIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build queen_brute_force_1/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_1 && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build queen_brute_force_1/rebuild_cache: phony queen_brute_force_1/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build queen_brute_force_1/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_1 && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build queen_brute_force_1/edit_cache: phony queen_brute_force_1/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target queen_brute_force_1
+
+
+#############################################
+# Order-only phony target for queen_brute_force_1
+
+build cmake_object_order_depends_target_queen_brute_force_1: phony || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_1LIB
+
+build queen_brute_force_1/CMakeFiles/queen_brute_force_1.dir/main.cpp.o: CXX_COMPILER__queen_brute_force_1_Debug ../queen_brute_force_1/main.cpp || cmake_object_order_depends_target_queen_brute_force_1
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_1/CMakeFiles/queen_brute_force_1.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_1
+  OBJECT_DIR = queen_brute_force_1/CMakeFiles/queen_brute_force_1.dir
+  OBJECT_FILE_DIR = queen_brute_force_1/CMakeFiles/queen_brute_force_1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target queen_brute_force_1
+
+
+#############################################
+# Link the executable queen_brute_force_1/queen_brute_force_1
+
+build queen_brute_force_1/queen_brute_force_1: CXX_EXECUTABLE_LINKER__queen_brute_force_1_Debug queen_brute_force_1/CMakeFiles/queen_brute_force_1.dir/main.cpp.o | queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a || queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a
+  OBJECT_DIR = queen_brute_force_1/CMakeFiles/queen_brute_force_1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_brute_force_1/queen_brute_force_1
+  TARGET_PDB = queen_brute_force_1.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target QUEEN_BRUTE_FORCE_1LIB
+
+
+#############################################
+# Order-only phony target for QUEEN_BRUTE_FORCE_1LIB
+
+build cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_1LIB: phony || queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+
+build queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/5queens.cpp.o: CXX_COMPILER__QUEEN_BRUTE_FORCE_1LIB_Debug ../queen_brute_force_1/5queens.cpp || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_1LIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/5queens.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_1
+  OBJECT_DIR = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+  OBJECT_FILE_DIR = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+
+build queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/collision.cpp.o: CXX_COMPILER__QUEEN_BRUTE_FORCE_1LIB_Debug ../queen_brute_force_1/collision.cpp || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_1LIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/collision.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_1
+  OBJECT_DIR = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+  OBJECT_FILE_DIR = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+
+build queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/displaySolution.cpp.o: CXX_COMPILER__QUEEN_BRUTE_FORCE_1LIB_Debug ../queen_brute_force_1/displaySolution.cpp || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_1LIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/displaySolution.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_1
+  OBJECT_DIR = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+  OBJECT_FILE_DIR = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target QUEEN_BRUTE_FORCE_1LIB
+
+
+#############################################
+# Link the static library queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a
+
+build queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a: CXX_STATIC_LIBRARY_LINKER__QUEEN_BRUTE_FORCE_1LIB_Debug queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/5queens.cpp.o queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/collision.cpp.o queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir/displaySolution.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = queen_brute_force_1/CMakeFiles/QUEEN_BRUTE_FORCE_1LIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a
+  TARGET_PDB = QUEEN_BRUTE_FORCE_1LIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build queen_brute_force_2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_2 && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build queen_brute_force_2/rebuild_cache: phony queen_brute_force_2/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build queen_brute_force_2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_2 && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build queen_brute_force_2/edit_cache: phony queen_brute_force_2/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target queen_brute_force_2
+
+
+#############################################
+# Order-only phony target for queen_brute_force_2
+
+build cmake_object_order_depends_target_queen_brute_force_2: phony || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_1LIB cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_2LIB
+
+build queen_brute_force_2/CMakeFiles/queen_brute_force_2.dir/main.cpp.o: CXX_COMPILER__queen_brute_force_2_Debug ../queen_brute_force_2/main.cpp || cmake_object_order_depends_target_queen_brute_force_2
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_2/CMakeFiles/queen_brute_force_2.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_1
+  OBJECT_DIR = queen_brute_force_2/CMakeFiles/queen_brute_force_2.dir
+  OBJECT_FILE_DIR = queen_brute_force_2/CMakeFiles/queen_brute_force_2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target queen_brute_force_2
+
+
+#############################################
+# Link the executable queen_brute_force_2/queen_brute_force_2
+
+build queen_brute_force_2/queen_brute_force_2: CXX_EXECUTABLE_LINKER__queen_brute_force_2_Debug queen_brute_force_2/CMakeFiles/queen_brute_force_2.dir/main.cpp.o | queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a || queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a  queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a
+  OBJECT_DIR = queen_brute_force_2/CMakeFiles/queen_brute_force_2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_brute_force_2/queen_brute_force_2
+  TARGET_PDB = queen_brute_force_2.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target QUEEN_BRUTE_FORCE_2LIB
+
+
+#############################################
+# Order-only phony target for QUEEN_BRUTE_FORCE_2LIB
+
+build cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_2LIB: phony || queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+
+build queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/2queens.cpp.o: CXX_COMPILER__QUEEN_BRUTE_FORCE_2LIB_Debug ../queen_brute_force_2/2queens.cpp || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_2LIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/2queens.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_2
+  OBJECT_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+  OBJECT_FILE_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+
+build queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/3queens.cpp.o: CXX_COMPILER__QUEEN_BRUTE_FORCE_2LIB_Debug ../queen_brute_force_2/3queens.cpp || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_2LIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/3queens.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_2
+  OBJECT_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+  OBJECT_FILE_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+
+build queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/4queens.cpp.o: CXX_COMPILER__QUEEN_BRUTE_FORCE_2LIB_Debug ../queen_brute_force_2/4queens.cpp || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_2LIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/4queens.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_2
+  OBJECT_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+  OBJECT_FILE_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+
+build queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/5queens.cpp.o: CXX_COMPILER__QUEEN_BRUTE_FORCE_2LIB_Debug ../queen_brute_force_2/5queens.cpp || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_2LIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/5queens.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_2
+  OBJECT_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+  OBJECT_FILE_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target QUEEN_BRUTE_FORCE_2LIB
+
+
+#############################################
+# Link the static library queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a
+
+build queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a: CXX_STATIC_LIBRARY_LINKER__QUEEN_BRUTE_FORCE_2LIB_Debug queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/2queens.cpp.o queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/3queens.cpp.o queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/4queens.cpp.o queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir/5queens.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = queen_brute_force_2/CMakeFiles/QUEEN_BRUTE_FORCE_2LIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a
+  TARGET_PDB = QUEEN_BRUTE_FORCE_2LIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build queen_recursive/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_recursive && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build queen_recursive/rebuild_cache: phony queen_recursive/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build queen_recursive/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_recursive && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build queen_recursive/edit_cache: phony queen_recursive/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target queen_recursive
+
+
+#############################################
+# Order-only phony target for queen_recursive
+
+build cmake_object_order_depends_target_queen_recursive: phony || cmake_object_order_depends_target_QUEEN_BRUTE_FORCE_1LIB cmake_object_order_depends_target_QUEEN_RECURSIVELIB
+
+build queen_recursive/CMakeFiles/queen_recursive.dir/main.cpp.o: CXX_COMPILER__queen_recursive_Debug ../queen_recursive/main.cpp || cmake_object_order_depends_target_queen_recursive
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_recursive/CMakeFiles/queen_recursive.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_brute_force_1
+  OBJECT_DIR = queen_recursive/CMakeFiles/queen_recursive.dir
+  OBJECT_FILE_DIR = queen_recursive/CMakeFiles/queen_recursive.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target queen_recursive
+
+
+#############################################
+# Link the executable queen_recursive/queen_recursive
+
+build queen_recursive/queen_recursive: CXX_EXECUTABLE_LINKER__queen_recursive_Debug queen_recursive/CMakeFiles/queen_recursive.dir/main.cpp.o | queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a queen_recursive/libQUEEN_RECURSIVELIB.a || queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a queen_recursive/libQUEEN_RECURSIVELIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a  queen_recursive/libQUEEN_RECURSIVELIB.a
+  OBJECT_DIR = queen_recursive/CMakeFiles/queen_recursive.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_recursive/queen_recursive
+  TARGET_PDB = queen_recursive.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target QUEEN_RECURSIVELIB
+
+
+#############################################
+# Order-only phony target for QUEEN_RECURSIVELIB
+
+build cmake_object_order_depends_target_QUEEN_RECURSIVELIB: phony || queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir
+
+build queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir/placeQueens.cpp.o: CXX_COMPILER__QUEEN_RECURSIVELIB_Debug ../queen_recursive/placeQueens.cpp || cmake_object_order_depends_target_QUEEN_RECURSIVELIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir/placeQueens.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_recursive
+  OBJECT_DIR = queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir
+  OBJECT_FILE_DIR = queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target QUEEN_RECURSIVELIB
+
+
+#############################################
+# Link the static library queen_recursive/libQUEEN_RECURSIVELIB.a
+
+build queen_recursive/libQUEEN_RECURSIVELIB.a: CXX_STATIC_LIBRARY_LINKER__QUEEN_RECURSIVELIB_Debug queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir/placeQueens.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = queen_recursive/CMakeFiles/QUEEN_RECURSIVELIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_recursive/libQUEEN_RECURSIVELIB.a
+  TARGET_PDB = QUEEN_RECURSIVELIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build queen_stack/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_stack && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build queen_stack/rebuild_cache: phony queen_stack/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build queen_stack/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_stack && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build queen_stack/edit_cache: phony queen_stack/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target queen_stack
+
+
+#############################################
+# Order-only phony target for queen_stack
+
+build cmake_object_order_depends_target_queen_stack: phony || cmake_object_order_depends_target_QUEEN_STACKLIB
+
+build queen_stack/CMakeFiles/queen_stack.dir/main.cpp.o: CXX_COMPILER__queen_stack_Debug ../queen_stack/main.cpp || cmake_object_order_depends_target_queen_stack
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_stack/CMakeFiles/queen_stack.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_stack
+  OBJECT_DIR = queen_stack/CMakeFiles/queen_stack.dir
+  OBJECT_FILE_DIR = queen_stack/CMakeFiles/queen_stack.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target queen_stack
+
+
+#############################################
+# Link the executable queen_stack/queen_stack
+
+build queen_stack/queen_stack: CXX_EXECUTABLE_LINKER__queen_stack_Debug queen_stack/CMakeFiles/queen_stack.dir/main.cpp.o | queen_stack/libQUEEN_STACKLIB.a || queen_stack/libQUEEN_STACKLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = queen_stack/libQUEEN_STACKLIB.a
+  OBJECT_DIR = queen_stack/CMakeFiles/queen_stack.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_stack/queen_stack
+  TARGET_PDB = queen_stack.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target QUEEN_STACKLIB
+
+
+#############################################
+# Order-only phony target for QUEEN_STACKLIB
+
+build cmake_object_order_depends_target_QUEEN_STACKLIB: phony || queen_stack/CMakeFiles/QUEEN_STACKLIB.dir
+
+build queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/displayProgress.cpp.o: CXX_COMPILER__QUEEN_STACKLIB_Debug ../queen_stack/displayProgress.cpp || cmake_object_order_depends_target_QUEEN_STACKLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/displayProgress.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_stack
+  OBJECT_DIR = queen_stack/CMakeFiles/QUEEN_STACKLIB.dir
+  OBJECT_FILE_DIR = queen_stack/CMakeFiles/QUEEN_STACKLIB.dir
+
+build queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/placeQueens.cpp.o: CXX_COMPILER__QUEEN_STACKLIB_Debug ../queen_stack/placeQueens.cpp || cmake_object_order_depends_target_QUEEN_STACKLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/placeQueens.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../queen_stack
+  OBJECT_DIR = queen_stack/CMakeFiles/QUEEN_STACKLIB.dir
+  OBJECT_FILE_DIR = queen_stack/CMakeFiles/QUEEN_STACKLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target QUEEN_STACKLIB
+
+
+#############################################
+# Link the static library queen_stack/libQUEEN_STACKLIB.a
+
+build queen_stack/libQUEEN_STACKLIB.a: CXX_STATIC_LIBRARY_LINKER__QUEEN_STACKLIB_Debug queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/displayProgress.cpp.o queen_stack/CMakeFiles/QUEEN_STACKLIB.dir/placeQueens.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = queen_stack/CMakeFiles/QUEEN_STACKLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queen_stack/libQUEEN_STACKLIB.a
+  TARGET_PDB = QUEEN_STACKLIB.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -2879,6 +3557,143 @@ build reverse/libREVERSELIB.a: CXX_STATIC_LIBRARY_LINKER__REVERSELIB_Debug rever
 #############################################
 # Utility command for rebuild_cache
 
+build rpn/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/rpn && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rpn/rebuild_cache: phony rpn/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build rpn/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/rpn && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build rpn/edit_cache: phony rpn/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target rpn
+
+
+#############################################
+# Order-only phony target for rpn
+
+build cmake_object_order_depends_target_rpn: phony || cmake_object_order_depends_target_FACTORIALLIB cmake_object_order_depends_target_RPNLIB cmake_object_order_depends_target_UNIPRINTLIB
+
+build rpn/CMakeFiles/rpn.dir/main.cpp.o: CXX_COMPILER__rpn_Debug ../rpn/main.cpp || cmake_object_order_depends_target_rpn
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = rpn/CMakeFiles/rpn.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../factorial -I../UniPrint
+  OBJECT_DIR = rpn/CMakeFiles/rpn.dir
+  OBJECT_FILE_DIR = rpn/CMakeFiles/rpn.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target rpn
+
+
+#############################################
+# Link the executable rpn/rpn
+
+build rpn/rpn: CXX_EXECUTABLE_LINKER__rpn_Debug rpn/CMakeFiles/rpn.dir/main.cpp.o | factorial/libFACTORIALLIB.a rpn/libRPNLIB.a UniPrint/libUNIPRINTLIB.a || UniPrint/libUNIPRINTLIB.a factorial/libFACTORIALLIB.a rpn/libRPNLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = factorial/libFACTORIALLIB.a  rpn/libRPNLIB.a  UniPrint/libUNIPRINTLIB.a
+  OBJECT_DIR = rpn/CMakeFiles/rpn.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = rpn/rpn
+  TARGET_PDB = rpn.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target RPNLIB
+
+
+#############################################
+# Order-only phony target for RPNLIB
+
+build cmake_object_order_depends_target_RPNLIB: phony || rpn/CMakeFiles/RPNLIB.dir
+
+build rpn/CMakeFiles/RPNLIB.dir/append2RPN.cpp.o: CXX_COMPILER__RPNLIB_Debug ../rpn/append2RPN.cpp || cmake_object_order_depends_target_RPNLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = rpn/CMakeFiles/RPNLIB.dir/append2RPN.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../rpn
+  OBJECT_DIR = rpn/CMakeFiles/RPNLIB.dir
+  OBJECT_FILE_DIR = rpn/CMakeFiles/RPNLIB.dir
+
+build rpn/CMakeFiles/RPNLIB.dir/calculation.cpp.o: CXX_COMPILER__RPNLIB_Debug ../rpn/calculation.cpp || cmake_object_order_depends_target_RPNLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = rpn/CMakeFiles/RPNLIB.dir/calculation.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../rpn
+  OBJECT_DIR = rpn/CMakeFiles/RPNLIB.dir
+  OBJECT_FILE_DIR = rpn/CMakeFiles/RPNLIB.dir
+
+build rpn/CMakeFiles/RPNLIB.dir/displayProgress.cpp.o: CXX_COMPILER__RPNLIB_Debug ../rpn/displayProgress.cpp || cmake_object_order_depends_target_RPNLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = rpn/CMakeFiles/RPNLIB.dir/displayProgress.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../rpn
+  OBJECT_DIR = rpn/CMakeFiles/RPNLIB.dir
+  OBJECT_FILE_DIR = rpn/CMakeFiles/RPNLIB.dir
+
+build rpn/CMakeFiles/RPNLIB.dir/priority.cpp.o: CXX_COMPILER__RPNLIB_Debug ../rpn/priority.cpp || cmake_object_order_depends_target_RPNLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = rpn/CMakeFiles/RPNLIB.dir/priority.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../rpn
+  OBJECT_DIR = rpn/CMakeFiles/RPNLIB.dir
+  OBJECT_FILE_DIR = rpn/CMakeFiles/RPNLIB.dir
+
+build rpn/CMakeFiles/RPNLIB.dir/readNumber.cpp.o: CXX_COMPILER__RPNLIB_Debug ../rpn/readNumber.cpp || cmake_object_order_depends_target_RPNLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = rpn/CMakeFiles/RPNLIB.dir/readNumber.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../rpn
+  OBJECT_DIR = rpn/CMakeFiles/RPNLIB.dir
+  OBJECT_FILE_DIR = rpn/CMakeFiles/RPNLIB.dir
+
+build rpn/CMakeFiles/RPNLIB.dir/rpn.cpp.o: CXX_COMPILER__RPNLIB_Debug ../rpn/rpn.cpp || cmake_object_order_depends_target_RPNLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = rpn/CMakeFiles/RPNLIB.dir/rpn.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../rpn
+  OBJECT_DIR = rpn/CMakeFiles/RPNLIB.dir
+  OBJECT_FILE_DIR = rpn/CMakeFiles/RPNLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target RPNLIB
+
+
+#############################################
+# Link the static library rpn/libRPNLIB.a
+
+build rpn/libRPNLIB.a: CXX_STATIC_LIBRARY_LINKER__RPNLIB_Debug rpn/CMakeFiles/RPNLIB.dir/append2RPN.cpp.o rpn/CMakeFiles/RPNLIB.dir/calculation.cpp.o rpn/CMakeFiles/RPNLIB.dir/displayProgress.cpp.o rpn/CMakeFiles/RPNLIB.dir/priority.cpp.o rpn/CMakeFiles/RPNLIB.dir/readNumber.cpp.o rpn/CMakeFiles/RPNLIB.dir/rpn.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = rpn/CMakeFiles/RPNLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = rpn/libRPNLIB.a
+  TARGET_PDB = RPNLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build selection/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/selection && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -3059,6 +3874,119 @@ build shiftK/libSHIFTKLIB.a: CXX_STATIC_LIBRARY_LINKER__SHIFTKLIB_Debug shiftK/C
 # /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target simu
+
+
+#############################################
+# Order-only phony target for simu
+
+build cmake_object_order_depends_target_simu: phony || cmake_object_order_depends_target_SIMULIB
+
+build simu/CMakeFiles/simu.dir/main.cpp.o: CXX_COMPILER__simu_Debug ../simu/main.cpp || cmake_object_order_depends_target_simu
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = simu/CMakeFiles/simu.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../simu
+  OBJECT_DIR = simu/CMakeFiles/simu.dir
+  OBJECT_FILE_DIR = simu/CMakeFiles/simu.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target simu
+
+
+#############################################
+# Link the executable simu/simu
+
+build simu/simu: CXX_EXECUTABLE_LINKER__simu_Debug simu/CMakeFiles/simu.dir/main.cpp.o | simu/libSIMULIB.a || simu/libSIMULIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = simu/libSIMULIB.a
+  OBJECT_DIR = simu/CMakeFiles/simu.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = simu/simu
+  TARGET_PDB = simu.dbg
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build simu/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/simu && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build simu/rebuild_cache: phony simu/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build simu/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/simu && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build simu/edit_cache: phony simu/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target SIMULIB
+
+
+#############################################
+# Order-only phony target for SIMULIB
+
+build cmake_object_order_depends_target_SIMULIB: phony || simu/CMakeFiles/SIMULIB.dir
+
+build simu/CMakeFiles/SIMULIB.dir/bestWindow.cpp.o: CXX_COMPILER__SIMULIB_Debug ../simu/bestWindow.cpp || cmake_object_order_depends_target_SIMULIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = simu/CMakeFiles/SIMULIB.dir/bestWindow.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../simu
+  OBJECT_DIR = simu/CMakeFiles/SIMULIB.dir
+  OBJECT_FILE_DIR = simu/CMakeFiles/SIMULIB.dir
+
+build simu/CMakeFiles/SIMULIB.dir/displayProgress.cpp.o: CXX_COMPILER__SIMULIB_Debug ../simu/displayProgress.cpp || cmake_object_order_depends_target_SIMULIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = simu/CMakeFiles/SIMULIB.dir/displayProgress.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../simu
+  OBJECT_DIR = simu/CMakeFiles/SIMULIB.dir
+  OBJECT_FILE_DIR = simu/CMakeFiles/SIMULIB.dir
+
+build simu/CMakeFiles/SIMULIB.dir/simu.cpp.o: CXX_COMPILER__SIMULIB_Debug ../simu/simu.cpp || cmake_object_order_depends_target_SIMULIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = simu/CMakeFiles/SIMULIB.dir/simu.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../simu
+  OBJECT_DIR = simu/CMakeFiles/SIMULIB.dir
+  OBJECT_FILE_DIR = simu/CMakeFiles/SIMULIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target SIMULIB
+
+
+#############################################
+# Link the static library simu/libSIMULIB.a
+
+build simu/libSIMULIB.a: CXX_STATIC_LIBRARY_LINKER__SIMULIB_Debug simu/CMakeFiles/SIMULIB.dir/bestWindow.cpp.o simu/CMakeFiles/SIMULIB.dir/displayProgress.cpp.o simu/CMakeFiles/SIMULIB.dir/simu.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = simu/CMakeFiles/SIMULIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = simu/libSIMULIB.a
+  TARGET_PDB = SIMULIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
 
 #############################################
 # Utility command for rebuild_cache
@@ -3221,7 +4149,7 @@ build stack/CMakeFiles/STACK.dir/main.cpp.o: CXX_COMPILER__STACK_Debug ../stack/
   DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
   DEP_FILE = stack/CMakeFiles/STACK.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
-  INCLUDES = -I../ -I../UniPrint -I../stack
+  INCLUDES = -I../ -I../UniPrint
   OBJECT_DIR = stack/CMakeFiles/STACK.dir
   OBJECT_FILE_DIR = stack/CMakeFiles/STACK.dir
 
@@ -3796,6 +4724,119 @@ build string_pm_kr/libSTRING_PM_KRLIB.a: CXX_STATIC_LIBRARY_LINKER__STRING_PM_KR
 #############################################
 # Utility command for rebuild_cache
 
+build sum/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/sum && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build sum/rebuild_cache: phony sum/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build sum/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/sum && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build sum/edit_cache: phony sum/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sum
+
+
+#############################################
+# Order-only phony target for sum
+
+build cmake_object_order_depends_target_sum: phony || cmake_object_order_depends_target_RANDOMLIB cmake_object_order_depends_target_REVERSELIB cmake_object_order_depends_target_SUMLIB cmake_object_order_depends_target_UNIPRINTLIB
+
+build sum/CMakeFiles/sum.dir/main.cpp.o: CXX_COMPILER__sum_Debug ../sum/main.cpp || cmake_object_order_depends_target_sum
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = sum/CMakeFiles/sum.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../sum -I../UniPrint -I../reverse -Irandom
+  OBJECT_DIR = sum/CMakeFiles/sum.dir
+  OBJECT_FILE_DIR = sum/CMakeFiles/sum.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sum
+
+
+#############################################
+# Link the executable sum/sum
+
+build sum/sum: CXX_EXECUTABLE_LINKER__sum_Debug sum/CMakeFiles/sum.dir/main.cpp.o | sum/libSUMLIB.a UniPrint/libUNIPRINTLIB.a reverse/libREVERSELIB.a random/libRANDOMLIB.a || UniPrint/libUNIPRINTLIB.a random/libRANDOMLIB.a reverse/libREVERSELIB.a sum/libSUMLIB.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_FLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/
+  LINK_LIBRARIES = sum/libSUMLIB.a  UniPrint/libUNIPRINTLIB.a  reverse/libREVERSELIB.a  random/libRANDOMLIB.a
+  OBJECT_DIR = sum/CMakeFiles/sum.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sum/sum
+  TARGET_PDB = sum.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target SUMLIB
+
+
+#############################################
+# Order-only phony target for SUMLIB
+
+build cmake_object_order_depends_target_SUMLIB: phony || sum/CMakeFiles/SUMLIB.dir
+
+build sum/CMakeFiles/SUMLIB.dir/sum0.cpp.o: CXX_COMPILER__SUMLIB_Debug ../sum/sum0.cpp || cmake_object_order_depends_target_SUMLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = sum/CMakeFiles/SUMLIB.dir/sum0.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../sum
+  OBJECT_DIR = sum/CMakeFiles/SUMLIB.dir
+  OBJECT_FILE_DIR = sum/CMakeFiles/SUMLIB.dir
+
+build sum/CMakeFiles/SUMLIB.dir/sum1.cpp.o: CXX_COMPILER__SUMLIB_Debug ../sum/sum1.cpp || cmake_object_order_depends_target_SUMLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = sum/CMakeFiles/SUMLIB.dir/sum1.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../sum
+  OBJECT_DIR = sum/CMakeFiles/SUMLIB.dir
+  OBJECT_FILE_DIR = sum/CMakeFiles/SUMLIB.dir
+
+build sum/CMakeFiles/SUMLIB.dir/sum2.cpp.o: CXX_COMPILER__SUMLIB_Debug ../sum/sum2.cpp || cmake_object_order_depends_target_SUMLIB
+  DEFINES = -DDSA_PQ_LIST -DDSA_STACK_LIST
+  DEP_FILE = sum/CMakeFiles/SUMLIB.dir/sum2.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I../ -I../sum
+  OBJECT_DIR = sum/CMakeFiles/SUMLIB.dir
+  OBJECT_FILE_DIR = sum/CMakeFiles/SUMLIB.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target SUMLIB
+
+
+#############################################
+# Link the static library sum/libSUMLIB.a
+
+build sum/libSUMLIB.a: CXX_STATIC_LIBRARY_LINKER__SUMLIB_Debug sum/CMakeFiles/SUMLIB.dir/sum0.cpp.o sum/CMakeFiles/SUMLIB.dir/sum1.cpp.o sum/CMakeFiles/SUMLIB.dir/sum2.cpp.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = sum/CMakeFiles/SUMLIB.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sum/libSUMLIB.a
+  TARGET_PDB = SUMLIB.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build UniPrint/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/UniPrint && /usr/local/Cellar/cmake/3.20.2/bin/cmake --regenerate-during-build -S/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src -B/Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
   DESC = Running CMake to regenerate build system...
@@ -3935,7 +4976,7 @@ build AVL: phony AVL/AVL
 
 build BINTREE: phony binTree/BINTREE
 
-build BITMAPLIB: phony BitMap/libBITMAPLIB.a
+build BITMAP: phony BitMap/BITMAP
 
 build BITMAP_SET_ONLYLIB: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
 
@@ -3991,6 +5032,10 @@ build MAJORITY: phony majority/MAJORITY
 
 build MAXLIB: phony max/libMAXLIB.a
 
+build MAXRECT: phony maxRect/MAXRECT
+
+build MAXRECTLIB: phony maxRect/libMAXRECTLIB.a
+
 build NEST_RECURSIVELIB: phony nest_recursive/libNEST_RECURSIVELIB.a
 
 build NEST_STACKLIB: phony nest_stack/libNEST_STACKLIB.a
@@ -3999,9 +5044,21 @@ build POWERLIB: phony power/libPOWERLIB.a
 
 build PQLIB: phony PQ/libPQLIB.a
 
+build PREFIX_FREE_CODES: phony Prefix_free_Codes/PREFIX_FREE_CODES
+
+build PREFIX_FREE_CODESLIB: phony Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a
+
 build PRIME: phony prime/PRIME
 
 build PRIMELIB: phony prime/libPRIMELIB.a
+
+build QUEEN_BRUTE_FORCE_1LIB: phony queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a
+
+build QUEEN_BRUTE_FORCE_2LIB: phony queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a
+
+build QUEEN_RECURSIVELIB: phony queen_recursive/libQUEEN_RECURSIVELIB.a
+
+build QUEEN_STACKLIB: phony queen_stack/libQUEEN_STACKLIB.a
 
 build QUEUE: phony queue/QUEUE
 
@@ -4009,9 +5066,13 @@ build RANDOMLIB: phony random/libRANDOMLIB.a
 
 build REVERSELIB: phony reverse/libREVERSELIB.a
 
+build RPNLIB: phony rpn/libRPNLIB.a
+
 build RedBlack: phony redBlack/RedBlack
 
 build SHIFTKLIB: phony shiftK/libSHIFTKLIB.a
+
+build SIMULIB: phony simu/libSIMULIB.a
 
 build STACK: phony stack/STACK
 
@@ -4031,13 +5092,13 @@ build STRING_PM_KMP_IMPROVEDLIB: phony string_pm_kmp_improved/libSTRING_PM_KMP_I
 
 build STRING_PM_KRLIB: phony string_pm_kr/libSTRING_PM_KRLIB.a
 
+build SUMLIB: phony sum/libSUMLIB.a
+
 build Splay: phony splay/Splay
 
 build UNIPRINTLIB: phony UniPrint/libUNIPRINTLIB.a
 
 build hashtable: phony hashtable/hashtable
-
-build libBITMAPLIB.a: phony BitMap/libBITMAPLIB.a
 
 build libBITMAP_SET_ONLYLIB.a: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
 
@@ -4063,6 +5124,8 @@ build libHUFFMANLIB.a: phony huffman/libHUFFMANLIB.a
 
 build libMAXLIB.a: phony max/libMAXLIB.a
 
+build libMAXRECTLIB.a: phony maxRect/libMAXRECTLIB.a
+
 build libNEST_RECURSIVELIB.a: phony nest_recursive/libNEST_RECURSIVELIB.a
 
 build libNEST_STACKLIB.a: phony nest_stack/libNEST_STACKLIB.a
@@ -4071,13 +5134,27 @@ build libPOWERLIB.a: phony power/libPOWERLIB.a
 
 build libPQLIB.a: phony PQ/libPQLIB.a
 
+build libPREFIX_FREE_CODESLIB.a: phony Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a
+
 build libPRIMELIB.a: phony prime/libPRIMELIB.a
+
+build libQUEEN_BRUTE_FORCE_1LIB.a: phony queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a
+
+build libQUEEN_BRUTE_FORCE_2LIB.a: phony queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a
+
+build libQUEEN_RECURSIVELIB.a: phony queen_recursive/libQUEEN_RECURSIVELIB.a
+
+build libQUEEN_STACKLIB.a: phony queen_stack/libQUEEN_STACKLIB.a
 
 build libRANDOMLIB.a: phony random/libRANDOMLIB.a
 
 build libREVERSELIB.a: phony reverse/libREVERSELIB.a
 
+build libRPNLIB.a: phony rpn/libRPNLIB.a
+
 build libSHIFTKLIB.a: phony shiftK/libSHIFTKLIB.a
+
+build libSIMULIB.a: phony simu/libSIMULIB.a
 
 build libSTRING_PMLIB.a: phony string_pm/libSTRING_PMLIB.a
 
@@ -4095,6 +5172,8 @@ build libSTRING_PM_KMP_IMPROVEDLIB.a: phony string_pm_kmp_improved/libSTRING_PM_
 
 build libSTRING_PM_KRLIB.a: phony string_pm_kr/libSTRING_PM_KRLIB.a
 
+build libSUMLIB.a: phony sum/libSUMLIB.a
+
 build libUNIPRINTLIB.a: phony UniPrint/libUNIPRINTLIB.a
 
 build median1: phony median1/median1
@@ -4105,11 +5184,25 @@ build nest_stack: phony nest_stack/nest_stack
 
 build power: phony power/power
 
+build queen_brute_force_1: phony queen_brute_force_1/queen_brute_force_1
+
+build queen_brute_force_2: phony queen_brute_force_2/queen_brute_force_2
+
+build queen_recursive: phony queen_recursive/queen_recursive
+
+build queen_stack: phony queen_stack/queen_stack
+
+build rpn: phony rpn/rpn
+
 build selection: phony selection/selection
 
 build shiftK: phony shiftK/shiftK
 
+build simu: phony simu/simu
+
 build skiplist: phony skiplist/skiplist
+
+build sum: phony sum/sum
 
 build vector: phony vector/vector
 
@@ -4121,7 +5214,7 @@ build vector: phony vector/vector
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build
 
-build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all daxue/all factorial/all fibonacci/all gcd/all graph/all greatest_slice/all hanoi/all hashtable/all huffman/all laby/all list/all majority/all max/all median1/all median2/all nest_recursive/all nest_stack/all power/all PQ/all prime/all queue/all random/all redBlack/all reverse/all selection/all shiftK/all skiplist/all splay/all stack/all string_pm/all string_pm_bf1/all string_pm_bf2/all string_pm_bm_bc/all string_pm_bm_bc+gs/all string_pm_kmp/all string_pm_kmp_improved/all string_pm_kr/all UniPrint/all vector/all
+build all: phony AVL/all binTree/all BitMap/all Bitmap_set_only/all BST/all BTree/all bubblesort/all conversion/all conversion_recursive/all countOnes/all cursor_list/all daxue/all factorial/all fibonacci/all gcd/all graph/all greatest_slice/all hanoi/all hashtable/all huffman/all laby/all list/all majority/all max/all maxRect/all median1/all median2/all nest_recursive/all nest_stack/all power/all PQ/all Prefix_free_Codes/all prime/all queen_brute_force_1/all queen_brute_force_2/all queen_recursive/all queen_stack/all queue/all random/all redBlack/all reverse/all rpn/all selection/all shiftK/all simu/all skiplist/all splay/all stack/all string_pm/all string_pm_bf1/all string_pm_bf2/all string_pm_bm_bc/all string_pm_bm_bc+gs/all string_pm_kmp/all string_pm_kmp_improved/all string_pm_kr/all sum/all UniPrint/all vector/all
 
 # =============================================================================
 
@@ -4149,7 +5242,7 @@ build BTree/all: phony
 #############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/BitMap
 
-build BitMap/all: phony BitMap/libBITMAPLIB.a
+build BitMap/all: phony BitMap/BITMAP
 
 # =============================================================================
 
@@ -4164,6 +5257,13 @@ build Bitmap_set_only/all: phony Bitmap_set_only/libBITMAP_SET_ONLYLIB.a
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/PQ
 
 build PQ/all: phony PQ/libPQLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/Prefix_free_Codes
+
+build Prefix_free_Codes/all: phony Prefix_free_Codes/PREFIX_FREE_CODES Prefix_free_Codes/libPREFIX_FREE_CODESLIB.a
 
 # =============================================================================
 
@@ -4308,6 +5408,13 @@ build max/all: phony max/libMAXLIB.a
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/maxRect
+
+build maxRect/all: phony maxRect/MAXRECT maxRect/libMAXRECTLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/median1
 
 build median1/all: phony median1/median1
@@ -4350,6 +5457,34 @@ build prime/all: phony prime/PRIME prime/libPRIMELIB.a
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_1
+
+build queen_brute_force_1/all: phony queen_brute_force_1/queen_brute_force_1 queen_brute_force_1/libQUEEN_BRUTE_FORCE_1LIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_brute_force_2
+
+build queen_brute_force_2/all: phony queen_brute_force_2/queen_brute_force_2 queen_brute_force_2/libQUEEN_BRUTE_FORCE_2LIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_recursive
+
+build queen_recursive/all: phony queen_recursive/queen_recursive queen_recursive/libQUEEN_RECURSIVELIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queen_stack
+
+build queen_stack/all: phony queen_stack/queen_stack queen_stack/libQUEEN_STACKLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/queue
 
 build queue/all: phony queue/QUEUE
@@ -4378,6 +5513,13 @@ build reverse/all: phony reverse/libREVERSELIB.a
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/rpn
+
+build rpn/all: phony rpn/rpn rpn/libRPNLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/selection
 
 build selection/all: phony selection/selection
@@ -4388,6 +5530,13 @@ build selection/all: phony selection/selection
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/shiftK
 
 build shiftK/all: phony shiftK/shiftK shiftK/libSHIFTKLIB.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/simu
+
+build simu/all: phony simu/simu simu/libSIMULIB.a
 
 # =============================================================================
 
@@ -4469,6 +5618,13 @@ build string_pm_kr/all: phony string_pm_kr/libSTRING_PM_KRLIB.a
 # =============================================================================
 
 #############################################
+# Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/sum
+
+build sum/all: phony sum/sum sum/libSUMLIB.a
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/melody/Downloads/test/Junhui-Deng-DSAPP-CMAKE/src/build/vector
 
 build vector/all: phony vector/vector
@@ -4480,14 +5636,14 @@ build vector/all: phony vector/vector
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../graph/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../skiplist/CMakeLists.txt ../splay/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../string_pm_bm_bc+gs/CMakeLists.txt ../string_pm_bm_bc/CMakeLists.txt ../string_pm_kmp/CMakeLists.txt ../string_pm_kmp_improved/CMakeLists.txt ../string_pm_kr/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../Prefix_free_Codes/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../graph/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../maxRect/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queen_brute_force_1/CMakeLists.txt ../queen_brute_force_2/CMakeLists.txt ../queen_recursive/CMakeLists.txt ../queen_stack/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../rpn/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../simu/CMakeLists.txt ../skiplist/CMakeLists.txt ../splay/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../string_pm_bm_bc+gs/CMakeLists.txt ../string_pm_bm_bc/CMakeLists.txt ../string_pm_kmp/CMakeLists.txt ../string_pm_kmp_improved/CMakeLists.txt ../string_pm_kr/CMakeLists.txt ../sum/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../graph/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../skiplist/CMakeLists.txt ../splay/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../string_pm_bm_bc+gs/CMakeLists.txt ../string_pm_bm_bc/CMakeLists.txt ../string_pm_kmp/CMakeLists.txt ../string_pm_kmp_improved/CMakeLists.txt ../string_pm_kr/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
+build ../AVL/CMakeLists.txt ../BST/CMakeLists.txt ../BTree/CMakeLists.txt ../BitMap/CMakeLists.txt ../Bitmap_set_only/CMakeLists.txt ../CMakeLists.txt ../PQ/CMakeLists.txt ../Prefix_free_Codes/CMakeLists.txt ../UniPrint/CMakeLists.txt ../binTree/CMakeLists.txt ../bubblesort/CMakeLists.txt ../conversion/CMakeLists.txt ../conversion_recursive/CMakeLists.txt ../countOnes/CMakeLists.txt ../cursor_list/CMakeLists.txt ../daxue/CMakeLists.txt ../factorial/CMakeLists.txt ../fibonacci/CMakeLists.txt ../gcd/CMakeLists.txt ../graph/CMakeLists.txt ../greatest_slice/CMakeLists.txt ../hanoi/CMakeLists.txt ../hashtable/CMakeLists.txt ../huffman/CMakeLists.txt ../laby/CMakeLists.txt ../list/CMakeLists.txt ../majority/CMakeLists.txt ../max/CMakeLists.txt ../maxRect/CMakeLists.txt ../median1/CMakeLists.txt ../median2/CMakeLists.txt ../nest_recursive/CMakeLists.txt ../nest_stack/CMakeLists.txt ../power/CMakeLists.txt ../prime/CMakeLists.txt ../queen_brute_force_1/CMakeLists.txt ../queen_brute_force_2/CMakeLists.txt ../queen_recursive/CMakeLists.txt ../queen_stack/CMakeLists.txt ../queue/CMakeLists.txt ../random/CMakeLists.txt ../redBlack/CMakeLists.txt ../reverse/CMakeLists.txt ../rpn/CMakeLists.txt ../selection/CMakeLists.txt ../shiftK/CMakeLists.txt ../simu/CMakeLists.txt ../skiplist/CMakeLists.txt ../splay/CMakeLists.txt ../stack/CMakeLists.txt ../string_pm/CMakeLists.txt ../string_pm_bf1/CMakeLists.txt ../string_pm_bf2/CMakeLists.txt ../string_pm_bm_bc+gs/CMakeLists.txt ../string_pm_bm_bc/CMakeLists.txt ../string_pm_kmp/CMakeLists.txt ../string_pm_kmp_improved/CMakeLists.txt ../string_pm_kr/CMakeLists.txt ../sum/CMakeLists.txt ../vector/CMakeLists.txt /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-C.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.20.2/CMakeCCompiler.cmake CMakeFiles/3.20.2/CMakeCXXCompiler.cmake CMakeFiles/3.20.2/CMakeSystem.cmake: phony
 
 
 #############################################

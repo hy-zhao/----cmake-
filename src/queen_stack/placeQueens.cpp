@@ -15,8 +15,8 @@ void placeQueens ( int N ) { //N皇后算法（迭代版）：采用试探/回�
       if ( N <= solu.size() || N <= q.y ) { //若已出界，则
          q = solu.pop(); q.y++; //回溯一行，并继续试探下一列
       } else { //否则，试探下一行
-         while ( ( q.y < N ) && ( 0 <= solu.find ( q ) ) ) //通过与已有皇后的比对
-            /*DSA*///while ((q.y < N) && (solu.find(q))) //（若基于List实现Stack，则find()返回值的语义有所不同）
+         // while ( ( q.y < N ) && ( 0 <= solu.find ( q ) ) ) //通过与已有皇后的比对
+            /*DSA*/while ((q.y < N) && (solu.find(q))) //（若基于List实现Stack，则find()返回值的语义有所不同）
             { q.y++; nCheck++; } //尝试找到可摆放下一皇后的列
          if ( N > q.y ) { //若存在可摆放的列，则
             solu.push ( q ); //摆上当前皇后，并

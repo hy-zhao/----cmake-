@@ -30,10 +30,7 @@ add_subdirectory(daxue)
 add_subdirectory(factorial)
 add_subdirectory(fibonacci)
 add_subdirectory(gcd)
-
-########################
 add_subdirectory(graph)
-
 add_subdirectory(greatest_slice)
 add_subdirectory(hanoi)
 add_subdirectory(hashtable)
@@ -42,41 +39,27 @@ add_subdirectory(laby)
 add_subdirectory(list)
 add_subdirectory(majority)
 add_subdirectory(max)
-
-########################
-# add_subdirectory(maxRect)
-
+add_subdirectory(maxRect)
 add_subdirectory(median1)
 add_subdirectory(median2)
 add_subdirectory(nest_recursive)
 add_subdirectory(nest_stack)
 add_subdirectory(power)
 add_subdirectory(PQ)
-
-########################
-# add_subdirectory(Prefix_free_Codes)
-
+add_subdirectory(Prefix_free_Codes)
 add_subdirectory(prime)
-
-########################
-# add_subdirectory(queen_brute_force_1)
-# add_subdirectory(queen_brute_force_2)
-# add_subdirectory(queen_recursive)
-# add_subdirectory(queen_stack)
-
+add_subdirectory(queen_brute_force_1)
+add_subdirectory(queen_brute_force_2)
+add_subdirectory(queen_recursive)
+add_subdirectory(queen_stack)
 add_subdirectory(queue)
 add_subdirectory(random)
 add_subdirectory(redBlack)
 add_subdirectory(reverse)
-
-########################
-# add_subdirectory(rpn)
-
+add_subdirectory(rpn)
 add_subdirectory(selection)
 add_subdirectory(shiftK)
-
-########################
-# add_subdirectory(simu)
+add_subdirectory(simu)
 add_subdirectory(skiplist)
 add_subdirectory(splay)
 add_subdirectory(stack)
@@ -88,8 +71,7 @@ add_subdirectory(string_pm_bm_bc+gs)
 add_subdirectory(string_pm_kmp)
 add_subdirectory(string_pm_kmp_improved)
 add_subdirectory(string_pm_kr)
-# add_subdirectory(sum)
-
+add_subdirectory(sum)
 add_subdirectory(UniPrint)
 add_subdirectory(vector)
 

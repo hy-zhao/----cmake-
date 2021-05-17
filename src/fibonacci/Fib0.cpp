@@ -5,6 +5,7 @@
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2003-2020. All rights reserved.
  ******************************************************************************************/
+#include<cstdint>
 
 int64_t fibI ( int n ) { //计算Fibonacci数列的第n项（迭代版）：O(n)
    int64_t f = 1, g = 0; //初始化：fib(-1)、fib(0)

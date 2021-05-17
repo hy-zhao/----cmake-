@@ -60,7 +60,7 @@ rule CXX_EXECUTABLE_LINKER__BINTREE_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__BITMAPLIB_Debug
+rule CXX_COMPILER__BITMAP_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -68,11 +68,11 @@ rule CXX_COMPILER__BITMAPLIB_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX executable.
 
-rule CXX_STATIC_LIBRARY_LINKER__BITMAPLIB_Debug
-  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__BITMAP_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
@@ -611,6 +611,44 @@ rule CXX_STATIC_LIBRARY_LINKER__MAXLIB_Debug
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__MAXRECT_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__MAXRECT_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__MAXRECTLIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__MAXRECTLIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__median1_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -763,6 +801,44 @@ rule CXX_STATIC_LIBRARY_LINKER__PQLIB_Debug
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__PREFIX_FREE_CODES_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__PREFIX_FREE_CODES_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__PREFIX_FREE_CODESLIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__PREFIX_FREE_CODESLIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__PRIME_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -793,6 +869,158 @@ rule CXX_COMPILER__PRIMELIB_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__PRIMELIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__queen_brute_force_1_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__queen_brute_force_1_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__QUEEN_BRUTE_FORCE_1LIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__QUEEN_BRUTE_FORCE_1LIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__queen_brute_force_2_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__queen_brute_force_2_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__QUEEN_BRUTE_FORCE_2LIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__QUEEN_BRUTE_FORCE_2LIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__queen_recursive_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__queen_recursive_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__QUEEN_RECURSIVELIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__QUEEN_RECURSIVELIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__queen_stack_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__queen_stack_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__QUEEN_STACKLIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__QUEEN_STACKLIB_Debug
   command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -877,6 +1105,44 @@ rule CXX_STATIC_LIBRARY_LINKER__REVERSELIB_Debug
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__rpn_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__rpn_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__RPNLIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__RPNLIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__selection_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -926,6 +1192,44 @@ rule CXX_COMPILER__SHIFTKLIB_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__SHIFTKLIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__simu_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__simu_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__SIMULIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__SIMULIB_Debug
   command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -1135,6 +1439,44 @@ rule CXX_COMPILER__STRING_PM_KRLIB_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__STRING_PM_KRLIB_Debug
+  command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sum_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__sum_Debug
+  command = $PRE_LINK && /usr/local/bin/g++-11 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__SUMLIB_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/bin/g++-11 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__SUMLIB_Debug
   command = $PRE_LINK && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /usr/local/Cellar/cmake/3.20.2/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
