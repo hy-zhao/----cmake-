@@ -1,0 +1,186 @@
+\chapter{Introduction}
+Algorithms + Data Structure = Programs\\
+{Algorithms + Data Structure} $\times$ efficiency = Computation\\
+
+
+\section{computational models}
+\subsection{measure}
+\begin{itemize}
+\item 正确性
+\item \stress{成本}
+\begin{itemize}
+\item 时间成本\ $T_A(n) = \max \left\{T_{0}(P)|| P \mid=n\right\}$ 
+\item 空间成本: 除了输入之外，计算所要用的空间
+\end{itemize}
+\end{itemize}
+
+\paragraph{Turning machine}
+\includegraphics[scale=0.5]{TM}
+\paragraph{Random Access Machine(RAM)}
+\begin{itemize}
+\item 寄存器顺序编号，总数没有限制
+\item 每一个基本操作仅需常数时间(constant time)
+\end{itemize}
+
+\comment{TM 和 RAM都是对于一般计算模型的抽象和简化，可独立于具体的平台，对算法的效率进行可信的比较和评判。将运行时间转换成需要执行的基本操作次数}
+
+\includegraphics[scale=0.5]{2-1}
+
+
+\subsection{渐进分析}
+
+
+\paragraph{big $\Omega$记号}
+\begin{itemize}
+\item $T(n)=\Omega(f(n)):$
+\item $\exists c>0$, 当 $n\gg 2$ 后，有 $T(n) < c \cdot f(n)$
+\end{itemize}
+
+\paragraph{big $\Theta$记号}
+\begin{itemize}
+\item $T(n)=\Theta(f(n)):$
+\item $\exists c_{1}>c_{2}>0$, 当 $n \gg 2$ 后, 有 $c_{1} \cdot f(n)>T(n)>c_{2} \cdot f(n)$
+\item $\Theta$ 是 $\Omega$ 和 $O$ 的组合
+\end{itemize}
+
+\paragraph{大$O$ 记号(big-$O$ notation)}
+\begin{itemize}
+\item 随着计算规模的增长，计算成本考察的是增长趋势，而不考虑具体的操作次数和存储单元 \ra Asymptotic analysis
+\begin{itemize}
+\item $T(n)=O(f(n))$ iff $\exists\ c>0$, 当 $n \gg 2$ 后, 有 $\mathrm{T}(\mathrm{n})< \mathrm{f}(\mathrm{n})$
+\item $\sqrt{5 n \cdot[3 n \cdot(n+2)+4]+6}< \sqrt{5 n \cdot\left[6 n^{2}+4\right]+6}<\sqrt{35 n^{3}+6}<6 \cdot n^{1.5}=O\left(n^{1.5}\right)$
+\item 常系数可忽略
+\item 低次项可忽略
+\item upper-bond在n比较小的时候，不一定会在$T(n)$
+\end{itemize}
+\end{itemize}
+
+\begin{enumerate}[label={(\arabic*)}]
+\item constant function
+\begin{itemize}
+\item $2=2013=2013 \times 2013=O(1)$ 甚至 $2013^{2013}=O(1)$
+\end{itemize}
+\item 对数 $O(\log n)$
+\begin{itemize}
+\item 常底数无所谓: $\forall \mathrm{a}, \mathrm{b}>0, \log _{\mathrm{a}} n=\log _{\mathrm{a}} \mathrm{b} \cdot \log _{b} n=O\left(\log _{b} n\right)$
+\item 常数次幂无所谓: $\forall c>0, \log n^{c}=c \cdot \log n=O(\log n)$
+\item 对数多项式(poly-log function): $123 * \log^{321} n+\log ^{105}\left(n^{2}-n+1\right)=O\left(\log ^{321} n\right)$
+\item 这类算法非常有效，复杂度无限接近与常数: $\forall\ c>0, \log n=O\left(n^{c}\right)$
+\end{itemize}
+\item 多项式(polynomial function)
+\begin{itemize}
+\item 一般地 : $a_{k} n^{k}+a_{k-1} n^{k-1}+\ldots+a_{1} n+a_{\theta}=O\left(n^{k}\right), a_{k}>0$
+\item tractable
+\item 线性(linear function): 所有 $O(\mathrm{n})$ 类函数
+\end{itemize}
+\item 指数(exponential function): $T(n)$
+\begin{itemize}
+\item $\forall c>1, \quad n^{c}=O\left(2^{n}\right)$
+\item 这类算法的计算成本增长极快，通常认为不可忍受
+\item intractable, incomputable
+\item NP-complete: 不存在多项式时间内回答此问题的算法
+\end{itemize}
+\item 从 $O\left(\mathrm{n}^{c}\right)$ 到 $0\left(2^{\mathrm{n}}\right)$, 是从有效算法到无效算法的分水岭
+\item 很多问题的 $O\left(2^{n}\right)$ 算法往往显而易见。然而，设计出 $O\left(\mathrm{n}^{c}\right)$ 算法却极其不易。甚至，有时注定地員能是徒劳无功
+\end{enumerate}
+
+
+\section{算法分析}
+正确性(不变性$\times$ 单调性) + 复杂度
+
+\subsection{C++指令类型}
+\begin{itemize}
+\item C++基本指令，RAM的基本指令
+\item 分支转向: goto
+\item 迭代循环: for(), while()
+\item 调用 + 递归 \ra goto
+\end{itemize}
+
+\subsection{复杂度分析的主要方法}
+\begin{itemize}
+\item 迭代: 级数求和
+\item 递归: 递归跟踪 + 递归方程
+\item 猜测 + 验证
+\end{itemize}
+
+\paragraph{级数}
+\begin{itemize}
+\item 算数级数: 与末项平方同阶 \\ $\mathrm{T}(\mathrm{n})=1+2+\ldots+\mathrm{n}=\mathrm{n}(\mathrm{n}+1) / 2=O\left(\mathrm{n}^{2}\right)$
+\item 幂方级数: 比幂次高出一阶 \\ $\sum_{\mathrm{k}=0}^{n} k^{d} \approx \int_{0}^{n} x^{d+1} d x=\left.\frac{1}{d+1} x^{d+1}\right|_{0} ^{n}=\frac{1}{d+1} n^{d+1}=O\left(n^{d+1}\right)$
+\item 几何级数: 与末项同阶 \\ $T_{a}(n)=a^{e}+a^{1}+\cdots+a^{n}=\left(a^{n+1}-1\right) /(a-1) = O\left(a^{n}\right)$\\
+$1+2+4+\ldots+2^{n}=2^{n+1}-1=O\left(2^{n+1}\right)=O\left(2^{n}\right)$
+\item 收敛级数 \\$1 / 1 / 2+1 / 2 / 3+1 / 3 / 4+\ldots+1 /(n-1) / n=1-1 / n=O(1)$\\
+$1+1 / 2^{2}+\ldots+1 / n^{2}<1+1 / 2^{2}+\ldots=\pi^{2 / 6}=O(1)$\\
+$1 / 3+1 / 7+1 / 8+1 / 15+1 / 24+1 / 26+1 / 31+1 / 35+\ldots=O(1)$
+\item 可能未必收敛，但是长度有限\\
+调和级数: $h(n)=1+1 / 2+1 / 3+\ldots+1 / n=\Theta(\log n)$ \\ 
+对数级数: $\log 1+\log 2+\log 3+\ldots+\log  n=\log (n !)=\Theta(n \log n)$
+\end{itemize}
+
+\paragraph{循环 vs 级数}
+$1 \prec \log \log n \prec \log n \prec n^{\epsilon} \prec n^{c} \prec n^{\log n} \prec c^{n} \prec n^{n} \prec c^{c^{n}},\ 0<\epsilon<1<\mathrm{c}$.\\
+\includegraphics[scale=0.5]{2-2}\\
+\includegraphics[scale=0.5]{2-3}
+
+\paragraph{Back-of-The-Envolope Calculation}
+
+\begin{itemize}
+\item 1 day $\approx 25 \times 4000=10^ 5 \mathrm{sec}$
+\item 1 lifetime / century $\approx 100 \times 365 =3 \times 10^4 \times 10^5 =3 \times 10^9 \mathrm{sec}$
+\item 三生三世 $\approx 300 \mathrm{yr}=10^ {10} \mathrm{sec}$
+\end{itemize}
+
+\paragraph{迭代与递归}
+\includegraphics[scale=0.5]{2-4}\\
+\includegraphics[scale=0.5]{2-5}\\
+\includegraphics[scale=0.5]{2-6}\\
+\includegraphics[scale=0.5]{2-7}\\
+\comment{几何级数可知，其big O和最后一个数值的级数相同，而最后一个数就是数组的个数$n$}
+
+\includegraphics[scale=0.5]{2-8}\\
+\comment{普通的求解达到$O(2n)$, 上述情况最坏的情况降为$\frac{5}{3}$}
+
+\section{Danymic programming}
+fibonacci 的求和两种简便方法：
+\begin{itemize}
+\item memoization: 将已计算过示例的结果制表备查
+\item Danymic programming: 
+\begin{lstlisting}
+    f = 0; g = 1;
+    while(0<n--){
+        g = g + f;
+        f = g - f;
+    }
+    return g;
+\end{lstlisting}
+\end{itemize}
+
+\begin{itemize}
+    \item 公共子序列(subsequence)：由序列中若干字符，按原相对次序构成
+    \item 最长公共子序列(longest common subsequence), 可能有多个，但是长度是一定的
+\end{itemize}
+
+
+\subsection{LCS: 递归}
+对于序列 $\mathrm{A}[0, \mathrm{n}]$ 和 $\mathrm{B}[0, \mathrm{~m}], \mathrm{LCS}(\mathrm{A}, \mathrm{B})$ 无非三种情况
+\begin{enumerate}[label={(\arabic*)}]
+\item 若n = -1或m = -1，则取作空序列 ("")
+\item 若$ A[n]$='x'=$B[m]$, 则取作LCS $(A[\theta, n), B[\theta, m))$+ 'X' \LR decrease
+\item 若$A[n] \neq B[m]$，则在两个字符中取一个稳定，另外一个单独的字符和稳定的字符比较，相同保留，不同去掉(两种取法，每一个都对应两种取法，可以发散出很多种) \LR devide
+\item $O(2^n)$
+\item 使用动态规划，可以消除其中的重复计算
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

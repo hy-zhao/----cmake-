@@ -1,0 +1,25 @@
+% 输出cls位置
+%kpsewhich -var-value=TEXMFHOME
+% !TEX TS-program = xelatex
+\documentclass{mynote}
+
+\title{Computer Networking}
+\from{James W. Kurose}
+\author{Nobody}
+\date{\today}
+\graphicspath{{fig/pre/},{fig/DJH},{fig/}}
+
+\begin{document}
+
+\makemytitle
+% \listoffigures
+% \part{Computer networking: A Top-Down Approach}
+% \input{chapter/part1.tex}
+\part{Data Structure and Algorithms}
+\input{chapter/DJH/part2.tex}
+\input{chapter/DJH/part3.tex}
+\input{chapter/DJH/part4.tex}
+% \part{Algorithm 4th ed. 笔记}
+% \input{chapter/Algo4/part1.tex}
+
+\end{document}

@@ -1,1 +1,10 @@
-lecture\ note/
+lecture\ note/*.lof
+lecture\ note/*.out
+lecture\ note/*.gz
+lecture\ note/*.txt
+lecture\ note/*.aux
+lecture\ note/*.log
+lecture\ note/chapter/part1.tex
+lecture\ note/chapter/Algo4/
+lecture\ note/fig/pre/
+lecture\ note/fig/Algo4/
